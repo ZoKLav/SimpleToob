@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <application android:name=".SimpleToobApp" android:label="SimpleToob"
+        android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme" android:allowBackup="false"
+        android:usesCleartextTraffic="false" android:supportsRtl="true" android:resizeableActivity="true" android:enableOnBackInvokedCallback="true">
+        <activity android:name=".MainActivity" android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:name=".CrayonIcon" android:targetActivity=".MainActivity"
+            android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="SimpleToob">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".BlueIcon" android:targetActivity=".MainActivity"
+            android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_blue" android:label="SimpleToob">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".MonoIcon" android:targetActivity=".MainActivity"
+            android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_mono" android:label="SimpleToob">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity-alias>
+        <activity android:name=".PlayerActivity" android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".CollectionSearchActivity" android:exported="false"/>
+        <activity android:name=".AccountActivity" android:exported="false"/>
+        <activity android:name=".PlaylistsActivity" android:exported="false"/>
+        <activity android:name=".WebSessionActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ImportSettingsActivity" android:exported="false"/>
+        <service android:name=".ImportJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <service android:name=".DownloadService" android:exported="false" android:foregroundServiceType="dataSync"/>
+    </application>
+</manifest>

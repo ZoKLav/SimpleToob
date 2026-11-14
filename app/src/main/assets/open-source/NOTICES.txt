@@ -1,0 +1,15 @@
+SimpleToob uses NewPipeExtractor and is distributed under GPL-3.0-or-later. Third-party components retain their own licenses.
+
+NewPipeExtractor v0.27.0: https://github.com/TeamNewPipe/NewPipeExtractor/tree/v0.27.0 — GPL-3.0-or-later. Full source archive included.
+
+AndroidX Media3 1.8.0 and AndroidX support components: Apache-2.0. Source JARs are included.
+
+Guava/failureaccess: Apache-2.0. jsoup/nanojson: MIT. Rhino: MPL-2.0. protobuf: BSD-3-Clause. Kotlin stdlib and annotations: Apache-2.0. jsr305: Apache-2.0/BSD as provided by its upstream source.
+
+Android core-library desugaring: GPL-2.0-with-classpath-exception. See https://github.com/google/desugar_jdk_libs and build-support provenance.
+
+NewPipe uses Rhino in interpreted mode; the desktop javax.script adapter rhino-engine is not packaged. No ad SDK or Google Play Services is packaged.
+
+jsoup-1.23.2.jar: META-INF/jsoup/LICENSE (license text retained)
+
+JSON-java 20240303 (public domain): build-support/json-tests-20240303.jar is used only by host tests and is not packaged into the APK. https://github.com/stleary/JSON-java/tree/20240303
