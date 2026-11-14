@@ -1,0 +1,2 @@
+# SimpleToob
+Lightweight YouTube player
