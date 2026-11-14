@@ -323,6 +323,18 @@ Current limits include:
 - Local playlists store one entry per video ID, so repeated occurrences collapse.
 - Import safety limits of 500 continuation pages and 50,000 playable entries per playlist.
 - No resumable downloads or WebM/HLS downloading.
+- 
+<p><img src="./screenshot/1.png" alt="Screenshot 1" width="700"></p>
+
+<p><img src="./screenshot/2.png" alt="Screenshot 2" width="700"></p>
+
+<p><img src="./screenshot/3.png" alt="Screenshot 3" width="700"></p>
+
+<p><img src="./screenshot/4.png" alt="Screenshot 4" width="700"></p>
+
+<p><img src="./screenshot/5.png" alt="Screenshot 5" width="700"></p>
+
+<p><img src="./screenshot/6.png" alt="Screenshot 6" width="700"></p>
 
 ## Complete changelog
 
