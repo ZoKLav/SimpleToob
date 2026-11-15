@@ -338,6 +338,55 @@ Current limits include:
 
 ## Complete changelog
 
+## 0.8.1 — account-switch/import fixes and video details
+
+Fixed / changed:
+- Stop the YouTube website at a signed-in landing and hand off to native Account ready / Use this account controls, retaining candidate selection only in memory.
+- Enforce a redirect-chain limit in addition to the fast-loop timer. Redirects inheriting a gesture flag no longer reset the budget; actual user interaction and explicit retries can reset it.
+- Verify a candidate session before replacing the saved account. Commit its encrypted cookie snapshot, selected account/channel and verified identity together, with profile/revision checks.
+- Reject mismatched explicit page/account contexts and comparable selected-channel tokens; do not assume account zero when selection metadata is absent.
+- Use authenticated selected-account browse requests for both initial and continuation subscription/playlist pages, replacing the unpinned initial website-HTML read.
+- Refuse signed-out/unrecognized collection responses without treating them as empty remote lists.
+- Scope signed-in subscription/playlist views, playlist choosers and local subscription state to local items plus the selected account's imports. Preserve every stored collection and the signed-out combined view.
+- Refresh subscriptions as soon as their transaction commits, independently of slower playlist imports; show import status on Subs while work is being followed.
+- Rebind the playlist view to the current local profile's database after returning from a profile change.
+- Preserve the existing Home recommendations, original-audio policy, background Audio, worker pools, schema 4, Android 8.0 minimum and development signer.
+
+Added:
+- Choose another account on the native handoff and Choose a YouTube channel in account-window options.
+- Show all account imports and Refresh imports after account switching preferences. One-time switch refresh is enabled by default; existing launch/interval controls remain independent.
+- View counts and upload dates on native video cards/watch/playlist/account views, with independent display toggles.
+- Backward-compatible video metadata fields. Reuse extracted numbers, precise dates or supplied website text without fetching each card separately, inventing timestamps or labelling live viewers as total views.
+- Sixteen UI/error phrases in all seven languages, now 635 entries per locale.
+- Slow-loop, handoff-selection, account/channel mismatch and collection-request regression cases; VideoMetadataTest and production-SQL account-scope cases. Android SessionVaultTest and account-view tests are supplied.
+
+Validation: 4,838 Java host assertions, 26 SQLite checks and 4,445 locale entries pass, along with Android compilation, DEX/desugaring and APK signing/alignment. Android instrumentation, visual layout and live Google/YouTube multi-account flows were not run here. These are targeted implementation fixes, not a claim that Taylor's device-specific report has been reproduced or resolved on hardware.
+
+## 0.8.0 — recommendations and regional Home charts
+
+Added:
+- Popular now and For you inside the existing Home screen, with no extra bottom navigation tab.
+- Real regional Music, Gaming and Trailers charts through the vendored extractor's category-chart endpoints.
+- Native signed-in YouTube Home recommendations, server-order card parsing, manual pagination, refresh and useful empty/retry states.
+- A direct in-app sign-in choice and Browse Popular now when For you is selected while signed out.
+- Per-local-profile Home mode and chart preferences, preserved with Back navigation and configuration changes.
+- Automatic Home grids at 700 dp (two columns) and 1050 dp (three columns); wide-screen grid toggle, with compact cards retaining list layout.
+- In-memory retention of loaded Home rows/pages and scroll position during Activity recreation, scoped to the current account/profile/settings.
+- Twenty-four Home phrases in all seven interface languages (619 entries per language).
+- HomeFeedParserTest, HomeRecommendationsTest, ChartFeedTest and six additional NavigationHistory assertions; Android HomeTest supplied for recreation, layout selection and signed-out gating.
+
+Fixed / changed:
+- Popular no longer uses a search for “new videos.” The saved discovery query remains available as an explicit Search topic action.
+- Account → Your home feed opens the shared native Home view instead of a separate account-only list.
+- Preserve mixed classic/modern video-card order, channel names/links, supplied pictures and duration metadata.
+- Exclude ad/Shorts wrappers and avoid treating menu/header/shelf continuations as the main feed's next page.
+- Honor current blocked-channel and short-video filters on the new feeds.
+- Use a dedicated two-worker recommendation-read pool so these reads do not occupy serialized account-write/import workers.
+- Cache public charts for five minutes and account first pages for two minutes. Keep private snapshots/cursors in memory, bounded and scoped to profile, credential revision, account setting, content language/region and session presence.
+- Clear private feed state on sign-out/account changes; reject late results and expired/repeated cursors. A server-declared signed-out response cannot be shown as personal recommendations.
+- Route first-page and continuation account reads through the same selected-account/delegation context.
+- Keep local watch history local; fetching account recommendations adds no background watch-history upload.
+
 ## 0.7.0 — interface languages and original audio
 
 Added:
