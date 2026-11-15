@@ -16,6 +16,8 @@ public final class SimpleToobApp extends Application {
     public LibraryStore library;
     public YoutubeRepository youtube;
     public ImageLoader thumbnails;
+    Avatars avatars;
+    public volatile boolean videoActive,audioActive;
     @Override public void onCreate() {
         super.onCreate();
         importReads=pool(3,12,"simpletoob-import-read");importControl=pool(1,4,"simpletoob-import-control");network=pool(3,48,"simpletoob-network");
@@ -25,7 +27,7 @@ public final class SimpleToobApp extends Application {
         prefs=new Prefs(this); library=new LibraryStore(this,prefs.text("profile","default"));
         sessions=new SessionVault(this,prefs);web=new YoutubeWebClient(sessions,prefs);votes=new RatingsRepository(prefs);
         youtube=new YoutubeRepository(this,prefs);
-        thumbnails=new ImageLoader(images);imports=new ImportManager(this);sessions.onChanged(imports::sessionChanged);imports.configure();registerActivityLifecycleCallbacks(new android.app.Application.ActivityLifecycleCallbacks(){int count;long lastForeground;public void onActivityStarted(android.app.Activity a){if(count++==0&&(lastForeground==0||android.os.SystemClock.elapsedRealtime()-lastForeground>30000)){lastForeground=android.os.SystemClock.elapsedRealtime();imports.foreground();}}public void onActivityStopped(android.app.Activity a){count=Math.max(0,count-1);}public void onActivityCreated(android.app.Activity a,android.os.Bundle b){}public void onActivityResumed(android.app.Activity a){}public void onActivityPaused(android.app.Activity a){}public void onActivitySaveInstanceState(android.app.Activity a,android.os.Bundle b){}public void onActivityDestroyed(android.app.Activity a){}});
+        thumbnails=new ImageLoader(images);avatars=new Avatars(this);imports=new ImportManager(this);sessions.onChanged(imports::sessionChanged);imports.configure();registerActivityLifecycleCallbacks(new android.app.Application.ActivityLifecycleCallbacks(){int count;long lastForeground;public void onActivityStarted(android.app.Activity a){if(count++==0&&(lastForeground==0||android.os.SystemClock.elapsedRealtime()-lastForeground>30000)){lastForeground=android.os.SystemClock.elapsedRealtime();imports.foreground();}}public void onActivityStopped(android.app.Activity a){count=Math.max(0,count-1);}public void onActivityCreated(android.app.Activity a,android.os.Bundle b){}public void onActivityResumed(android.app.Activity a){}public void onActivityPaused(android.app.Activity a){}public void onActivitySaveInstanceState(android.app.Activity a,android.os.Bundle b){}public void onActivityDestroyed(android.app.Activity a){}});
         // SQLite initialization and metadata expiry never run on the UI thread.
         disk.execute(() -> library.expireMetadata());
     }

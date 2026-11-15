@@ -19,8 +19,8 @@ public final class YoutubeRepository {
         Page(List<Video> videos,String next){this.videos=videos;this.next=next;}
     }
     public static final class Comment {
-        public final String text,replies;
-        Comment(String text,String replies){this.text=text;this.replies=replies;}
+        public final String text,replies,avatar;
+        Comment(String text,String replies,String avatar){this.text=text;this.replies=replies;this.avatar=avatar;}
     }
     public static final class Comments {
         public final List<Comment> rows;public final String next;
@@ -45,6 +45,7 @@ public final class YoutubeRepository {
     }
     private final LinkedHashMap<String,Continuation> pages=new LinkedHashMap<>();
     private final LinkedHashMap<String,Media> mediaCache=new LinkedHashMap<>();
+    private final java.util.concurrent.ConcurrentHashMap<String,java.util.concurrent.FutureTask<Media>> inFlight=new java.util.concurrent.ConcurrentHashMap<>();
     private final Map<String,Long> fetched=new HashMap<>();
     private final Prefs prefs;private volatile boolean initialized;private volatile String localeKey="";
     YoutubeRepository(Context context,Prefs prefs){this.prefs=prefs;}
@@ -84,13 +85,22 @@ public final class YoutubeRepository {
             c.page=next;return new Page(rows,remember(c));
         }catch(ApiException e){throw e;}catch(Exception e){throw extractionError(e);}
     }
+    public String channelAvatar(String channel)throws Exception{initialize();String url=ChannelUrls.parse(channel);if(url==null)return "";return thumbnail(ChannelInfo.getInfo(ServiceList.YouTube,url).getAvatars());}
+    /** Called by the media loader, never by the UI thread. No video bytes are fetched for audio playback. */
+    public String audio(String id)throws Exception{Media m=media(id);AudioStream stream=m.info.getAudioStreams().stream().filter(a->a.isUrl()&&WebDownloader.mediaUrl(a.getContent())).max(Comparator.comparingInt(a->(a.getFormat()==MediaFormat.M4A?10000:0)+a.getAverageBitrate())).orElse(null);if(stream==null)throw new ApiException("No public audio-only stream is available for this video.");return stream.getContent();}
     public Video details(String id)throws Exception{return media(id).video;}
     public Media media(String id)throws Exception {
+        if(android.os.Looper.myLooper()==android.os.Looper.getMainLooper())throw new IllegalStateException("Media extraction must run off the UI thread");
+        java.util.concurrent.FutureTask<Media> task=new java.util.concurrent.FutureTask<>(()->extractMedia(id));java.util.concurrent.FutureTask<Media> active=inFlight.putIfAbsent(id,task);
+        if(active!=null){try{return active.get();}catch(java.util.concurrent.ExecutionException e){Throwable cause=e.getCause();if(cause instanceof Exception)throw (Exception)cause;throw new ApiException("Media extraction failed");}}
+        try{task.run();return task.get();}catch(java.util.concurrent.ExecutionException e){Throwable cause=e.getCause();if(cause instanceof Exception)throw (Exception)cause;throw new ApiException("Media extraction failed");}finally{inFlight.remove(id,task);}
+    }
+    private Media extractMedia(String id)throws Exception {
         initialize();if(!VideoIds.valid(id))throw new ApiException("Invalid video ID");
         synchronized(this){Media m=mediaCache.get(id);if(m!=null && System.currentTimeMillis()-fetched.getOrDefault(id,0L)<3*60*1000)return m;}
         try {
             StreamInfo info=StreamInfo.getInfo(ServiceList.YouTube,"https://www.youtube.com/watch?v="+id);
-            Video v=new Video(id,info.getName(),info.getUploaderName(),info.getUploaderUrl(),thumbnail(info.getThumbnails()),plain(info.getDescription()),info.getTextualUploadDate(),info.getDuration());
+            Video v=new Video(id,info.getName(),info.getUploaderName(),info.getUploaderUrl(),thumbnail(info.getThumbnails()),plain(info.getDescription()),info.getTextualUploadDate(),info.getDuration()).withAvatar(thumbnail(info.getUploaderAvatars()));
             List<Choice> choices=new ArrayList<>();
             AudioStream mp4=info.getAudioStreams().stream().filter(a->a.isUrl()&&a.getFormat()==MediaFormat.M4A&&WebDownloader.mediaUrl(a.getContent())).max(Comparator.comparingInt(AudioStream::getAverageBitrate)).orElse(null);
             AudioStream webm=info.getAudioStreams().stream().filter(a->a.isUrl()&&a.getFormat()!=MediaFormat.M4A&&WebDownloader.mediaUrl(a.getContent())).max(Comparator.comparingInt(AudioStream::getAverageBitrate)).orElse(null);
@@ -110,7 +120,7 @@ public final class YoutubeRepository {
             List<CommentsInfoItem> items;org.schabi.newpipe.extractor.Page next;
             if(token.isEmpty()){CommentsInfo i=CommentsInfo.getInfo(ServiceList.YouTube,url);if(i.isCommentsDisabled())throw new ApiException("Comments are disabled for this video.");items=i.getRelatedItems();next=i.getNextPage();}
             else {Continuation c=continuation(token);url=c.comments;ListExtractor.InfoItemsPage<CommentsInfoItem> p=CommentsInfo.getMoreItems(ServiceList.YouTube,url,c.page);items=p.getItems();next=p.getNextPage();}
-            List<Comment> rows=new ArrayList<>();for(CommentsInfoItem i:items){Continuation r=new Continuation(i.getReplies());r.comments=url;rows.add(new Comment(i.getUploaderName()+"\n"+plain(i.getCommentText())+"\n"+i.getLikeCount()+" likes"+(i.getReplyCount()>0?" · "+i.getReplyCount()+" replies":""),remember(r)));}
+            List<Comment> rows=new ArrayList<>();for(CommentsInfoItem i:items){Continuation r=new Continuation(i.getReplies());r.comments=url;rows.add(new Comment(i.getUploaderName()+"\n"+plain(i.getCommentText())+"\n"+i.getLikeCount()+" likes"+(i.getReplyCount()>0?" · "+i.getReplyCount()+" replies":""),remember(r),thumbnail(i.getUploaderAvatars())));}
             Continuation n=new Continuation(next);n.comments=url;return new Comments(rows,remember(n));
         }catch(ApiException e){throw e;}catch(Exception e){throw extractionError(e);}
     }
@@ -132,7 +142,7 @@ public final class YoutubeRepository {
             java.util.List<Video> rows=new java.util.ArrayList<>();for(org.schabi.newpipe.extractor.stream.StreamInfoItem i:items){Video v=video(i);if(v!=null)rows.add(v);}return new PlaylistResult(title,new Page(rows,remember(new Continuation(next))));
         }catch(Exception e){throw extractionError(e);}
     }
-    private static Video video(StreamInfoItem i){String id=VideoIds.parse(i.getUrl());if(id==null)return null;return new Video(id,i.getName(),i.getUploaderName(),i.getUploaderUrl(),thumbnail(i.getThumbnails()),i.getShortDescription()==null?"":i.getShortDescription(),i.getTextualUploadDate()==null?"":i.getTextualUploadDate(),i.getDuration());}
+    private static Video video(StreamInfoItem i){String id=VideoIds.parse(i.getUrl());if(id==null)return null;return new Video(id,i.getName(),i.getUploaderName(),i.getUploaderUrl(),thumbnail(i.getThumbnails()),i.getShortDescription()==null?"":i.getShortDescription(),i.getTextualUploadDate()==null?"":i.getTextualUploadDate(),i.getDuration()).withAvatar(thumbnail(i.getUploaderAvatars()));}
     private static String thumbnail(List<Image> images){return images==null||images.isEmpty()?"":images.get(images.size()-1).getUrl();}
     private static String plain(Description d){if(d==null)return "";return d.type()==Description.Type.HTML?Html.fromHtml(d.content(),Html.FROM_HTML_MODE_LEGACY).toString():d.content();}
     public static int resolution(String label){try{String n=label.split("p")[0].replaceAll("[^0-9]","");return Integer.parseInt(n);}catch(Exception e){return 0;}}

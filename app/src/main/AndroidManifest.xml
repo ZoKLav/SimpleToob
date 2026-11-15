@@ -3,9 +3,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application android:name=".SimpleToobApp" android:label="SimpleToob"
         android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher"
@@ -34,6 +36,8 @@
         <activity android:name=".PlayerActivity" android:exported="false"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name=".CollectionSearchActivity" android:exported="false"/>
+        <activity android:name=".AudioActivity" android:exported="false"/>
+        <service android:name=".AudioService" android:exported="false" android:foregroundServiceType="mediaPlayback"><intent-filter><action android:name="androidx.media3.session.MediaSessionService"/></intent-filter></service>
         <activity android:name=".AccountActivity" android:exported="false"/>
         <activity android:name=".PlaylistsActivity" android:exported="false"/>
         <activity android:name=".WebSessionActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>

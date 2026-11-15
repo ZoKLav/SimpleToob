@@ -15,6 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.RejectedExecutionException;
 
 public final class ImageLoader {
+    private final java.util.Map<String,java.util.List<java.lang.ref.WeakReference<ImageView>>> pending=new java.util.HashMap<>();
     private final ExecutorService executor;
     private final Handler main=new Handler(Looper.getMainLooper());
     private final LruCache<String,Bitmap> cache=new LruCache<String,Bitmap>(12*1024*1024) {
@@ -25,11 +26,15 @@ public final class ImageLoader {
     public void load(String url,ImageView target,boolean fallback) {
         target.setTag(url); if(!fallback)target.setImageDrawable(null);
         Bitmap hit=cache.get(url); if(hit!=null) { target.setImageBitmap(hit); return; }
+        if(!AccountCollections.imageUrl(url))return;
+        synchronized(pending){java.util.List<java.lang.ref.WeakReference<ImageView>> rows=pending.get(url);if(rows!=null){rows.add(new java.lang.ref.WeakReference<>(target));return;}rows=new java.util.ArrayList<>();rows.add(new java.lang.ref.WeakReference<>(target));pending.put(url,rows);}
         try { executor.execute(() -> {
-            Bitmap result=fetch(url); if(result==null) return; cache.put(url,result);
-            main.post(() -> { if(url.equals(target.getTag())) target.setImageBitmap(result); });
-        }); } catch(RejectedExecutionException ignored) { /* Scrolling never blocks on thumbnails. */ }
+            boolean needed=false;synchronized(pending){java.util.List<java.lang.ref.WeakReference<ImageView>> rows=pending.get(url);if(rows!=null)for(java.lang.ref.WeakReference<ImageView> ref:rows){ImageView view=ref.get();if(view!=null&&url.equals(view.getTag())){needed=true;break;}}}
+            Bitmap result=needed?fetch(url):null;if(result!=null)cache.put(url,result);
+            main.post(()->{java.util.List<java.lang.ref.WeakReference<ImageView>> rows;synchronized(pending){rows=pending.remove(url);}if(result!=null&&rows!=null)for(java.lang.ref.WeakReference<ImageView> ref:rows){ImageView view=ref.get();if(view!=null&&url.equals(view.getTag()))view.setImageBitmap(result);}});
+        }); } catch(RejectedExecutionException ignored) { synchronized(pending){pending.remove(url);} }
     }
+
     private Bitmap fetch(String source) {
         HttpURLConnection c=null;
         try {

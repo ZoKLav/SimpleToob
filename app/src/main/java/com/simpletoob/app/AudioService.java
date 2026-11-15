@@ -1,0 +1,43 @@
+package com.simpletoob.app;
+
+import android.app.PendingIntent;
+import android.content.*;
+import androidx.media3.common.*;
+import androidx.media3.datasource.*;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.exoplayer.source.ProgressiveMediaSource;
+import androidx.media3.session.*;
+import com.google.common.util.concurrent.*;
+import java.io.IOException;
+import java.util.*;
+
+/** Owns audio playback independently of Activities and the display's power state. */
+public final class AudioService extends MediaSessionService {
+    public static volatile long sleepUntil;
+    public static volatile boolean queueLoading;public static volatile String queueError="";
+    private int queueGeneration;private boolean destroyed;private java.util.concurrent.Future<?> queueWork;
+    private final android.os.Handler timer=new android.os.Handler(android.os.Looper.getMainLooper());
+    private final Runnable sleep=()->{sleepUntil=0;if(this.player!=null)this.player.pause();};
+    private android.content.SharedPreferences.OnSharedPreferenceChangeListener profileListener;
+    private MediaSession session;private ExoPlayer player;private SimpleToobApp app;
+    @Override public void onCreate(){super.onCreate();queueError="";app=(SimpleToobApp)getApplication();
+        ResolvingDataSource.Factory audio=new ResolvingDataSource.Factory(MediaNetwork.factory(app.prefs),spec->{String id=spec.uri.getSchemeSpecificPart();if(!"simpletoob-audio".equals(spec.uri.getScheme())||!VideoIds.valid(id))throw new IOException("Invalid audio item");try{return spec.withUri(android.net.Uri.parse(app.youtube.audio(id)));}catch(Exception e){throw new IOException("Couldn't resolve this public audio stream. Retry from the Audio tab.",e);}});
+        player=new ExoPlayer.Builder(this).setMediaSourceFactory(new ProgressiveMediaSource.Factory(audio)).setLoadControl(MediaNetwork.buffers(app.prefs,true)).build();
+        player.setAudioAttributes(new AudioAttributes.Builder().setUsage(C.USAGE_MEDIA).setContentType(C.AUDIO_CONTENT_TYPE_MUSIC).build(),true);player.setHandleAudioBecomingNoisy(true);player.setWakeMode(C.WAKE_MODE_NETWORK);
+        player.setShuffleModeEnabled(app.prefs.flag("audio_shuffle",false));player.setRepeatMode(app.prefs.number("audio_repeat",Player.REPEAT_MODE_OFF));
+        player.addListener(new Player.Listener(){@Override public void onEvents(Player p,Player.Events events){app.audioActive=p.getPlayWhenReady()&&(p.getPlaybackState()==Player.STATE_READY||p.getPlaybackState()==Player.STATE_BUFFERING);}@Override public void onIsPlayingChanged(boolean playing){app.audioActive=playing;}@Override public void onPlayerError(PlaybackException error){app.audioActive=false;MediaItem item=player.getCurrentMediaItem();if(item!=null)app.youtube.invalidateMedia(item.mediaId);Diagnostics.record("audio error "+error.getErrorCodeName());}@Override public void onShuffleModeEnabledChanged(boolean enabled){app.prefs.put("audio_shuffle",enabled);}@Override public void onRepeatModeChanged(int repeat){app.prefs.put("audio_repeat",repeat);}});
+        PendingIntent open=PendingIntent.getActivity(this,70,new Intent(this,AudioActivity.class),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
+        profileListener=(prefs,key)->{if("profile".equals(key)){queueGeneration++;queueLoading=false;if(queueWork!=null)queueWork.cancel(true);player.stop();player.clearMediaItems();stopSelf();}};app.prefs.data.registerOnSharedPreferenceChangeListener(profileListener);
+        session=new MediaSession.Builder(this,player).setSessionActivity(open).setCallback(new MediaSession.Callback(){
+            @Override public ListenableFuture<List<MediaItem>> onAddMediaItems(MediaSession s,MediaSession.ControllerInfo c,List<MediaItem> items){queueGeneration++;queueLoading=false;queueError="";if(queueWork!=null)queueWork.cancel(true);List<MediaItem> safe=new ArrayList<>();for(MediaItem item:items){if(!VideoIds.valid(item.mediaId))return Futures.immediateFailedFuture(new IllegalArgumentException("Invalid audio item"));MediaMetadata metadata=item.mediaMetadata;safe.add(new MediaItem.Builder().setMediaId(item.mediaId).setUri("simpletoob-audio:"+item.mediaId).setMediaMetadata(metadata).build());}return Futures.immediateFuture(safe);}
+        }).build();
+    }
+    @Override public int onStartCommand(Intent intent,int flags,int id){if(intent!=null&&"clear".equals(intent.getAction())){queueGeneration++;queueLoading=false;queueError="";if(queueWork!=null)queueWork.cancel(true);player.stop();player.clearMediaItems();timer.removeCallbacks(sleep);sleepUntil=0;stopSelf();return START_NOT_STICKY;}if(intent!=null&&"video".equals(intent.getAction())){loadPlaylist(null,intent.getStringExtra("profile"),intent.getStringExtra("video"));return START_NOT_STICKY;}if(intent!=null&&"playlist".equals(intent.getAction())){loadPlaylist(intent.getStringExtra("id"),intent.getStringExtra("profile"),null);return START_NOT_STICKY;}if(intent!=null&&"sleep".equals(intent.getAction())){timer.removeCallbacks(sleep);int minutes=Math.max(0,Math.min(120,intent.getIntExtra("minutes",0)));sleepUntil=minutes==0?0:android.os.SystemClock.elapsedRealtime()+minutes*60000L;if(minutes>0)timer.postDelayed(sleep,minutes*60000L);return START_NOT_STICKY;}return super.onStartCommand(intent,flags,id);}
+    private void loadPlaylist(String id,String profile,String video){
+        if((id==null&&video==null)||profile==null||!profile.equals(app.prefs.text("profile","default")))return;
+        int generation=++queueGeneration;queueLoading=true;queueError="";if(queueWork!=null)queueWork.cancel(true);LibraryStore library=app.library;
+        try{queueWork=app.disk.submit(()->{try{if(!profile.equals(app.prefs.text("profile","default")))return;List<Video> videos=video!=null?Collections.singletonList(Video.fromJson(new org.json.JSONObject(video))):id.isEmpty()?library.list(true,"Newest first"):library.playlistVideos(id);List<MediaItem> items=new ArrayList<>();for(Video v:videos){if(Thread.currentThread().isInterrupted())return;MediaMetadata.Builder metadata=new MediaMetadata.Builder().setTitle(v.title).setArtist(v.channel).setIsPlayable(true).setMediaType(MediaMetadata.MEDIA_TYPE_MUSIC);if(AccountCollections.imageUrl(v.thumbnail))metadata.setArtworkUri(android.net.Uri.parse(v.thumbnail));items.add(new MediaItem.Builder().setMediaId(v.id).setUri("simpletoob-audio:"+v.id).setMediaMetadata(metadata.build()).build());}timer.post(()->{if(destroyed||generation!=queueGeneration||!profile.equals(app.prefs.text("profile","default")))return;queueLoading=false;if(items.isEmpty()){queueError="This playlist is empty.";if(player.getMediaItemCount()==0)stopSelf();return;}player.setMediaItems(items);player.prepare();player.play();});}catch(Exception e){timer.post(()->{if(!destroyed&&generation==queueGeneration){queueLoading=false;queueError="Couldn't load this local playlist. Please retry.";if(player.getMediaItemCount()==0)stopSelf();}});}});}catch(java.util.concurrent.RejectedExecutionException e){queueLoading=false;queueError="Library is busy. Please retry.";}
+    }
+    @Override public MediaSession onGetSession(MediaSession.ControllerInfo controller){return getPackageName().equals(controller.getPackageName())||controller.isTrusted()?session:null;}
+    @Override public void onDestroy(){destroyed=true;queueGeneration++;queueLoading=false;if(queueWork!=null)queueWork.cancel(true);app.audioActive=false;timer.removeCallbacksAndMessages(null);sleepUntil=0;if(profileListener!=null)app.prefs.data.unregisterOnSharedPreferenceChangeListener(profileListener);if(session!=null)session.release();if(player!=null)player.release();super.onDestroy();}
+}
