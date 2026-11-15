@@ -21,7 +21,9 @@ public final class DownloadService extends Service {
     private volatile RangeTransfer transfer;
     private long notified;
     private NotificationManager notifications;
-    @Override public void onCreate(){super.onCreate();notifications=getSystemService(NotificationManager.class);notifications.createNotificationChannel(new NotificationChannel(CHANNEL,"Video downloads",NotificationManager.IMPORTANCE_LOW));}
+    @Override protected void attachBaseContext(android.content.Context base){super.attachBaseContext(AppLanguage.wrap(base));}
+    private String tr(int id,Object...args){return I18n.get(this,id,args);}
+    @Override public void onCreate(){super.onCreate();notifications=getSystemService(NotificationManager.class);notifications.createNotificationChannel(new NotificationChannel(CHANNEL,I18n.text(this,"Video downloads"),NotificationManager.IMPORTANCE_LOW));}
     @Override public IBinder onBind(Intent intent){return null;}
     @Override public int onStartCommand(Intent intent,int flags,int startId){
         if(intent==null){stopSelf();return START_NOT_STICKY;}
@@ -33,13 +35,13 @@ public final class DownloadService extends Service {
     }
     private Notification notification(String title,String message,boolean ongoing,boolean done,Uri output){
         Intent open=new Intent(this,MainActivity.class);PendingIntent content=PendingIntent.getActivity(this,1,open,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
-        Notification.Builder n=new Notification.Builder(this,CHANNEL).setSmallIcon(android.R.drawable.stat_sys_download).setContentTitle(title==null?"SimpleToob download":title).setContentText(message).setOngoing(ongoing).setOnlyAlertOnce(true).setContentIntent(content);
-        if(ongoing){Intent cancel=new Intent(this,DownloadService.class).setAction("cancel");PendingIntent action=PendingIntent.getService(this,2,cancel,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);n.addAction(new Notification.Action.Builder(null,"Cancel",action).build());n.setProgress(0,0,true);}
+        Notification.Builder n=new Notification.Builder(this,CHANNEL).setSmallIcon(android.R.drawable.stat_sys_download).setContentTitle(title==null?tr(R.string.ui_simpletoob_download_49fcb2):title).setContentText(I18n.text(this,message)).setOngoing(ongoing).setOnlyAlertOnce(true).setContentIntent(content);
+        if(ongoing){Intent cancel=new Intent(this,DownloadService.class).setAction("cancel");PendingIntent action=PendingIntent.getService(this,2,cancel,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);n.addAction(new Notification.Action.Builder(null,I18n.text(this,"Cancel"),action).build());n.setProgress(0,0,true);}
         if(done&&output!=null){Intent view=new Intent(Intent.ACTION_VIEW).setDataAndType(output,"video/mp4").addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);PendingIntent action=PendingIntent.getActivity(this,3,view,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);n.setContentIntent(action).setAutoCancel(true).setSmallIcon(android.R.drawable.stat_sys_download_done);}
         return n.build();
     }
     private void check()throws InterruptedIOException{if(cancelled||Thread.currentThread().isInterrupted())throw new InterruptedIOException("Cancelled");}
-    private synchronized void progress(String title,String text){if(System.currentTimeMillis()-notified<1000)return;notified=System.currentTimeMillis();state=text;notifications.notify(20,notification(title,text,true,false,null));}
+    private synchronized void progress(String title,String text){if(System.currentTimeMillis()-notified<1000)return;notified=System.currentTimeMillis();state=I18n.text(this,text);notifications.notify(20,notification(title,text,true,false,null));}
     private synchronized void stageProgress(String title,String text){notified=0;progress(title,text);}
     private void download(String title,String video,String audio,String destination){
         PowerManager.WakeLock wake=getSystemService(PowerManager.class).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,"SimpleToob:download");wake.acquire(6L*60*60*1000);
@@ -60,7 +62,7 @@ public final class DownloadService extends Service {
         finally{
             if(transfer!=null)transfer.close();transfer=null;if(temp.exists()){File[] files=temp.listFiles();if(files!=null)for(File f:files)f.delete();temp.delete();}
             if(!success&&output!=null)try{DocumentsContract.deleteDocument(getContentResolver(),output);}catch(Exception ignored){}
-            if(wake.isHeld())wake.release();state=message;final String resultMessage=message;final boolean completed=success;final Uri document=output;
+            if(wake.isHeld())wake.release();state=I18n.text(this,message);final String resultMessage=message;final boolean completed=success;final Uri document=output;
             new Handler(Looper.getMainLooper()).post(()->{busy=false;stopForeground(STOP_FOREGROUND_REMOVE);notifications.notify(21,notification(title,resultMessage,false,completed,document));stopSelf();});
         }
     }

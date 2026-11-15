@@ -42,6 +42,7 @@ final class Ui {
         double lum=(Color.red(accent)*.299+Color.green(accent)*.587+Color.blue(accent)*.114);
         onAccent=Color.luminance(accent)>.179?Color.BLACK:Color.WHITE;
     }
+    String tr(int id,Object...args){return I18n.get(context,id,args);}
     int dp(float n) { return (int)(n*context.getResources().getDisplayMetrics().density+.5f); }
     GradientDrawable rounded(int color,int radius) {
         GradientDrawable d=new GradientDrawable(); d.setColor(color); d.setCornerRadius(dp(radius)); return d;
@@ -62,7 +63,7 @@ final class Ui {
         b.setOnClickListener(v->action.run());return b;
     }
     Button quiet(String label,Runnable action){Button b=button(label,false,action);b.setBackground(touch(Color.TRANSPARENT,radius()));return b;}
-    Button chip(String icon,String label,Runnable action){Button b=button(label,false,action);b.setSingleLine(true);b.setEllipsize(android.text.TextUtils.TruncateAt.END);if(icon!=null){AppIcons d=new AppIcons(icon,text);d.setBounds(0,0,dp(18),dp(18));b.setCompoundDrawables(d,null,null,null);b.setCompoundDrawablePadding(dp(7));}return b;}
+    Button chip(String icon,String label,Runnable action){Button b=button(label,false,action);b.setSingleLine(true);b.setEllipsize(android.text.TextUtils.TruncateAt.END);if(icon!=null){AppIcons d=new AppIcons(icon,text);d.setBounds(0,0,dp(18),dp(18));b.setCompoundDrawablesRelative(d,null,null,null);b.setCompoundDrawablePadding(dp(7));}return b;}
     ImageButton icon(String icon,String label,Runnable action){ImageButton b=new ImageButton(context);b.setImageDrawable(new AppIcons(icon,text));b.setScaleType(ImageView.ScaleType.CENTER_INSIDE);b.setPadding(dp(12),dp(12),dp(12),dp(12));b.setBackground(touch(Color.TRANSPARENT,24));b.setContentDescription(label);b.setOnClickListener(v->action.run());b.setLayoutParams(new LinearLayout.LayoutParams(dp(48),dp(48)));return b;}
     LinearLayout toolbar(String title,Runnable back){LinearLayout bar=row();bar.setPadding(dp(8),dp(2),dp(8),dp(2));bar.addView(icon("back","Back",back));TextView name=heading(title,18);name.setPadding(dp(8),0,0,0);bar.addView(name,new LinearLayout.LayoutParams(0,-2,1));return bar;}
     void divider(LinearLayout parent){View d=new View(context);d.setBackgroundColor(line);parent.addView(d,new LinearLayout.LayoutParams(-1,dp(1)));}

@@ -20,6 +20,8 @@ public final class AudioService extends MediaSessionService {
     private final Runnable sleep=()->{sleepUntil=0;if(this.player!=null)this.player.pause();};
     private android.content.SharedPreferences.OnSharedPreferenceChangeListener profileListener;
     private MediaSession session;private ExoPlayer player;private SimpleToobApp app;
+    @Override protected void attachBaseContext(android.content.Context base){super.attachBaseContext(AppLanguage.wrap(base));}
+    private String tr(int id,Object...args){return I18n.get(this,id,args);}
     @Override public void onCreate(){super.onCreate();queueError="";app=(SimpleToobApp)getApplication();
         ResolvingDataSource.Factory audio=new ResolvingDataSource.Factory(MediaNetwork.factory(app.prefs),spec->{String id=spec.uri.getSchemeSpecificPart();if(!"simpletoob-audio".equals(spec.uri.getScheme())||!VideoIds.valid(id))throw new IOException("Invalid audio item");try{return spec.withUri(android.net.Uri.parse(app.youtube.audio(id)));}catch(Exception e){throw new IOException("Couldn't resolve this public audio stream. Retry from the Audio tab.",e);}});
         player=new ExoPlayer.Builder(this).setMediaSourceFactory(new ProgressiveMediaSource.Factory(audio)).setLoadControl(MediaNetwork.buffers(app.prefs,true)).build();

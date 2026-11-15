@@ -26,7 +26,8 @@ public final class ImportManager {
     public long last(String kind){return app.prefs.data.getLong(prefix()+kind+".last."+app.sessions.owner(),0);}
     private long lastAttempt(String kind){return app.prefs.data.getLong(prefix()+kind+".attempt."+app.sessions.owner(),0);}
     private long lastRun(String kind){return Math.max(last(kind),lastAttempt(kind));}
-    public String status(){if(!app.sessions.present())return "Signed out · automatic imports paused";return progressProfile.equals(app.sessions.profile())&&!progress.isEmpty()?progress:app.prefs.text(prefix()+"status",app.sessions.present()?"Ready to import":"Signed out · automatic imports paused");}
+    public String status(){return I18n.importStatus(app,rawStatus());}
+    private String rawStatus(){if(!app.sessions.present())return "Signed out · automatic imports paused";return progressProfile.equals(app.sessions.profile())&&!progress.isEmpty()?progress:app.prefs.text(prefix()+"status",app.sessions.present()?"Ready to import":"Signed out · automatic imports paused");}
     public boolean running(){Future<?> f=active;return f!=null&&!f.isDone();}
     public void listen(Runnable r){listeners.addIfAbsent(r);}public void unlisten(Runnable r){listeners.remove(r);}
     private void changed(){main.post(()->{for(Runnable r:listeners)r.run();});}

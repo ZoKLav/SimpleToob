@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 final class AppIcons extends Drawable {
     private final String name;private final Paint p=new Paint(3);private final int color;
     AppIcons(String name,int color){this.name=name;this.color=color;}
-    @Override public void draw(Canvas c){c.save();c.translate(getBounds().left,getBounds().top);c.scale(getBounds().width()/24f,getBounds().height()/24f);p.setColor(color);p.setStyle(Paint.Style.STROKE);p.setStrokeWidth(1.8f);p.setStrokeCap(Paint.Cap.ROUND);p.setStrokeJoin(Paint.Join.ROUND);
+    @Override public void draw(Canvas c){c.save();c.translate(getBounds().left,getBounds().top);c.scale(getBounds().width()/24f,getBounds().height()/24f);p.setColor(color);p.setStyle(Paint.Style.STROKE);p.setStrokeWidth(1.8f);p.setStrokeCap(Paint.Cap.ROUND);p.setStrokeJoin(Paint.Join.ROUND);if(getLayoutDirection()==android.view.View.LAYOUT_DIRECTION_RTL&&(name.equals("back")||name.equals("chevron"))){c.translate(24,0);c.scale(-1,1);}
         switch(name){
         case "music":path(c,9,17,9,5,20,3,20,15);c.drawOval(3,16,9,21,p);c.drawOval(14,14,20,19,p);c.drawLine(9,9,20,7,p);break;
         case "previous":path(c,18,5,7,12,18,19,18,5);c.drawLine(5,5,5,19,p);break;

@@ -13,6 +13,10 @@ import static org.junit.Assert.*;
 /** Device regression for system Back and navigation restoration; requires Android hardware/emulator. */
 @RunWith(AndroidJUnit4.class)
 public final class NavigationTest {
+    private String originalLanguage;
+    @org.junit.Before public void englishLabels(){android.content.Context context=InstrumentationRegistry.getInstrumentation().getTargetContext();originalLanguage=context.getSharedPreferences("preferences",0).getString("ui_language",null);AppLanguage.select(context,"en");}
+    @org.junit.After public void restoreLanguage(){android.content.SharedPreferences.Editor editor=InstrumentationRegistry.getInstrumentation().getTargetContext().getSharedPreferences("preferences",0).edit();if(originalLanguage==null)editor.remove("ui_language");else editor.putString("ui_language",originalLanguage);editor.commit();}
+
     @Test public void systemBackReturnsThroughSectionsAndSettingsAfterRecreation(){
         Intent intent=new Intent(InstrumentationRegistry.getInstrumentation().getTargetContext(),MainActivity.class).putExtra("open_screen","Library");
         try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(intent)){

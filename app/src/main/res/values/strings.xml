@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="ui_120_minutes_af74ba" formatted="false">"120 minutes"</string>
+    <string name="ui_12_hours_dda5db" formatted="false">"12 hours"</string>
+    <string name="ui_15_10_080_minutes_6e4654" formatted="false">"15–10,080 minutes"</string>
+    <string name="ui_15_minutes_899761" formatted="false">"15 minutes"</string>
+    <string name="ui_1_hour_f030c3" formatted="false">"1 hour"</string>
+    <string name="ui_1_s_2_s_videos_3_s_9f709d">"%1$s\n%2$s videos%3$s"</string>
+    <string name="ui_1_s_loaded_2_s_4b6a29">"%1$s loaded%2$s"</string>
+    <string name="ui_1_s_minutes_e23e2d">"%1$s minutes"</string>
+    <string name="ui_1_s_on_this_device_b8d1dd">"%1$s · on this device"</string>
+    <string name="ui_1_s_results_2843e1">"%1$s results"</string>
+    <string name="ui_1_s_session_stays_inside_simpletoob_9c91c8">"%1$s · session stays inside SimpleToob"</string>
+    <string name="ui_1_s_subscriptions_available_offline_d7f42b">"%1$s subscriptions · available offline"</string>
+    <string name="ui_1_s_this_does_not_unsubscribe_on_youtube_account_11e596">"%1$s\nThis does not unsubscribe on YouTube. Account imports may restore it if you remain subscribed there."</string>
+    <string name="ui_1_s_videos_hold_a_card_for_options_920491">"%1$s videos · hold a card for options"</string>
+    <string name="ui_1_sp_9fd02d">"%1$sp"</string>
+    <string name="ui_30_minutes_31bbe8" formatted="false">"30 minutes"</string>
+    <string name="ui_60_minutes_ee8eb1" formatted="false">"60 minutes"</string>
+    <string name="ui_6_hours_1e35c2" formatted="false">"6 hours"</string>
+    <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"A session is saved, but its account identity needs verification."</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"About SimpleToob 0.7.0"</string>
+    <string name="ui_accent_1_s_6d6c3e">"Accent %1$s"</string>
+    <string name="ui_accent_color_e49578" formatted="false">"Accent color"</string>
+    <string name="ui_account_imports_25ea2a" formatted="false">"Account imports"</string>
+    <string name="ui_account_index_for_older_sessions_8f5adb" formatted="false">"Account index for older sessions"</string>
+    <string name="ui_account_options_d67188" formatted="false">"Account options"</string>
+    <string name="ui_account_overview_a44850" formatted="false">"‹ Account overview"</string>
+    <string name="ui_account_page_rendering_7420e8" formatted="false">"Account-page rendering"</string>
+    <string name="ui_add_61cc55" formatted="false">"Add"</string>
+    <string name="ui_add_to_local_copy_f2829c" formatted="false">"Add to local copy"</string>
+    <string name="ui_add_to_playlist_3e241e" formatted="false">"Add to playlist"</string>
+    <string name="ui_add_to_youtube_and_local_copy_5374d2" formatted="false">"Add to YouTube and local copy"</string>
+    <string name="ui_added_to_local_playlist_b51472" formatted="false">"Added to local playlist"</string>
+    <string name="ui_added_to_youtube_and_local_playlist_667465" formatted="false">"Added to YouTube and local playlist"</string>
+    <string name="ui_advance_saved_list_queue_a728dd" formatted="false">"Advance saved-list queue"</string>
+    <string name="ui_all_d87c44" formatted="false">"all"</string>
+    <string name="ui_all_settings_942f31" formatted="false">"‹ All settings"</string>
+    <string name="ui_allow_refresh_1f344b" formatted="false">"Allow refresh"</string>
+    <string name="ui_any_c5fe02" formatted="false">"any"</string>
+    <string name="ui_app_font_size_adcb66" formatted="false">"App font size (%)"</string>
+    <string name="ui_app_language_changes_menus_and_messages_youtube__0cffb5" formatted="false">"App language changes menus and messages. YouTube content language and region are separate."</string>
+    <string name="ui_app_session_removed_1f25e0" formatted="false">"App session removed"</string>
+    <string name="ui_appearance_41def7" formatted="false">"Appearance"</string>
+    <string name="ui_au_acdf41" formatted="false">"Australia"</string>
+    <string name="ui_audio_acdac2" formatted="false">"Audio"</string>
+    <string name="ui_audio_network_settings_963963" formatted="false">"Audio/network settings"</string>
+    <string name="ui_audio_only_continues_with_the_screen_off_baf013" formatted="false">"Audio only · continues with the screen off"</string>
+    <string name="ui_audio_options_605c8b" formatted="false">"Audio options"</string>
+    <string name="ui_audio_player_76e779" formatted="false">"Audio player"</string>
+    <string name="ui_audio_player_is_connecting_c37579" formatted="false">"Audio player is connecting…"</string>
+    <string name="ui_automatic_format_fallback_5cbd52" formatted="false">"Automatic format fallback"</string>
+    <string name="ui_automatic_interval_1abe9b" formatted="false">"Automatic interval"</string>
+    <string name="ui_automatic_refresh_and_import_behavior_5f222e" formatted="false">"Automatic refresh and import behavior"</string>
+    <string name="ui_available_offline_1_s_fcadb8">"Available offline · %1$s"</string>
+    <string name="ui_avc_first_b4c7df" formatted="false">"AVC first"</string>
+    <string name="ui_back_b52b36" formatted="false">"Back"</string>
+    <string name="ui_background_intervals_have_a_15_minute_minimum_an_ba0b1e" formatted="false">"Background intervals have a 15-minute minimum. Android can delay jobs for battery and network conditions. Settings apply to this local profile."</string>
+    <string name="ui_balanced_03342d" formatted="false">"Balanced"</string>
+    <string name="ui_blue_crayon_479f48" formatted="false">"Blue crayon"</string>
+    <string name="ui_both_1f4698" formatted="false">"Both"</string>
+    <string name="ui_br_b6a03c" formatted="false">"Brazil"</string>
+    <string name="ui_browse_2f3b5c" formatted="false">"Browse"</string>
+    <string name="ui_browse_a_public_youtube_playlist_062db8" formatted="false">"Browse a public YouTube playlist"</string>
+    <string name="ui_browse_options_cefbc9" formatted="false">"Browse options"</string>
+    <string name="ui_buffer_budget_seconds_2e73a6" formatted="false">"Buffer budget (seconds)"</string>
+    <string name="ui_buffering_014b2d" formatted="false">"Buffering…"</string>
+    <string name="ui_ca_09acbb" formatted="false">"Canada"</string>
+    <string name="ui_cancel_77dfd2" formatted="false">"Cancel"</string>
+    <string name="ui_caption_language_bfae2c" formatted="false">"Caption language"</string>
+    <string name="ui_caption_text_size_d9d585" formatted="false">"Caption text size"</string>
+    <string name="ui_cc_off_7a6e71" formatted="false">"CC off"</string>
+    <string name="ui_cc_on_6eaeb5" formatted="false">"CC on"</string>
+    <string name="ui_channel_avatar_24bf93" formatted="false">"Channel avatar"</string>
+    <string name="ui_channel_details_aren_t_available_yet_3f0805" formatted="false">"Channel details aren't available yet."</string>
+    <string name="ui_channel_fbe7d7" formatted="false">"channel"</string>
+    <string name="ui_channel_filters_reset_b48577" formatted="false">"Channel filters reset"</string>
+    <string name="ui_channel_url_or_uc_channel_id_0cd8e2" formatted="false">"Channel URL or UC channel ID"</string>
+    <string name="ui_channel_videos_a63971" formatted="false">"Channel videos"</string>
+    <string name="ui_channels_3536f7" formatted="false">"channels"</string>
+    <string name="ui_checking_account_d9e59d" formatted="false">"Checking account…"</string>
+    <string name="ui_choose_a_playlist_42a83c" formatted="false">"Choose a playlist"</string>
+    <string name="ui_choose_a_playlist_to_start_listening_b0cc63" formatted="false">"Choose a playlist to start listening."</string>
+    <string name="ui_choose_an_mp4_quality_to_download_a_combined_vid_3428c9" formatted="false">"Choose an MP4 quality to download a combined video file."</string>
+    <string name="ui_choose_another_google_account_21b002" formatted="false">"Choose another Google account"</string>
+    <string name="ui_choose_interface_language_cb6da4" formatted="false">"Choose interface language"</string>
+    <string name="ui_choose_playlist_654ba2" formatted="false">"Choose playlist"</string>
+    <string name="ui_choose_saved_videos_or_any_local_imported_playli_268eb7" formatted="false">"Choose Saved videos or any local/imported playlist. No account required."</string>
+    <string name="ui_chunked_media_transfers_99ad33" formatted="false">"Chunked media transfers"</string>
+    <string name="ui_clear_719ea3" formatted="false">"Clear"</string>
+    <string name="ui_clear_history_53b515" formatted="false">"Clear history"</string>
+    <string name="ui_clear_history_83cf06" formatted="false">"Clear history?"</string>
+    <string name="ui_clear_local_video_data_6d7ee1" formatted="false">"Clear local video data?"</string>
+    <string name="ui_clear_queue_and_stop_ab7714" formatted="false">"Clear queue and stop"</string>
+    <string name="ui_clear_saved_videos_and_history_b3f132" formatted="false">"Clear saved videos and history"</string>
+    <string name="ui_close_bbfa77" formatted="false">"Close"</string>
+    <string name="ui_comment_153d7a" formatted="false">"Comment"</string>
+    <string name="ui_comments_and_ratings_b26b63" formatted="false">"Comments and ratings"</string>
+    <string name="ui_comments_fce06e" formatted="false">"Comments"</string>
+    <string name="ui_comments_unavailable_tap_to_retry_93fd76" formatted="false">"Comments unavailable · tap to retry"</string>
+    <string name="ui_compact_cards_bf5707" formatted="false">"Compact cards"</string>
+    <string name="ui_connecting_fd3e79" formatted="false">"Connecting…"</string>
+    <string name="ui_content_and_account_behavior_ed97c9" formatted="false">"Content and account behavior"</string>
+    <string name="ui_content_language_9dc835" formatted="false">"Content language"</string>
+    <string name="ui_content_region_0b4abc" formatted="false">"Content region"</string>
+    <string name="ui_continue_2e0262" formatted="false">"Continue"</string>
+    <string name="ui_continue_from_the_last_local_checkpoint_ae1e69" formatted="false">"Continue from the last local checkpoint."</string>
+    <string name="ui_continue_watching_8fca30" formatted="false">"Continue watching"</string>
+    <string name="ui_cool_13cf34" formatted="false">"Cool"</string>
+    <string name="ui_copy_af74f7" formatted="false">"Copy"</string>
+    <string name="ui_couldn_t_connect_to_the_audio_player_please_reop_8c89ee" formatted="false">"Couldn't connect to the audio player. Please reopen Audio."</string>
+    <string name="ui_couldn_t_load_this_local_playlist_please_retry_ecfe9c" formatted="false">"Couldn't load this local playlist. Please retry."</string>
+    <string name="ui_couldn_t_play_this_track_1_s_tap_play_to_retry_o_a66f14">"Couldn't play this track (%1$s). Tap Play to retry or skip it."</string>
+    <string name="ui_couldn_t_update_the_launcher_icon_374b26" formatted="false">"Couldn't update the launcher icon."</string>
+    <string name="ui_crayon_1301e7" formatted="false">"Crayon"</string>
+    <string name="ui_create_6e157c" formatted="false">"Create"</string>
+    <string name="ui_create_local_playlist_b50668" formatted="false">"Create local playlist"</string>
+    <string name="ui_create_playlist_62c988" formatted="false">"Create playlist"</string>
+    <string name="ui_custom_accent_07ebc7" formatted="false">"Custom accent"</string>
+    <string name="ui_custom_import_interval_faead1" formatted="false">"Custom import interval"</string>
+    <string name="ui_custom_minutes_a47324" formatted="false">"Custom minutes"</string>
+    <string name="ui_daily_728298" formatted="false">"Daily"</string>
+    <string name="ui_dark_ae1ef0" formatted="false">"Dark"</string>
+    <string name="ui_dark_gray_brightness_1_s_48_d1306c">"Dark gray brightness: %1$s / 48"</string>
+    <string name="ui_dark_gray_brightness_1_s_48_zero_is_black_9d9b07">"Dark gray brightness: %1$s / 48 · zero is black"</string>
+    <string name="ui_dark_gray_tone_3c8dbb" formatted="false">"Dark gray tone"</string>
+    <string name="ui_de_600ccd" formatted="false">"German"</string>
+    <string name="ui_de_ce3e4b" formatted="false">"Germany"</string>
+    <string name="ui_decoder_fallback_a329cd" formatted="false">"Decoder fallback"</string>
+    <string name="ui_default_808d7d" formatted="false">"Default"</string>
+    <string name="ui_default_video_quality_9e632e" formatted="false">"Default video quality"</string>
+    <string name="ui_defer_automatic_imports_during_playback_566517" formatted="false">"Defer automatic imports during playback"</string>
+    <string name="ui_delete_f6fdbe" formatted="false">"Delete"</string>
+    <string name="ui_delete_this_local_playlist_d9202d" formatted="false">"Delete this local playlist?"</string>
+    <string name="ui_description_55f8eb" formatted="false">"Description"</string>
+    <string name="ui_diagnostics_3af227" formatted="false">"Diagnostics"</string>
+    <string name="ui_discover_4827ea" formatted="false">"Discover"</string>
+    <string name="ui_dislike_efc984" formatted="false">"Dislike"</string>
+    <string name="ui_display_information_7b9b00" formatted="false">"Display information"</string>
+    <string name="ui_display_information_copied_ea0d0a" formatted="false">"Display information copied"</string>
+    <string name="ui_download_a479c9" formatted="false">"Download"</string>
+    <string name="ui_download_connections_673940" formatted="false">"Download connections"</string>
+    <string name="ui_download_on_unmetered_connections_337b19" formatted="false">"Download on unmetered connections"</string>
+    <string name="ui_download_started_the_file_will_be_saved_to_your__ddb597" formatted="false">"Download started. The file will be saved to your chosen location."</string>
+    <string name="ui_duration_137000" formatted="false">"Duration"</string>
+    <string name="ui_en_094b0f" formatted="false">"English"</string>
+    <string name="ui_english_649df0" formatted="false">"English"</string>
+    <string name="ui_enter_a_comment_c8ddc4" formatted="false">"Enter a comment"</string>
+    <string name="ui_enter_a_valid_youtube_playlist_url_512231" formatted="false">"Enter a valid YouTube playlist URL."</string>
+    <string name="ui_enter_a_value_cd8763" formatted="false">"Enter a value"</string>
+    <string name="ui_es_09cd68" formatted="false">"Spanish"</string>
+    <string name="ui_extractor_and_playback_libraries_1c9dd3" formatted="false">"Extractor and playback libraries"</string>
+    <string name="ui_fill_7adb67" formatted="false">"Fill"</string>
+    <string name="ui_fit_dab564" formatted="false">"Fit"</string>
+    <string name="ui_font_family_54a184" formatted="false">"Font family"</string>
+    <string name="ui_forward_1_s_seconds_7dc40f">"Forward %1$s seconds"</string>
+    <string name="ui_fr_6d2830" formatted="false">"France"</string>
+    <string name="ui_fr_b858a8" formatted="false">"French"</string>
+    <string name="ui_gaming_c0ecc0" formatted="false">"Gaming"</string>
+    <string name="ui_gb_505a44" formatted="false">"United Kingdom"</string>
+    <string name="ui_generated_color_bars_and_tone_isolate_renderer_d_de12c4" formatted="false">"Generated color bars and tone isolate renderer/decoder problems"</string>
+    <string name="ui_give_audio_and_video_priority_over_new_scheduled_f5dd65" formatted="false">"Give audio and video priority over new scheduled imports."</string>
+    <string name="ui_hardware_b76ab6" formatted="false">"Hardware"</string>
+    <string name="ui_hardware_rendering_enabled_19f68b" formatted="false">"Hardware rendering enabled"</string>
+    <string name="ui_hide_short_videos_ca68dc" formatted="false">"Hide short videos"</string>
+    <string name="ui_hide_videos_three_minutes_or_shorter_in_browsing_fe7502" formatted="false">"Hide videos three minutes or shorter in browsing and search."</string>
+    <string name="ui_history_90ccd6" formatted="false">"History"</string>
+    <string name="ui_history_cleared_5a2d82" formatted="false">"History cleared"</string>
+    <string name="ui_home_70f8bb" formatted="false">"Home"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"Home discovery query"</string>
+    <string name="ui_home_topic_fa8a18" formatted="false">"Home topic"</string>
+    <string name="ui_https_instance_url_f0ca6a" formatted="false">"HTTPS instance URL"</string>
+    <string name="ui_import_1_s_now_f3f9af">"Import %1$s now"</string>
+    <string name="ui_import_behavior_e3c199" formatted="false">"Import behavior"</string>
+    <string name="ui_import_interval_4150f1" formatted="false">"Import interval"</string>
+    <string name="ui_import_on_app_launch_29ab16" formatted="false">"Import on app launch"</string>
+    <string name="ui_import_schedule_731452" formatted="false">"Import &amp; schedule"</string>
+    <string name="ui_import_settings_a04343" formatted="false">"Import settings"</string>
+    <string name="ui_import_stopped_completed_local_copies_kept_77bf89" formatted="false">"Import stopped; completed local copies kept"</string>
+    <string name="ui_import_subscriptions_playlists_2a477c" formatted="false">"Import subscriptions &amp; playlists"</string>
+    <string name="ui_import_youtube_playlists_71d725" formatted="false">"Import YouTube playlists"</string>
+    <string name="ui_import_youtube_subscriptions_b418ab" formatted="false">"Import YouTube subscriptions"</string>
+    <string name="ui_imported_1_s_subscriptions_b7baa5">"Imported %1$s subscriptions"</string>
+    <string name="ui_imported_434eb2" formatted="false">"Imported"</string>
+    <string name="ui_imports_copy_youtube_subscriptions_and_playlists_a48a90" formatted="false">"Imports copy YouTube subscriptions and playlists into your regular local lists. Local edits are not uploaded. Automatic imports pause when signed out."</string>
+    <string name="ui_imports_on_unmetered_networks_only_fbc7c8" formatted="false">"Imports on unmetered networks only"</string>
+    <string name="ui_include_channel_names_in_results_acac52" formatted="false">"Include channel names in results."</string>
+    <string name="ui_include_video_duration_8a5186" formatted="false">"Include video duration."</string>
+    <string name="ui_interface_and_controls_9d0f4b" formatted="false">"Interface and controls"</string>
+    <string name="ui_interface_language_9407e9" formatted="false">"Interface language"</string>
+    <string name="ui_it_6c5522" formatted="false">"Italian"</string>
+    <string name="ui_ja_84572e" formatted="false">"Japanese"</string>
+    <string name="ui_jp_1920a5" formatted="false">"Japan"</string>
+    <string name="ui_keep_draft_a416b0" formatted="false">"Keep draft"</string>
+    <string name="ui_keep_saved_and_subscriptions_4ea800" formatted="false">"Keep Saved and subscriptions"</string>
+    <string name="ui_keep_screen_awake_e46566" formatted="false">"Keep screen awake"</string>
+    <string name="ui_keep_the_screen_on_while_native_playback_is_acti_e7d952" formatted="false">"Keep the screen on while native playback is active."</string>
+    <string name="ui_keep_your_library_together_235b59" formatted="false">"Keep your library together"</string>
+    <string name="ui_keep_youtube_and_ryd_41bbdd" formatted="false">"Keep YouTube and RYD"</string>
+    <string name="ui_ko_65a7da" formatted="false">"Korean"</string>
+    <string name="ui_language_89b86a" formatted="false">"Language"</string>
+    <string name="ui_last_completed_1_s_449f25">"Last completed: %1$s"</string>
+    <string name="ui_launcher_icon_743655" formatted="false">"Launcher icon"</string>
+    <string name="ui_launcher_icon_updated_0ef19e" formatted="false">"Launcher icon updated"</string>
+    <string name="ui_library_b8100f" formatted="false">"Library"</string>
+    <string name="ui_library_is_busy_please_retry_133dd2" formatted="false">"Library is busy. Please retry."</string>
+    <string name="ui_light_a36ef8" formatted="false">"Light"</string>
+    <string name="ui_like_c7e02c" formatted="false">"Like"</string>
+    <string name="ui_liked_videos_964f36" formatted="false">"Liked videos"</string>
+    <string name="ui_listen_c518fb" formatted="false">"Listen"</string>
+    <string name="ui_load_comments_automatically_f9dc50" formatted="false">"Load comments automatically"</string>
+    <string name="ui_load_more_dfe60c" formatted="false">"Load more"</string>
+    <string name="ui_loaded_videos_copied_locally_17e660" formatted="false">"Loaded videos copied locally"</string>
+    <string name="ui_loading_1_s_aba14c">"Loading %1$s…"</string>
+    <string name="ui_loading_33ce41" formatted="false">"Loading…"</string>
+    <string name="ui_loading_audio_011ae4" formatted="false">"Loading audio…"</string>
+    <string name="ui_loading_channel_9913f4" formatted="false">"Loading channel…"</string>
+    <string name="ui_loading_playlist_0f0b75" formatted="false">"Loading playlist…"</string>
+    <string name="ui_loading_public_comments_3421bc" formatted="false">"Loading public comments…"</string>
+    <string name="ui_loading_ratings_8096fb" formatted="false">"Loading ratings…"</string>
+    <string name="ui_loading_video_be9907" formatted="false">"Loading video…"</string>
+    <string name="ui_local_316699" formatted="false">" · local"</string>
+    <string name="ui_local_and_youtube_playlists_5e43ac" formatted="false">"Local and YouTube playlists"</string>
+    <string name="ui_local_dc99d5" formatted="false">"Local"</string>
+    <string name="ui_local_edits_kept_29e455" formatted="false">" · local edits kept"</string>
+    <string name="ui_local_playlist_name_e2612f" formatted="false">"Local playlist name"</string>
+    <string name="ui_local_playlists_saved_videos_and_history_stay_on_085a86" formatted="false">"Local playlists, saved videos and history stay on this device."</string>
+    <string name="ui_local_profiles_008815" formatted="false">"Local profiles"</string>
+    <string name="ui_long_bd3027" formatted="false">"long"</string>
+    <string name="ui_loop_current_video_1ae752" formatted="false">"Loop current video"</string>
+    <string name="ui_make_simpletoob_yours_d1d738" formatted="false">"Make SimpleToob yours"</string>
+    <string name="ui_manual_launch_only_9af751" formatted="false">"Manual / launch only"</string>
+    <string name="ui_maximum_loaded_comments_fb10ed" formatted="false">"Maximum loaded comments"</string>
+    <string name="ui_medium_20af41" formatted="false">"medium"</string>
+    <string name="ui_merge_imports_keep_local_items_fc6a90" formatted="false">"Merge imports; keep local items"</string>
+    <string name="ui_merge_keep_missing_channels_playlists_c0eaf6" formatted="false">"Merge · keep missing channels/playlists"</string>
+    <string name="ui_mirror_previous_imports_keep_local_only_items_7a0c35" formatted="false">"Mirror previous imports; keep local-only items"</string>
+    <string name="ui_mirror_remove_missing_imported_collections_84b654" formatted="false">"Mirror · remove missing imported collections"</string>
+    <string name="ui_monochrome_1dda99" formatted="false">"Monochrome"</string>
+    <string name="ui_monospace_43ad90" formatted="false">"Monospace"</string>
+    <string name="ui_more_comments_30a9b4" formatted="false">"More comments"</string>
+    <string name="ui_more_from_this_video_44d8cf" formatted="false">"More from this video"</string>
+    <string name="ui_move_down_260ff8" formatted="false">"Move down"</string>
+    <string name="ui_move_up_b4f57c" formatted="false">"Move up"</string>
+    <string name="ui_music_131260" formatted="false">"Music"</string>
+    <string name="ui_native_media_playback_no_developer_keys_no_ad_pl_559b5b" formatted="false">"Native media playback · no developer keys · no ad player. Website changes or verification can interrupt extraction. Account imports refresh local subscriptions and playlists while signed in. Uploads are not included."</string>
+    <string name="ui_neutral_4bd291" formatted="false">"Neutral"</string>
+    <string name="ui_new_local_profile_9401ba" formatted="false">"New local profile"</string>
+    <string name="ui_new_name_9e627c" formatted="false">"New name"</string>
+    <string name="ui_newest_first_f5ec77" formatted="false">"Newest first"</string>
+    <string name="ui_newpipeextractor_gpl_3_0_or_later_androidx_media_2e9815" formatted="false">"NewPipeExtractor: GPL-3.0-or-later\nAndroidX Media3: Apache-2.0\nAdditional dependencies and corresponding source are included in the source archive."</string>
+    <string name="ui_next_bc9819" formatted="false">"Next"</string>
+    <string name="ui_next_track_74babe" formatted="false">"Next track"</string>
+    <string name="ui_no_completed_import_for_this_account_9f3f1a" formatted="false">"No completed import for this account"</string>
+    <string name="ui_no_description_available_eb3cdb" formatted="false">"No description available."</string>
+    <string name="ui_no_playable_streams_found_open_player_options_to_4e4f73" formatted="false">"No playable streams found. Open player options to retry."</string>
+    <string name="ui_no_playlists_yet_create_one_or_import_from_youtu_ca4ae3" formatted="false">"No playlists yet. Create one or import from YouTube."</string>
+    <string name="ui_no_public_comments_returned_0ca62f" formatted="false">"No public comments returned."</string>
+    <string name="ui_no_recognized_videos_returned_verify_the_session_3c335e" formatted="false">"No recognized videos returned. Verify the session or try again later."</string>
+    <string name="ui_no_results_try_another_search_or_duration_bcbcd8" formatted="false">"No results. Try another search or duration."</string>
+    <string name="ui_no_stream_selected_43155d" formatted="false">"No stream selected"</string>
+    <string name="ui_no_subscriptions_yet_add_or_import_channels_eab367" formatted="false">"No subscriptions yet · add or import channels"</string>
+    <string name="ui_no_supported_video_link_found_c284bf" formatted="false">"No supported video link found."</string>
+    <string name="ui_no_videos_here_yet_58dd2a" formatted="false">"No videos here yet."</string>
+    <string name="ui_not_configured_811931" formatted="false">"Not configured"</string>
+    <string name="ui_off_by_default_feabf2" formatted="false">"Off by default."</string>
+    <string name="ui_off_e3de5a" formatted="false">"Off"</string>
+    <string name="ui_ok_9ce3bd" formatted="false">"OK"</string>
+    <string name="ui_older_comments_trimmed_8e547e" formatted="false">" · older comments trimmed"</string>
+    <string name="ui_oldest_first_6a99c6" formatted="false">"Oldest first"</string>
+    <string name="ui_on_this_device_a7f962" formatted="false">"On this device"</string>
+    <string name="ui_on_this_device_hold_a_playlist_to_edit_b152dc" formatted="false">"On this device · hold a playlist to edit"</string>
+    <string name="ui_on_youtube_9114a8" formatted="false">"On YouTube"</string>
+    <string name="ui_open_a_video_or_playlist_link_85f78d" formatted="false">"Open a video or playlist link"</string>
+    <string name="ui_open_playlist_link_0e8cd6" formatted="false">"Open playlist link"</string>
+    <string name="ui_open_source_notices_03c217" formatted="false">"Open-source notices"</string>
+    <string name="ui_open_source_software_b07311" formatted="false">"Open-source software"</string>
+    <string name="ui_open_the_video_to_load_channel_details_first_e46f0c" formatted="false">"Open the video to load channel details first."</string>
+    <string name="ui_open_the_video_to_load_its_channel_first_b78b9f" formatted="false">"Open the video to load its channel first."</string>
+    <string name="ui_open_video_ce7781" formatted="false">"Open video"</string>
+    <string name="ui_optional_invidious_ratings_source_8b8a9e" formatted="false">"Optional Invidious ratings source"</string>
+    <string name="ui_page_text_size_9cbed6" formatted="false">"Page text size"</string>
+    <string name="ui_panel_padding_3dc00b" formatted="false">"Panel padding"</string>
+    <string name="ui_pause_781961" formatted="false">"Pause"</string>
+    <string name="ui_paused_c7dfb6" formatted="false">"Paused"</string>
+    <string name="ui_play_5d12bd" formatted="false">"Play"</string>
+    <string name="ui_play_audio_from_b6a4f8" formatted="false">"Play audio from"</string>
+    <string name="ui_play_or_pause_fe13ca" formatted="false">"Play or pause"</string>
+    <string name="ui_play_queue_5d2d90" formatted="false">"Play queue"</string>
+    <string name="ui_play_video_when_opened_f887c2" formatted="false">"Play video when opened"</string>
+    <string name="ui_playback_c8e308" formatted="false">"Playback"</string>
+    <string name="ui_playback_diagnostics_380464" formatted="false">"Playback diagnostics"</string>
+    <string name="ui_playback_engine_0255b8" formatted="false">"Playback engine"</string>
+    <string name="ui_playback_failed_1_s_tap_player_options_to_retry_a0f7a9">"Playback failed: %1$s. Tap player options to retry."</string>
+    <string name="ui_playback_speed_6ff42b" formatted="false">"Playback speed"</string>
+    <string name="ui_player_options_ee1ac2" formatted="false">"Player options"</string>
+    <string name="ui_playlist_c554c6" formatted="false">"playlist"</string>
+    <string name="ui_playlist_cd95b4" formatted="false">"Playlist"</string>
+    <string name="ui_playlist_created_fe637f" formatted="false">"Playlist created"</string>
+    <string name="ui_playlist_name_544f75" formatted="false">"Playlist name"</string>
+    <string name="ui_playlist_url_f6c539" formatted="false">"Playlist URL"</string>
+    <string name="ui_playlists_71f0f9" formatted="false">"‹ Playlists"</string>
+    <string name="ui_playlists_77b69f" formatted="false">"Playlists"</string>
+    <string name="ui_playlists_bbdff1" formatted="false">"playlists"</string>
+    <string name="ui_post_7858ac" formatted="false">"Post"</string>
+    <string name="ui_posts_to_youtube_through_this_profile_s_in_app_w_7425b1" formatted="false">"Posts to YouTube through this profile's in-app web session. Your draft stays here until submission is confirmed."</string>
+    <string name="ui_prefer_captions_5bec54" formatted="false">"Prefer captions"</string>
+    <string name="ui_preferred_codecs_87f454" formatted="false">"Preferred codecs"</string>
+    <string name="ui_preferred_maximum_resolution_a8e3c4" formatted="false">"Preferred maximum resolution"</string>
+    <string name="ui_preparing_1_s_439e60">"Preparing %1$s…"</string>
+    <string name="ui_previous_50f942" formatted="false">"Previous"</string>
+    <string name="ui_previous_track_3963ec" formatted="false">"Previous track"</string>
+    <string name="ui_profile_name_775747" formatted="false">"Profile name"</string>
+    <string name="ui_profiles_and_google_account_31b7e2" formatted="false">"Profiles and Google account"</string>
+    <string name="ui_profiles_and_library_0ae39e" formatted="false">"Profiles and library"</string>
+    <string name="ui_profiles_and_youtube_account_28303a" formatted="false">"Profiles and YouTube account"</string>
+    <string name="ui_pt_bc8112" formatted="false">"Portuguese"</string>
+    <string name="ui_public_comments_and_rating_estimates_do_not_need_49def1" formatted="false">"Public comments and rating estimates do not need login. Writing or reacting uses your YouTube session inside SimpleToob."</string>
+    <string name="ui_public_comments_load_independently_of_login_and__bf5526" formatted="false">"Public comments load independently of login and playback."</string>
+    <string name="ui_quality_a60f2c" formatted="false">"Quality"</string>
+    <string name="ui_queue_and_sleep_timer_options_90987c" formatted="false">"Queue and sleep timer options"</string>
+    <string name="ui_queue_d325fc" formatted="false">"Queue"</string>
+    <string name="ui_rating_source_information_dc2253" formatted="false">"Rating source information"</string>
+    <string name="ui_rating_sources_f31df6" formatted="false">"Rating sources"</string>
+    <string name="ui_ratings_sources_892353" formatted="false">"Ratings sources"</string>
+    <string name="ui_ratings_unavailable_89189b" formatted="false">"Ratings unavailable"</string>
+    <string name="ui_read_comments_or_add_your_own_af7033" formatted="false">"Read comments or add your own"</string>
+    <string name="ui_read_replies_b5fe6a" formatted="false">"Read replies"</string>
+    <string name="ui_reading_video_page_1d141c" formatted="false">"Reading video page…"</string>
+    <string name="ui_ready_to_import_2555df" formatted="false">"Ready to import"</string>
+    <string name="ui_record_watched_videos_in_this_profile_b2893d" formatted="false">"Record watched videos in this profile."</string>
+    <string name="ui_reject_new_download_work_on_a_metered_connection_2ef5b6" formatted="false">"Reject new download work on a metered connection."</string>
+    <string name="ui_related_videos_038843" formatted="false">"Related videos"</string>
+    <string name="ui_reload_public_comments_71e1b1" formatted="false">"Reload public comments"</string>
+    <string name="ui_reload_sign_in_96d01c" formatted="false">"Reload sign-in"</string>
+    <string name="ui_remember_history_563d15" formatted="false">"Remember history"</string>
+    <string name="ui_remove_app_session_79fd3b" formatted="false">"Remove app session"</string>
+    <string name="ui_remove_e96390" formatted="false">"Remove"</string>
+    <string name="ui_remove_local_subscription_ca7c85" formatted="false">"Remove local subscription?"</string>
+    <string name="ui_remove_optional_ratings_source_6b4e83" formatted="false">"Remove optional ratings source"</string>
+    <string name="ui_remove_saved_session_d9e024" formatted="false">"Remove saved session"</string>
+    <string name="ui_remove_this_app_s_saved_session_ea2a70" formatted="false">"Remove this app's saved session?"</string>
+    <string name="ui_remove_this_profile_s_session_734108" formatted="false">"Remove this profile's session?"</string>
+    <string name="ui_rendering_mode_45b17a" formatted="false">"Rendering mode"</string>
+    <string name="ui_repeat_off_c4d7b8" formatted="false">"Repeat off"</string>
+    <string name="ui_repeat_queue_2a9843" formatted="false">"Repeat queue"</string>
+    <string name="ui_repeat_track_07d5e1" formatted="false">"Repeat track"</string>
+    <string name="ui_replace_local_edits_on_the_next_import_1d57a7" formatted="false">"Replace local edits on the next import?"</string>
+    <string name="ui_replay_after_it_finishes_dacc34" formatted="false">"Replay after it finishes."</string>
+    <string name="ui_reset_hidden_channels_18cf99" formatted="false">"Reset hidden channels"</string>
+    <string name="ui_results_612e12" formatted="false">"Results"</string>
+    <string name="ui_resume_videos_1dbb9f" formatted="false">"Resume videos"</string>
+    <string name="ui_retrieve_rating_evidence_separately_from_account_fadba1" formatted="false">"Retrieve rating evidence separately from account actions."</string>
+    <string name="ui_retry_9f5cd8" formatted="false">"Retry"</string>
+    <string name="ui_return_youtube_dislike_bf087e" formatted="false">"Return YouTube Dislike"</string>
+    <string name="ui_return_youtube_dislike_https_returnyoutubedislik_298eb8" formatted="false">"Return YouTube Dislike: https://returnyoutubedislike.com\nInvidious API: https://docs.invidious.io/api/\n\nDislike counts are estimates. Providers can share the same dataset, so counts are never summed into a fabricated total."</string>
+    <string name="ui_rewind_1_s_seconds_303bb1">"Rewind %1$s seconds"</string>
+    <string name="ui_rounded_button_radius_b0f73e" formatted="false">"Rounded button radius"</string>
+    <string name="ui_run_search_181269" formatted="false">"Run search"</string>
+    <string name="ui_sans_serif_411162" formatted="false">"Sans serif"</string>
+    <string name="ui_save_efc007" formatted="false">"Save"</string>
+    <string name="ui_save_loaded_videos_to_a_local_playlist_33e342" formatted="false">"Save loaded videos to a local playlist"</string>
+    <string name="ui_saved_838a49" formatted="false">"Saved ✓"</string>
+    <string name="ui_saved_c0ae8f" formatted="false">"Saved"</string>
+    <string name="ui_saved_list_updated_fa6e5a" formatted="false">"Saved list updated"</string>
+    <string name="ui_saved_order_8d1c95" formatted="false">"Saved order"</string>
+    <string name="ui_saved_videos_34b676" formatted="false">"Saved videos"</string>
+    <string name="ui_science_d2d066" formatted="false">"Science"</string>
+    <string name="ui_screen_off_playlist_playback_b0c194" formatted="false">"Screen-off playlist playback"</string>
+    <string name="ui_search_above_no_account_or_api_key_is_required_bb7f8a" formatted="false">"Search above. No account or API key is required."</string>
+    <string name="ui_search_bce064" formatted="false">"Search"</string>
+    <string name="ui_search_collections_c610c5" formatted="false">"Search collections"</string>
+    <string name="ui_search_or_paste_a_link_87f212" formatted="false">"Search or paste a link"</string>
+    <string name="ui_search_topic_dbf185" formatted="false">"Search topic"</string>
+    <string name="ui_search_type_16d2f2" formatted="false">"Search type"</string>
+    <string name="ui_search_youtube_e17e23" formatted="false">"Search YouTube"</string>
+    <string name="ui_seek_buttons_seconds_2ebe46" formatted="false">"Seek buttons (seconds)"</string>
+    <string name="ui_serif_a05794" formatted="false">"Serif"</string>
+    <string name="ui_settings_c7f73b" formatted="false">"Settings"</string>
+    <string name="ui_share_09ca55" formatted="false">"Share"</string>
+    <string name="ui_short_a0f4ea" formatted="false">"short"</string>
+    <string name="ui_show_aggregate_ratings_3e1f65" formatted="false">"Show aggregate ratings"</string>
+    <string name="ui_show_all_channels_again_2a4a95" formatted="false">"Show all channels again"</string>
+    <string name="ui_show_channel_on_cards_9ef19a" formatted="false">"Show channel on cards"</string>
+    <string name="ui_show_duration_on_cards_6d3a36" formatted="false">"Show duration on cards"</string>
+    <string name="ui_shuffle_off_e59f97" formatted="false">"Shuffle off"</string>
+    <string name="ui_shuffle_on_785728" formatted="false">"Shuffle on"</string>
+    <string name="ui_sign_in_ada2e9" formatted="false">"Sign in"</string>
+    <string name="ui_sign_in_and_manage_your_session_8ce7d0" formatted="false">"Sign in and manage your session"</string>
+    <string name="ui_sign_in_switch_account_3e93ad" formatted="false">"Sign in / switch account"</string>
+    <string name="ui_sign_in_to_youtube_2bcb0f" formatted="false">"Sign in to YouTube"</string>
+    <string name="ui_signed_in_as_1_s_aff3e2">"Signed in as %1$s"</string>
+    <string name="ui_signed_out_automatic_imports_paused_737300" formatted="false">"Signed out · automatic imports paused"</string>
+    <string name="ui_simpletoob_download_49fcb2" formatted="false">"SimpleToob download"</string>
+    <string name="ui_sleep_timer_e90613" formatted="false">"Sleep timer"</string>
+    <string name="ui_sleep_timer_off_1dbcb9" formatted="false">"Sleep timer off"</string>
+    <string name="ui_sleep_timer_set_b28b6d" formatted="false">"Sleep timer set"</string>
+    <string name="ui_smaller_video_thumbnails_df8f9c" formatted="false">"Smaller video thumbnails."</string>
+    <string name="ui_software_compatibility_9c3526" formatted="false">"Software compatibility"</string>
+    <string name="ui_software_compatibility_enabled_d97fa3" formatted="false">"Software compatibility enabled"</string>
+    <string name="ui_square_buttons_5f14d9" formatted="false">"Square buttons"</string>
+    <string name="ui_start_audio_before_setting_a_sleep_timer_6be670" formatted="false">"Start audio before setting a sleep timer."</string>
+    <string name="ui_start_native_playback_after_loading_d4795a" formatted="false">"Start native playback after loading."</string>
+    <string name="ui_start_screen_e58663" formatted="false">"Start screen"</string>
+    <string name="ui_starting_speed_d3b8ea" formatted="false">"Starting speed"</string>
+    <string name="ui_still_waiting_for_video_try_another_quality_or_r_b15450" formatted="false">"Still waiting for video. Try another quality or retry from player options."</string>
+    <string name="ui_stop_audio_after_d3a7b5" formatted="false">"Stop audio after"</string>
+    <string name="ui_stop_current_import_0959ff" formatted="false">"Stop current import"</string>
+    <string name="ui_stream_details_c97084" formatted="false">"Stream details"</string>
+    <string name="ui_subs_ce8813" formatted="false">"Subs"</string>
+    <string name="ui_subscribe_button_target_48e3f7" formatted="false">"Subscribe button target"</string>
+    <string name="ui_subscribe_d6981f" formatted="false">"Subscribe"</string>
+    <string name="ui_subscribed_22c0c9" formatted="false">"Subscribed ✓"</string>
+    <string name="ui_subscribed_in_this_profile_1e88b7" formatted="false">"Subscribed in this profile"</string>
+    <string name="ui_subscriptions_5697fd" formatted="false">"Subscriptions"</string>
+    <string name="ui_subscriptions_and_playlists_in_one_local_library_addd6c" formatted="false">"Subscriptions and playlists in one local library"</string>
+    <string name="ui_subscriptions_playlists_and_automatic_intervals_2fac6d" formatted="false">"Subscriptions, playlists and automatic intervals"</string>
+    <string name="ui_system_317f1e" formatted="false">"system"</string>
+    <string name="ui_system_bc0792" formatted="false">"System"</string>
+    <string name="ui_test_player_without_network_6d0a35" formatted="false">"Test player without network"</string>
+    <string name="ui_the_active_profile_changed_reopen_this_video_87548a" formatted="false">"The active profile changed. Reopen this video."</string>
+    <string name="ui_theme_a797e3" formatted="false">"Theme"</string>
+    <string name="ui_this_is_the_bundled_renderer_test_clip_a9accb" formatted="false">"This is the bundled renderer test clip."</string>
+    <string name="ui_this_playlist_is_empty_4c4846" formatted="false">"This playlist is empty."</string>
+    <string name="ui_this_profile_only_subscriptions_stay_806912" formatted="false">"This profile only; subscriptions stay"</string>
+    <string name="ui_thumbnail_for_1_s_ea2425">"Thumbnail for %1$s"</string>
+    <string name="ui_title_768e0c" formatted="false">"Title"</string>
+    <string name="ui_toggle_fullscreen_751fc4" formatted="false">"Toggle fullscreen"</string>
+    <string name="ui_tone_376990" formatted="false">"Tone"</string>
+    <string name="ui_try_another_available_decoder_after_a_codec_erro_8d5d04" formatted="false">"Try another available decoder after a codec error."</string>
+    <string name="ui_try_another_extracted_stream_after_a_playback_fa_45a61f" formatted="false">"Try another extracted stream after a playback failure."</string>
+    <string name="ui_unedited_imported_playlists_refresh_their_conten_861a60" formatted="false">"Unedited imported playlists refresh their contents. Edited copies are kept as-is until you explicitly allow a refresh from their playlist menu. Mirror never deletes local-only subscriptions or playlists."</string>
+    <string name="ui_unsubscribe_834cc0" formatted="false">"Unsubscribe"</string>
+    <string name="ui_us_aa3093" formatted="false">"United States"</string>
+    <string name="ui_use_15_10_080_minutes_380d2c" formatted="false">"Use 15–10,080 minutes"</string>
+    <string name="ui_use_available_captions_when_playback_starts_160879" formatted="false">"Use available captions when playback starts."</string>
+    <string name="ui_use_bounded_cdn_requests_for_progressive_playbac_516da7" formatted="false">"Use bounded CDN requests for progressive playback."</string>
+    <string name="ui_use_device_language_308648" formatted="false">"Use device language"</string>
+    <string name="ui_use_ryd_estimates_video_ids_are_sent_to_the_prov_5af642" formatted="false">"Use RYD estimates; video IDs are sent to the provider."</string>
+    <string name="ui_use_square_corners_instead_of_rounded_buttons_451abe" formatted="false">"Use square corners instead of rounded buttons."</string>
+    <string name="ui_use_this_account_d5d543" formatted="false">"Use this account"</string>
+    <string name="ui_verify_saved_session_7dd5a6" formatted="false">"Verify saved session"</string>
+    <string name="ui_verify_your_session_d8972f" formatted="false">"Verify your session"</string>
+    <string name="ui_verifying_your_youtube_account_22621b" formatted="false">"Verifying your YouTube account…"</string>
+    <string name="ui_video_data_cleared_ee618b" formatted="false">"Video data cleared"</string>
+    <string name="ui_video_ffbaf5" formatted="false">"video"</string>
+    <string name="ui_video_fit_be87a4" formatted="false">"Video fit"</string>
+    <string name="ui_video_information_a6b831" formatted="false">"Video information"</string>
+    <string name="ui_video_metadata_is_still_loading_c90e9b" formatted="false">"Video metadata is still loading."</string>
+    <string name="ui_video_options_45fdab" formatted="false">"Video options"</string>
+    <string name="ui_video_quality_baf4d0" formatted="false">"Video quality"</string>
+    <string name="ui_video_surface_bb2121" formatted="false">"Video surface"</string>
+    <string name="ui_view_recent_states_and_error_codes_no_session_co_46170c" formatted="false">"View recent states and error codes; no session cookies or stream URLs"</string>
+    <string name="ui_vp9_first_d21425" formatted="false">"VP9 first"</string>
+    <string name="ui_wait_for_video_details_to_load_01e8d3" formatted="false">"Wait for video details to load."</string>
+    <string name="ui_warm_63e498" formatted="false">"Warm"</string>
+    <string name="ui_watch_history_2a8498" formatted="false">"Watch history"</string>
+    <string name="ui_watch_videos_read_comments_and_use_local_playlis_a6951e" formatted="false">"Watch videos, read comments and use local playlists without signing in."</string>
+    <string name="ui_write_a_comment_9ea900" formatted="false">"Write a comment"</string>
+    <string name="ui_you_re_browsing_signed_out_dfe958" formatted="false">"You're browsing signed out"</string>
+    <string name="ui_your_home_feed_5a069a" formatted="false">"Your home feed"</string>
+    <string name="ui_your_local_subscriptions_and_account_imports_56c59d" formatted="false">"Your local subscriptions and account imports"</string>
+    <string name="ui_your_music_your_queue_cd6677" formatted="false">"Your music. Your queue."</string>
+    <string name="ui_your_playlists_and_account_imports_8ff4e7" formatted="false">"Your playlists and account imports"</string>
+    <string name="ui_your_watch_list_and_queue_25db6a" formatted="false">"Your watch list and queue"</string>
+    <string name="ui_youtube_1_s_fe214a">" · YouTube%1$s"</string>
+    <string name="ui_youtube_558865" formatted="false">"YouTube"</string>
+    <string name="ui_youtube_accepted_the_reaction_request_f7129c" formatted="false">"YouTube accepted the reaction request"</string>
+    <string name="ui_youtube_accepted_the_subscription_request_66417c" formatted="false">"YouTube accepted the subscription request"</string>
+    <string name="ui_youtube_account_cba2dc" formatted="false">"YouTube account"</string>
+    <string name="ui_youtube_confirmed_submission_moderation_can_dela_d955ee" formatted="false">"YouTube confirmed submission. Moderation can delay visibility."</string>
+    <string name="ui_youtube_didn_t_provide_related_video_rows_08feab" formatted="false">"YouTube didn't provide related video rows."</string>
+    <string name="ui_youtube_playlist_created_9d1e2a" formatted="false">"YouTube playlist created"</string>
+    <string name="ui_youtube_reported_likes_and_labeled_provider_esti_6eba33" formatted="false">"YouTube-reported likes and labeled provider estimates"</string>
+    <string name="ui_youtube_s_version_will_replace_the_edited_local__e7af6f" formatted="false">"YouTube's version will replace the edited local copy when it next imports."</string>
+    <string name="ui_youtube_session_7ee0a7" formatted="false">"YouTube session"</string>
+    <string name="ui_youtube_session_verified_1_s_8e59aa">"YouTube session verified · %1$s"</string>
+    <string name="ui_youtube_sign_in_required_603d9f" formatted="false">"YouTube sign-in required"</string>
+    <string name="ui_youtube_subscription_a671d2" formatted="false">"YouTube subscription"</string>
+    <string name="ui_youtube_url_embed_code_or_video_id_190223" formatted="false">"YouTube URL, embed code or video ID"</string>
+    <string name="ui_zoom_9b3cbe" formatted="false">"Zoom"</string>
+    <string name="ui_search_playlists_channels_34e368" formatted="false">"Search playlists / channels"</string>
+    <string name="ui_filter_duration_1f13fc" formatted="false">"Filter duration"</string>
+    <string name="ui_sort_videos_cf988d" formatted="false">"Sort videos"</string>
+    <string name="ui_refresh_56e3ba" formatted="false">"Refresh"</string>
+    <string name="ui_theme_colors_and_app_icon_4d36b5" formatted="false">"Theme, colors and app icon"</string>
+    <string name="ui_quality_history_and_queue_4f079d" formatted="false">"Quality, history and queue"</string>
+    <string name="ui_fonts_spacing_and_button_shape_fab99c" formatted="false">"Fonts, spacing and button shape"</string>
+    <string name="ui_rendering_codecs_and_captions_90989d" formatted="false">"Rendering, codecs and captions"</string>
+    <string name="ui_loading_providers_and_limits_516512" formatted="false">"Loading, providers and limits"</string>
+    <string name="ui_language_session_and_diagnostics_d5f81d" formatted="false">"Language, session and diagnostics"</string>
+    <string name="ui_local_profiles_and_saved_data_aef30d" formatted="false">"Local profiles and saved data"</string>
+    <string name="ui_version_and_open_source_software_3badeb" formatted="false">"Version and open-source software"</string>
+    <string name="ui_sign_out_dc1649" formatted="false">"Sign out"</string>
+    <string name="ui_no_captions_available_c3909c" formatted="false">"No captions available"</string>
+    <string name="ui_speed_2d2cb0" formatted="false">"Speed"</string>
+    <string name="ui_loading_8f26c6" formatted="false">"Loading"</string>
+    <string name="ui_turn_captions_off_f09d74" formatted="false">"Turn captions off"</string>
+    <string name="ui_turn_captions_on_a36754" formatted="false">"Turn captions on"</string>
+    <string name="ui_retry_playback_075821" formatted="false">"Retry playback"</string>
+    <string name="ui_clear_youtube_reaction_75418d" formatted="false">"Clear YouTube reaction"</string>
+    <string name="ui_import_subscriptions_now_6018ab" formatted="false">"Import subscriptions now"</string>
+    <string name="ui_import_playlists_now_0d3bf3" formatted="false">"Import playlists now"</string>
+    <string name="ui_starting_download_43a6a6" formatted="false">"Starting download…"</string>
+    <string name="ui_joining_audio_and_video_9bd756" formatted="false">"Joining audio and video…"</string>
+    <string name="ui_saving_file_3218d9" formatted="false">"Saving file…"</string>
+    <string name="ui_download_complete_95efb3" formatted="false">"Download complete"</string>
+    <string name="ui_download_cancelled_ba5475" formatted="false">"Download cancelled"</string>
+    <string name="ui_download_failed_1_s_af7f8f">"Download failed: %1$s"</string>
+    <string name="ui_video_downloads_497449" formatted="false">"Video downloads"</string>
+    <string name="ui_local_copy_a3a04f" formatted="false">"Local copy"</string>
+    <string name="ui_local_939bb4" formatted="false">"local"</string>
+    <string name="ui_not_subscribed_bbf5d7" formatted="false">"Not subscribed"</string>
+    <string name="ui_subscribed_dd1242" formatted="false">"Subscribed"</string>
+    <string name="ui_saved_locally_f7fe28" formatted="false">"Saved locally"</string>
+    <string name="ui_save_for_later_d88215" formatted="false">"Save for later"</string>
+    <string name="ui_remove_from_saved_350381" formatted="false">"Remove from Saved"</string>
+    <string name="ui_subscribe_locally_19114c" formatted="false">"Subscribe locally"</string>
+    <string name="ui_browse_channel_90c03b" formatted="false">"Browse channel"</string>
+    <string name="ui_hide_channel_461211" formatted="false">"Hide channel"</string>
+    <string name="ui_share_link_3c1362" formatted="false">"Share link"</string>
+    <string name="ui_rename_d3f4cb" formatted="false">"Rename"</string>
+    <string name="ui_allow_refresh_from_youtube_9b47b7" formatted="false">"Allow refresh from YouTube"</string>
+    <string name="ui_new_local_playlist_ce1813" formatted="false">"New local playlist"</string>
+    <string name="ui_import_schedule_playlists_f5a59f" formatted="false">"Import / schedule playlists"</string>
+    <string name="ui_create_new_playlist_327b33" formatted="false">"Create new playlist"</string>
+    <string name="ui_create_on_youtube_a854d8" formatted="false">"Create on YouTube"</string>
+    <string name="ui_signed_out_imports_paused_c503ad" formatted="false">"Signed out · imports paused"</string>
+    <string name="ui_importing_subscriptions_bdae82" formatted="false">"Importing subscriptions…"</string>
+    <string name="ui_importing_playlists_ff0d00" formatted="false">"Importing playlists…"</string>
+    <string name="ui_import_complete_133f50" formatted="false">"Import complete"</string>
+    <string name="ui_comment_author_avatar_898fbe" formatted="false">"Comment author avatar"</string>
+    <string name="ui_surfaceview_4341cb" formatted="false">"SurfaceView"</string>
+    <string name="ui_textureview_6fbced" formatted="false">"TextureView"</string>
+    <string name="ui_crayonicon_abb0d7" formatted="false">"CrayonIcon"</string>
+    <string name="ui_blueicon_58f8ec" formatted="false">"BlueIcon"</string>
+    <string name="ui_monoicon_0f080a" formatted="false">"MonoIcon"</string>
+    <string name="ui_account_image_refresh_unavailable_8933ca" formatted="false">"account image refresh unavailable"</string>
+    <string name="ui_account_changed_import_stopped_9c2b72" formatted="false">"Account changed; import stopped"</string>
+    <string name="ui_waiting_for_an_unmetered_connection_87299f" formatted="false">"Waiting for an unmetered connection"</string>
+    <string name="ui_checking_the_signed_in_account_c368c0" formatted="false">"Checking the signed-in account…"</string>
+    <string name="ui_http_401_de5511" formatted="false">"HTTP 401"</string>
+    <string name="ui_http_403_a4fd11" formatted="false">"HTTP 403"</string>
+    <string name="ui_youtube_did_not_expose_a_stable_account_channel__2ca98f" formatted="false">"YouTube did not expose a stable account/channel identity. Existing local items were kept."</string>
+    <string name="ui_imported_eec56a" formatted="false">"Imported "</string>
+    <string name="ui_subscriptions_f55e91" formatted="false">" subscriptions"</string>
+    <string name="ui_subscriptions_could_not_refresh_existing_local_c_aebcc2" formatted="false">"Subscriptions could not refresh; existing local copies kept"</string>
+    <string name="ui_some_playlists_could_not_refresh_existing_local__2738ad" formatted="false">"Some playlists could not refresh; existing local copies kept"</string>
+    <string name="ui_playlists_ce7356" formatted="false">" playlists"</string>
+    <string name="ui_import_finished_2b9126" formatted="false">"Import finished · "</string>
+    <string name="ui_subscriptions_b02912" formatted="false">" subscriptions · "</string>
+    <string name="ui_subscriptions_could_not_refresh_02a050" formatted="false">" · subscriptions could not refresh"</string>
+    <string name="ui_could_not_refresh_previous_copies_kept_98b5db" formatted="false">" could not refresh; previous copies kept"</string>
+    <string name="ui_import_failed_existing_local_items_kept_ea1365" formatted="false">"Import failed; existing local items kept"</string>
+    <string name="ui_import_workers_are_busy_try_again_shortly_6d23ce" formatted="false">"Import workers are busy. Try again shortly."</string>
+    <string name="ui_youtube_repeated_a_subscription_page_local_subsc_c2f913" formatted="false">"YouTube repeated a subscription page; local subscriptions kept"</string>
+    <string name="ui_subscription_import_exceeded_its_page_limit_loca_2a12d8" formatted="false">"Subscription import exceeded its page limit; local subscriptions kept"</string>
+    <string name="ui_playlist_exceeds_50_000_playable_videos_existing_08358c" formatted="false">"Playlist exceeds 50,000 playable videos; existing local copy kept"</string>
+    <string name="ui_youtube_repeated_a_playlist_page_existing_local__066ca9" formatted="false">"YouTube repeated a playlist page; existing local copy kept"</string>
+    <string name="ui_playlist_page_limit_reached_existing_local_copy__d4dbda" formatted="false">"Playlist page limit reached; existing local copy kept"</string>
+    <string name="ui_audio_track_8ff5fe" formatted="false">"Audio track"</string>
+    <string name="ui_original_audio_72f1be" formatted="false">"Original audio"</string>
+    <string name="ui_dubbed_audio_1d5afe" formatted="false">"Dubbed audio"</string>
+    <string name="ui_audio_description_fdf88c" formatted="false">"Audio description"</string>
+    <string name="ui_alternate_audio_2db6c4" formatted="false">"Alternate audio"</string>
+    <string name="ui_no_audio_tracks_available_f401c5" formatted="false">"No audio tracks available"</string>
+    <string name="ui_original_audio_is_preferred_interface_language_d_40cca1" formatted="false">"Original audio is preferred; interface language does not choose a dub."</string>
+    <string name="ui_unknown_language_e4f2ad" formatted="false">"Unknown language"</string>
+    <string name="ui_audio_track_changed_170512" formatted="false">"Audio track changed"</string>
+    <string name="ui_original_unlabelled_audio_67966f" formatted="false">"Unlabelled audio"</string>
+    <string name="ui_add_local_profile_054ba7" formatted="false">"Add local profile"</string>
+    <string name="ui_youtube_account_inside_simpletoob_5c6fa5" formatted="false">"YouTube account inside SimpleToob"</string>
+    <string name="ui_couldn_t_complete_that_action_please_retry_46b742" formatted="false">"Couldn't complete that action. Please retry."</string>
+    <string name="ui_busy_finishing_earlier_requests_please_retry_in__8fa3b8" formatted="false">"Busy finishing earlier requests. Please retry in a moment."</string>
+    <string name="ui_a_download_is_already_running_cancel_it_before_s_129df3" formatted="false">"A download is already running. Cancel it before starting another."</string>
+    <string name="ui_this_account_window_only_opens_google_and_youtub_87e844" formatted="false">"This account window only opens Google and YouTube pages."</string>
+    <string name="ui_uploads_are_not_included_b4c9d3" formatted="false">"Uploads are not included."</string>
+    <string name="ui_navigation_stopped_outside_google_youtube_e57b0b" formatted="false">"Navigation stopped outside Google/YouTube."</string>
+    <string name="ui_repeated_account_page_redirects_were_stopped_rel_b0ea34" formatted="false">"Repeated account-page redirects were stopped. Reload from the menu to retry."</string>
+    <string name="ui_the_account_page_couldn_t_load_check_your_connec_04ae12" formatted="false">"The account page couldn't load. Check your connection or reload from the menu."</string>
+    <string name="ui_secure_connection_failed_loading_was_stopped_bb2576" formatted="false">"Secure connection failed. Loading was stopped."</string>
+    <string name="ui_the_account_page_renderer_stopped_close_and_reop_7b8848" formatted="false">"The account-page renderer stopped. Close and reopen this window."</string>
+    <string name="ui_the_active_profile_changed_reopen_this_account_w_dbe262" formatted="false">"The active profile changed. Reopen this account window."</string>
+    <string name="ui_finish_signing_in_and_return_to_youtube_first_4ca78c" formatted="false">"Finish signing in and return to YouTube first."</string>
+    <string name="ui_couldn_t_read_the_selected_youtube_account_yet_l_a25b25" formatted="false">"Couldn't read the selected YouTube account yet. Let the YouTube page finish loading, then try again."</string>
+    <string name="ui_close_and_reopen_this_window_to_restart_the_page_b18588" formatted="false">"Close and reopen this window to restart the page renderer."</string>
+    <string name="ui_close_and_reopen_this_window_to_restart_the_rend_45d0cd" formatted="false">"Close and reopen this window to restart the renderer."</string>
+    <string name="ui_finish_the_current_account_check_first_c56448" formatted="false">"Finish the current account check first."</string>
+    <string name="ui_this_audio_track_is_no_longer_available_reload_t_387bdc" formatted="false">"This audio track is no longer available. Reload the video."</string>
+    <string name="ui_no_public_audio_only_stream_is_available_for_thi_c758be" formatted="false">"No public audio-only stream is available for this video."</string>
+    <string name="ui_likes_e9f009" formatted="false">"Likes"</string>
+    <string name="ui_dislikes_7d2cc8" formatted="false">"Dislikes"</string>
+    <string name="ui_unavailable_1d5ee3" formatted="false">"unavailable"</string>
+    <string name="ui_estimated_781012" formatted="false">"estimated"</string>
+    <string name="ui_1_s_likes_0c10a5">"%1$s likes"</string>
+    <string name="ui_1_s_replies_f40704">"%1$s replies"</string>
+    <string name="ui_1_ss_left_72cd1d">"%1$ss left"</string>
+</resources>

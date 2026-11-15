@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="ui_120_minutes_af74ba" formatted="false">"120 دقيقة"</string>
+    <string name="ui_12_hours_dda5db" formatted="false">"12 ساعة"</string>
+    <string name="ui_15_10_080_minutes_6e4654" formatted="false">"15–10,080 دقيقة"</string>
+    <string name="ui_15_minutes_899761" formatted="false">"15 دقيقة"</string>
+    <string name="ui_1_hour_f030c3" formatted="false">"ساعة واحدة"</string>
+    <string name="ui_1_s_2_s_videos_3_s_9f709d">"%1$s\n%2$s فيديو%3$s"</string>
+    <string name="ui_1_s_loaded_2_s_4b6a29">"تم تحميل %1$s%2$s"</string>
+    <string name="ui_1_s_minutes_e23e2d">"%1$s دقيقة"</string>
+    <string name="ui_1_s_on_this_device_b8d1dd">"%1$s · على هذا الجهاز"</string>
+    <string name="ui_1_s_results_2843e1">"%1$s نتيجة"</string>
+    <string name="ui_1_s_session_stays_inside_simpletoob_9c91c8">"%1$s · تبقى الجلسة داخل SimpleToob"</string>
+    <string name="ui_1_s_subscriptions_available_offline_d7f42b">"%1$s اشتراك · متاحة دون اتصال"</string>
+    <string name="ui_1_s_this_does_not_unsubscribe_on_youtube_account_11e596">"%1$s\nلن يُلغي هذا الاشتراك على YouTube. قد تعيده عمليات الاستيراد إذا بقيت مشتركًا هناك."</string>
+    <string name="ui_1_s_videos_hold_a_card_for_options_920491">"%1$s فيديو · اضغط مطولًا على بطاقة لعرض الخيارات"</string>
+    <string name="ui_1_sp_9fd02d">"%1$sp"</string>
+    <string name="ui_30_minutes_31bbe8" formatted="false">"30 دقيقة"</string>
+    <string name="ui_60_minutes_ee8eb1" formatted="false">"60 دقيقة"</string>
+    <string name="ui_6_hours_1e35c2" formatted="false">"6 ساعات"</string>
+    <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"هناك جلسة محفوظة، لكن يجب التحقق من هوية الحساب."</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"حول SimpleToob 0.7.0"</string>
+    <string name="ui_accent_1_s_6d6c3e">"لون التمييز %1$s"</string>
+    <string name="ui_accent_color_e49578" formatted="false">"لون التمييز"</string>
+    <string name="ui_account_imports_25ea2a" formatted="false">"استيراد الحساب"</string>
+    <string name="ui_account_index_for_older_sessions_8f5adb" formatted="false">"فهرس الحساب للجلسات القديمة"</string>
+    <string name="ui_account_options_d67188" formatted="false">"خيارات الحساب"</string>
+    <string name="ui_account_overview_a44850" formatted="false">"‹ نظرة عامة على الحساب"</string>
+    <string name="ui_account_page_rendering_7420e8" formatted="false">"عرض صفحة الحساب"</string>
+    <string name="ui_add_61cc55" formatted="false">"إضافة"</string>
+    <string name="ui_add_to_local_copy_f2829c" formatted="false">"إضافة إلى النسخة المحلية"</string>
+    <string name="ui_add_to_playlist_3e241e" formatted="false">"إضافة إلى قائمة تشغيل"</string>
+    <string name="ui_add_to_youtube_and_local_copy_5374d2" formatted="false">"إضافة إلى YouTube والنسخة المحلية"</string>
+    <string name="ui_added_to_local_playlist_b51472" formatted="false">"أُضيف إلى قائمة التشغيل المحلية"</string>
+    <string name="ui_added_to_youtube_and_local_playlist_667465" formatted="false">"أُضيف إلى YouTube وقائمة التشغيل المحلية"</string>
+    <string name="ui_advance_saved_list_queue_a728dd" formatted="false">"الانتقال تلقائيًا في طابور المحفوظات"</string>
+    <string name="ui_all_d87c44" formatted="false">"الكل"</string>
+    <string name="ui_all_settings_942f31" formatted="false">"‹ جميع الإعدادات"</string>
+    <string name="ui_allow_refresh_1f344b" formatted="false">"السماح بالتحديث"</string>
+    <string name="ui_any_c5fe02" formatted="false">"أي مدة"</string>
+    <string name="ui_app_font_size_adcb66" formatted="false">"حجم خط التطبيق (%)"</string>
+    <string name="ui_app_language_changes_menus_and_messages_youtube__0cffb5" formatted="false">"تغيّر لغة التطبيق القوائم والرسائل. لغة محتوى YouTube ومنطقته إعدادان منفصلان."</string>
+    <string name="ui_app_session_removed_1f25e0" formatted="false">"أُزيلت جلسة التطبيق"</string>
+    <string name="ui_appearance_41def7" formatted="false">"المظهر"</string>
+    <string name="ui_au_acdf41" formatted="false">"أستراليا"</string>
+    <string name="ui_audio_acdac2" formatted="false">"الصوت"</string>
+    <string name="ui_audio_network_settings_963963" formatted="false">"إعدادات الصوت والشبكة"</string>
+    <string name="ui_audio_only_continues_with_the_screen_off_baf013" formatted="false">"صوت فقط · يستمر مع إطفاء الشاشة"</string>
+    <string name="ui_audio_options_605c8b" formatted="false">"خيارات الصوت"</string>
+    <string name="ui_audio_player_76e779" formatted="false">"مشغّل الصوت"</string>
+    <string name="ui_audio_player_is_connecting_c37579" formatted="false">"جارٍ الاتصال بمشغّل الصوت…"</string>
+    <string name="ui_automatic_format_fallback_5cbd52" formatted="false">"الانتقال التلقائي إلى تنسيق بديل"</string>
+    <string name="ui_automatic_interval_1abe9b" formatted="false">"الفاصل التلقائي"</string>
+    <string name="ui_automatic_refresh_and_import_behavior_5f222e" formatted="false">"التحديث التلقائي وسلوك الاستيراد"</string>
+    <string name="ui_available_offline_1_s_fcadb8">"متاح دون اتصال · %1$s"</string>
+    <string name="ui_avc_first_b4c7df" formatted="false">"AVC أولًا"</string>
+    <string name="ui_back_b52b36" formatted="false">"رجوع"</string>
+    <string name="ui_background_intervals_have_a_15_minute_minimum_an_ba0b1e" formatted="false">"الحد الأدنى للفاصل 15 دقيقة. قد يؤخّر Android المهام بسبب البطارية أو الشبكة. تنطبق الإعدادات على هذا الملف المحلي."</string>
+    <string name="ui_balanced_03342d" formatted="false">"متوازن"</string>
+    <string name="ui_blue_crayon_479f48" formatted="false">"قلم شمع أزرق"</string>
+    <string name="ui_both_1f4698" formatted="false">"كلاهما"</string>
+    <string name="ui_br_b6a03c" formatted="false">"البرازيل"</string>
+    <string name="ui_browse_2f3b5c" formatted="false">"تصفّح"</string>
+    <string name="ui_browse_a_public_youtube_playlist_062db8" formatted="false">"تصفّح قائمة تشغيل عامة على YouTube"</string>
+    <string name="ui_browse_options_cefbc9" formatted="false">"خيارات التصفّح"</string>
+    <string name="ui_buffer_budget_seconds_2e73a6" formatted="false">"ميزانية التخزين المؤقت (ثوانٍ)"</string>
+    <string name="ui_buffering_014b2d" formatted="false">"جارٍ التخزين المؤقت…"</string>
+    <string name="ui_ca_09acbb" formatted="false">"كندا"</string>
+    <string name="ui_cancel_77dfd2" formatted="false">"إلغاء"</string>
+    <string name="ui_caption_language_bfae2c" formatted="false">"لغة الترجمة"</string>
+    <string name="ui_caption_text_size_d9d585" formatted="false">"حجم نص الترجمة"</string>
+    <string name="ui_cc_off_7a6e71" formatted="false">"الترجمة متوقفة"</string>
+    <string name="ui_cc_on_6eaeb5" formatted="false">"الترجمة مفعّلة"</string>
+    <string name="ui_channel_avatar_24bf93" formatted="false">"صورة القناة"</string>
+    <string name="ui_channel_details_aren_t_available_yet_3f0805" formatted="false">"تفاصيل القناة غير متاحة بعد."</string>
+    <string name="ui_channel_fbe7d7" formatted="false">"قناة"</string>
+    <string name="ui_channel_filters_reset_b48577" formatted="false">"أُعيد ضبط فلاتر القنوات"</string>
+    <string name="ui_channel_url_or_uc_channel_id_0cd8e2" formatted="false">"رابط القناة أو معرّف UC"</string>
+    <string name="ui_channel_videos_a63971" formatted="false">"فيديوهات القناة"</string>
+    <string name="ui_channels_3536f7" formatted="false">"قنوات"</string>
+    <string name="ui_checking_account_d9e59d" formatted="false">"جارٍ فحص الحساب…"</string>
+    <string name="ui_choose_a_playlist_42a83c" formatted="false">"اختيار قائمة تشغيل"</string>
+    <string name="ui_choose_a_playlist_to_start_listening_b0cc63" formatted="false">"اختر قائمة تشغيل لبدء الاستماع."</string>
+    <string name="ui_choose_an_mp4_quality_to_download_a_combined_vid_3428c9" formatted="false">"اختر جودة MP4 لتنزيل ملف فيديو مع الصوت."</string>
+    <string name="ui_choose_another_google_account_21b002" formatted="false">"اختيار حساب Google آخر"</string>
+    <string name="ui_choose_interface_language_cb6da4" formatted="false">"اختيار لغة الواجهة"</string>
+    <string name="ui_choose_playlist_654ba2" formatted="false">"اختيار قائمة تشغيل"</string>
+    <string name="ui_choose_saved_videos_or_any_local_imported_playli_268eb7" formatted="false">"اختر فيديوهات محفوظة أو قائمة محلية/مستوردة. لا حاجة لحساب."</string>
+    <string name="ui_chunked_media_transfers_99ad33" formatted="false">"نقل الوسائط على أجزاء"</string>
+    <string name="ui_clear_719ea3" formatted="false">"مسح"</string>
+    <string name="ui_clear_history_53b515" formatted="false">"مسح السجل"</string>
+    <string name="ui_clear_history_83cf06" formatted="false">"مسح السجل؟"</string>
+    <string name="ui_clear_local_video_data_6d7ee1" formatted="false">"مسح بيانات الفيديو المحلية؟"</string>
+    <string name="ui_clear_queue_and_stop_ab7714" formatted="false">"مسح الطابور والإيقاف"</string>
+    <string name="ui_clear_saved_videos_and_history_b3f132" formatted="false">"مسح الفيديوهات المحفوظة والسجل"</string>
+    <string name="ui_close_bbfa77" formatted="false">"إغلاق"</string>
+    <string name="ui_comment_153d7a" formatted="false">"تعليق"</string>
+    <string name="ui_comments_and_ratings_b26b63" formatted="false">"التعليقات والتقييمات"</string>
+    <string name="ui_comments_fce06e" formatted="false">"التعليقات"</string>
+    <string name="ui_comments_unavailable_tap_to_retry_93fd76" formatted="false">"التعليقات غير متاحة · اضغط للمحاولة مجددًا"</string>
+    <string name="ui_compact_cards_bf5707" formatted="false">"بطاقات مدمجة"</string>
+    <string name="ui_connecting_fd3e79" formatted="false">"جارٍ الاتصال…"</string>
+    <string name="ui_content_and_account_behavior_ed97c9" formatted="false">"المحتوى وسلوك الحساب"</string>
+    <string name="ui_content_language_9dc835" formatted="false">"لغة المحتوى"</string>
+    <string name="ui_content_region_0b4abc" formatted="false">"منطقة المحتوى"</string>
+    <string name="ui_continue_2e0262" formatted="false">"متابعة"</string>
+    <string name="ui_continue_from_the_last_local_checkpoint_ae1e69" formatted="false">"المتابعة من آخر موضع محفوظ محليًا."</string>
+    <string name="ui_continue_watching_8fca30" formatted="false">"متابعة المشاهدة"</string>
+    <string name="ui_cool_13cf34" formatted="false">"بارد"</string>
+    <string name="ui_copy_af74f7" formatted="false">"نسخ"</string>
+    <string name="ui_couldn_t_connect_to_the_audio_player_please_reop_8c89ee" formatted="false">"تعذّر الاتصال بالمشغّل. افتح الصوت مجددًا."</string>
+    <string name="ui_couldn_t_load_this_local_playlist_please_retry_ecfe9c" formatted="false">"تعذّر تحميل القائمة المحلية. حاول مجددًا."</string>
+    <string name="ui_couldn_t_play_this_track_1_s_tap_play_to_retry_o_a66f14">"تعذّر تشغيل المقطع (%1$s). اضغط تشغيل للمحاولة أو تخطّه."</string>
+    <string name="ui_couldn_t_update_the_launcher_icon_374b26" formatted="false">"تعذّر تغيير أيقونة المشغّل."</string>
+    <string name="ui_crayon_1301e7" formatted="false">"قلم شمع"</string>
+    <string name="ui_create_6e157c" formatted="false">"إنشاء"</string>
+    <string name="ui_create_local_playlist_b50668" formatted="false">"إنشاء قائمة محلية"</string>
+    <string name="ui_create_playlist_62c988" formatted="false">"إنشاء قائمة تشغيل"</string>
+    <string name="ui_custom_accent_07ebc7" formatted="false">"لون تمييز مخصص"</string>
+    <string name="ui_custom_import_interval_faead1" formatted="false">"فاصل استيراد مخصص"</string>
+    <string name="ui_custom_minutes_a47324" formatted="false">"دقائق مخصصة"</string>
+    <string name="ui_daily_728298" formatted="false">"يوميًا"</string>
+    <string name="ui_dark_ae1ef0" formatted="false">"داكن"</string>
+    <string name="ui_dark_gray_brightness_1_s_48_d1306c">"سطوع الرمادي الداكن: %1$s / 48"</string>
+    <string name="ui_dark_gray_brightness_1_s_48_zero_is_black_9d9b07">"سطوع الرمادي الداكن: %1$s / 48 · الصفر أسود"</string>
+    <string name="ui_dark_gray_tone_3c8dbb" formatted="false">"درجة الرمادي الداكن"</string>
+    <string name="ui_de_600ccd" formatted="false">"الألمانية"</string>
+    <string name="ui_de_ce3e4b" formatted="false">"ألمانيا"</string>
+    <string name="ui_decoder_fallback_a329cd" formatted="false">"فك ترميز بديل"</string>
+    <string name="ui_default_808d7d" formatted="false">"الافتراضي"</string>
+    <string name="ui_default_video_quality_9e632e" formatted="false">"جودة الفيديو الافتراضية"</string>
+    <string name="ui_defer_automatic_imports_during_playback_566517" formatted="false">"تأجيل الاستيراد التلقائي أثناء التشغيل"</string>
+    <string name="ui_delete_f6fdbe" formatted="false">"حذف"</string>
+    <string name="ui_delete_this_local_playlist_d9202d" formatted="false">"حذف هذه القائمة المحلية؟"</string>
+    <string name="ui_description_55f8eb" formatted="false">"الوصف"</string>
+    <string name="ui_diagnostics_3af227" formatted="false">"التشخيص"</string>
+    <string name="ui_discover_4827ea" formatted="false">"استكشاف"</string>
+    <string name="ui_dislike_efc984" formatted="false">"لم يعجبني"</string>
+    <string name="ui_display_information_7b9b00" formatted="false">"معلومات العرض"</string>
+    <string name="ui_display_information_copied_ea0d0a" formatted="false">"نُسخت معلومات العرض"</string>
+    <string name="ui_download_a479c9" formatted="false">"تنزيل"</string>
+    <string name="ui_download_connections_673940" formatted="false">"اتصالات التنزيل"</string>
+    <string name="ui_download_on_unmetered_connections_337b19" formatted="false">"التنزيل عبر اتصالات غير محدودة"</string>
+    <string name="ui_download_started_the_file_will_be_saved_to_your__ddb597" formatted="false">"بدأ التنزيل. سيُحفظ الملف في المكان الذي اخترته."</string>
+    <string name="ui_duration_137000" formatted="false">"المدة"</string>
+    <string name="ui_en_094b0f" formatted="false">"الإنجليزية"</string>
+    <string name="ui_english_649df0" formatted="false">"الإنجليزية"</string>
+    <string name="ui_enter_a_comment_c8ddc4" formatted="false">"اكتب تعليقًا"</string>
+    <string name="ui_enter_a_valid_youtube_playlist_url_512231" formatted="false">"أدخل رابط قائمة تشغيل YouTube صالحًا."</string>
+    <string name="ui_enter_a_value_cd8763" formatted="false">"أدخل قيمة"</string>
+    <string name="ui_es_09cd68" formatted="false">"الإسبانية"</string>
+    <string name="ui_extractor_and_playback_libraries_1c9dd3" formatted="false">"مكتبات الاستخراج والتشغيل"</string>
+    <string name="ui_fill_7adb67" formatted="false">"ملء"</string>
+    <string name="ui_fit_dab564" formatted="false">"احتواء"</string>
+    <string name="ui_font_family_54a184" formatted="false">"عائلة الخط"</string>
+    <string name="ui_forward_1_s_seconds_7dc40f">"تقديم %1$s ثانية"</string>
+    <string name="ui_fr_6d2830" formatted="false">"فرنسا"</string>
+    <string name="ui_fr_b858a8" formatted="false">"الفرنسية"</string>
+    <string name="ui_gaming_c0ecc0" formatted="false">"الألعاب"</string>
+    <string name="ui_gb_505a44" formatted="false">"المملكة المتحدة"</string>
+    <string name="ui_generated_color_bars_and_tone_isolate_renderer_d_de12c4" formatted="false">"تعزل أشرطة الألوان والنغمة مشاكل العرض أو فك الترميز"</string>
+    <string name="ui_give_audio_and_video_priority_over_new_scheduled_f5dd65" formatted="false">"إعطاء الصوت والفيديو أولوية على عمليات الاستيراد المجدولة الجديدة."</string>
+    <string name="ui_hardware_b76ab6" formatted="false">"العتاد"</string>
+    <string name="ui_hardware_rendering_enabled_19f68b" formatted="false">"فُعّل العرض بالعتاد"</string>
+    <string name="ui_hide_short_videos_ca68dc" formatted="false">"إخفاء الفيديوهات القصيرة"</string>
+    <string name="ui_hide_videos_three_minutes_or_shorter_in_browsing_fe7502" formatted="false">"إخفاء فيديوهات الثلاث دقائق أو أقل أثناء التصفّح والبحث."</string>
+    <string name="ui_history_90ccd6" formatted="false">"السجل"</string>
+    <string name="ui_history_cleared_5a2d82" formatted="false">"مُسح السجل"</string>
+    <string name="ui_home_70f8bb" formatted="false">"الرئيسية"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"استعلام الاستكشاف في الرئيسية"</string>
+    <string name="ui_home_topic_fa8a18" formatted="false">"موضوع الرئيسية"</string>
+    <string name="ui_https_instance_url_f0ca6a" formatted="false">"رابط HTTPS للخادم"</string>
+    <string name="ui_import_1_s_now_f3f9af">"استيراد %1$s الآن"</string>
+    <string name="ui_import_behavior_e3c199" formatted="false">"سلوك الاستيراد"</string>
+    <string name="ui_import_interval_4150f1" formatted="false">"فاصل الاستيراد"</string>
+    <string name="ui_import_on_app_launch_29ab16" formatted="false">"الاستيراد عند بدء التطبيق"</string>
+    <string name="ui_import_schedule_731452" formatted="false">"الاستيراد والجدولة"</string>
+    <string name="ui_import_settings_a04343" formatted="false">"إعدادات الاستيراد"</string>
+    <string name="ui_import_stopped_completed_local_copies_kept_77bf89" formatted="false">"توقف الاستيراد؛ احتُفظ بالنسخ المكتملة"</string>
+    <string name="ui_import_subscriptions_playlists_2a477c" formatted="false">"استيراد الاشتراكات وقوائم التشغيل"</string>
+    <string name="ui_import_youtube_playlists_71d725" formatted="false">"استيراد قوائم تشغيل YouTube"</string>
+    <string name="ui_import_youtube_subscriptions_b418ab" formatted="false">"استيراد اشتراكات YouTube"</string>
+    <string name="ui_imported_1_s_subscriptions_b7baa5">"استُورد %1$s اشتراك"</string>
+    <string name="ui_imported_434eb2" formatted="false">"مستورد"</string>
+    <string name="ui_imports_copy_youtube_subscriptions_and_playlists_a48a90" formatted="false">"ينسخ الاستيراد اشتراكات وقوائم YouTube إلى قوائمك المحلية المعتادة. لا تُرفع التعديلات المحلية. يتوقف الاستيراد التلقائي عند تسجيل الخروج."</string>
+    <string name="ui_imports_on_unmetered_networks_only_fbc7c8" formatted="false">"الاستيراد عبر شبكات غير محدودة فقط"</string>
+    <string name="ui_include_channel_names_in_results_acac52" formatted="false">"إظهار أسماء القنوات في النتائج."</string>
+    <string name="ui_include_video_duration_8a5186" formatted="false">"إظهار مدة الفيديو."</string>
+    <string name="ui_interface_and_controls_9d0f4b" formatted="false">"الواجهة وعناصر التحكم"</string>
+    <string name="ui_interface_language_9407e9" formatted="false">"لغة الواجهة"</string>
+    <string name="ui_it_6c5522" formatted="false">"الإيطالية"</string>
+    <string name="ui_ja_84572e" formatted="false">"اليابانية"</string>
+    <string name="ui_jp_1920a5" formatted="false">"اليابان"</string>
+    <string name="ui_keep_draft_a416b0" formatted="false">"الاحتفاظ بالمسودة"</string>
+    <string name="ui_keep_saved_and_subscriptions_4ea800" formatted="false">"الاحتفاظ بالمحفوظات والاشتراكات"</string>
+    <string name="ui_keep_screen_awake_e46566" formatted="false">"إبقاء الشاشة مضاءة"</string>
+    <string name="ui_keep_the_screen_on_while_native_playback_is_acti_e7d952" formatted="false">"إبقاء الشاشة مضاءة أثناء تشغيل الفيديو."</string>
+    <string name="ui_keep_your_library_together_235b59" formatted="false">"اجمع مكتبتك في مكان واحد"</string>
+    <string name="ui_keep_youtube_and_ryd_41bbdd" formatted="false">"الاحتفاظ بـ YouTube وRYD"</string>
+    <string name="ui_ko_65a7da" formatted="false">"الكورية"</string>
+    <string name="ui_language_89b86a" formatted="false">"اللغة"</string>
+    <string name="ui_last_completed_1_s_449f25">"آخر اكتمال: %1$s"</string>
+    <string name="ui_launcher_icon_743655" formatted="false">"أيقونة المشغّل"</string>
+    <string name="ui_launcher_icon_updated_0ef19e" formatted="false">"حُدّثت أيقونة المشغّل"</string>
+    <string name="ui_library_b8100f" formatted="false">"المكتبة"</string>
+    <string name="ui_library_is_busy_please_retry_133dd2" formatted="false">"المكتبة مشغولة. حاول مجددًا."</string>
+    <string name="ui_light_a36ef8" formatted="false">"فاتح"</string>
+    <string name="ui_like_c7e02c" formatted="false">"أعجبني"</string>
+    <string name="ui_liked_videos_964f36" formatted="false">"الفيديوهات التي أعجبتك"</string>
+    <string name="ui_listen_c518fb" formatted="false">"استماع"</string>
+    <string name="ui_load_comments_automatically_f9dc50" formatted="false">"تحميل التعليقات تلقائيًا"</string>
+    <string name="ui_load_more_dfe60c" formatted="false">"تحميل المزيد"</string>
+    <string name="ui_loaded_videos_copied_locally_17e660" formatted="false">"نُسخت الفيديوهات المحمّلة محليًا"</string>
+    <string name="ui_loading_1_s_aba14c">"جارٍ تحميل %1$s…"</string>
+    <string name="ui_loading_33ce41" formatted="false">"جارٍ التحميل…"</string>
+    <string name="ui_loading_audio_011ae4" formatted="false">"جارٍ تحميل الصوت…"</string>
+    <string name="ui_loading_channel_9913f4" formatted="false">"جارٍ تحميل القناة…"</string>
+    <string name="ui_loading_playlist_0f0b75" formatted="false">"جارٍ تحميل قائمة التشغيل…"</string>
+    <string name="ui_loading_public_comments_3421bc" formatted="false">"جارٍ تحميل التعليقات العامة…"</string>
+    <string name="ui_loading_ratings_8096fb" formatted="false">"جارٍ تحميل التقييمات…"</string>
+    <string name="ui_loading_video_be9907" formatted="false">"جارٍ تحميل الفيديو…"</string>
+    <string name="ui_local_316699" formatted="false">" · محلي"</string>
+    <string name="ui_local_and_youtube_playlists_5e43ac" formatted="false">"قوائم محلية ومن YouTube"</string>
+    <string name="ui_local_dc99d5" formatted="false">"محلي"</string>
+    <string name="ui_local_edits_kept_29e455" formatted="false">" · حُفظت التعديلات المحلية"</string>
+    <string name="ui_local_playlist_name_e2612f" formatted="false">"اسم القائمة المحلية"</string>
+    <string name="ui_local_playlists_saved_videos_and_history_stay_on_085a86" formatted="false">"تبقى القوائم المحلية والفيديوهات المحفوظة والسجل على هذا الجهاز."</string>
+    <string name="ui_local_profiles_008815" formatted="false">"الملفات المحلية"</string>
+    <string name="ui_long_bd3027" formatted="false">"طويلة"</string>
+    <string name="ui_loop_current_video_1ae752" formatted="false">"تكرار الفيديو الحالي"</string>
+    <string name="ui_make_simpletoob_yours_d1d738" formatted="false">"اجعل SimpleToob كما تحب"</string>
+    <string name="ui_manual_launch_only_9af751" formatted="false">"يدويًا / عند التشغيل فقط"</string>
+    <string name="ui_maximum_loaded_comments_fb10ed" formatted="false">"الحد الأقصى للتعليقات المحمّلة"</string>
+    <string name="ui_medium_20af41" formatted="false">"متوسطة"</string>
+    <string name="ui_merge_imports_keep_local_items_fc6a90" formatted="false">"دمج الاستيراد؛ إبقاء العناصر المحلية"</string>
+    <string name="ui_merge_keep_missing_channels_playlists_c0eaf6" formatted="false">"دمج · إبقاء القنوات والقوائم المفقودة"</string>
+    <string name="ui_mirror_previous_imports_keep_local_only_items_7a0c35" formatted="false">"مطابقة الاستيرادات السابقة؛ إبقاء المحلي فقط"</string>
+    <string name="ui_mirror_remove_missing_imported_collections_84b654" formatted="false">"مطابقة · إزالة المجموعات المستوردة المفقودة"</string>
+    <string name="ui_monochrome_1dda99" formatted="false">"أحادي اللون"</string>
+    <string name="ui_monospace_43ad90" formatted="false">"ثابت العرض"</string>
+    <string name="ui_more_comments_30a9b4" formatted="false">"مزيد من التعليقات"</string>
+    <string name="ui_more_from_this_video_44d8cf" formatted="false">"المزيد من هذا الفيديو"</string>
+    <string name="ui_move_down_260ff8" formatted="false">"نقل لأسفل"</string>
+    <string name="ui_move_up_b4f57c" formatted="false">"نقل لأعلى"</string>
+    <string name="ui_music_131260" formatted="false">"الموسيقى"</string>
+    <string name="ui_native_media_playback_no_developer_keys_no_ad_pl_559b5b" formatted="false">"تشغيل أصلي · دون مفاتيح مطوّر أو مشغّل إعلانات. قد توقف تغييرات الموقع أو التحقق الاستخراج. يحدّث الاستيراد الاشتراكات والقوائم المحلية عند تسجيل الدخول. الرفع غير مدعوم."</string>
+    <string name="ui_neutral_4bd291" formatted="false">"محايد"</string>
+    <string name="ui_new_local_profile_9401ba" formatted="false">"ملف محلي جديد"</string>
+    <string name="ui_new_name_9e627c" formatted="false">"اسم جديد"</string>
+    <string name="ui_newest_first_f5ec77" formatted="false">"الأحدث أولًا"</string>
+    <string name="ui_newpipeextractor_gpl_3_0_or_later_androidx_media_2e9815" formatted="false">"NewPipeExtractor: GPL-3.0-or-later\nAndroidX Media3: Apache-2.0\nيتضمن أرشيف المصدر الاعتماديات الإضافية ومصدرها المقابل."</string>
+    <string name="ui_next_bc9819" formatted="false">"التالي"</string>
+    <string name="ui_next_track_74babe" formatted="false">"المقطع التالي"</string>
+    <string name="ui_no_completed_import_for_this_account_9f3f1a" formatted="false">"لا استيراد مكتمل لهذا الحساب"</string>
+    <string name="ui_no_description_available_eb3cdb" formatted="false">"لا يوجد وصف متاح."</string>
+    <string name="ui_no_playable_streams_found_open_player_options_to_4e4f73" formatted="false">"لم يُعثر على تدفقات قابلة للتشغيل. أعد المحاولة من خيارات المشغّل."</string>
+    <string name="ui_no_playlists_yet_create_one_or_import_from_youtu_ca4ae3" formatted="false">"لا قوائم بعد. أنشئ واحدة أو استورد من YouTube."</string>
+    <string name="ui_no_public_comments_returned_0ca62f" formatted="false">"لم تصل تعليقات عامة."</string>
+    <string name="ui_no_recognized_videos_returned_verify_the_session_3c335e" formatted="false">"لم تصل فيديوهات معروفة. تحقق من الجلسة أو حاول لاحقًا."</string>
+    <string name="ui_no_results_try_another_search_or_duration_bcbcd8" formatted="false">"لا نتائج. جرّب بحثًا أو مدة أخرى."</string>
+    <string name="ui_no_stream_selected_43155d" formatted="false">"لم يُحدّد تدفق"</string>
+    <string name="ui_no_subscriptions_yet_add_or_import_channels_eab367" formatted="false">"لا اشتراكات بعد · أضف قنوات أو استوردها"</string>
+    <string name="ui_no_supported_video_link_found_c284bf" formatted="false">"لم يُعثر على رابط فيديو مدعوم."</string>
+    <string name="ui_no_videos_here_yet_58dd2a" formatted="false">"لا فيديوهات بعد."</string>
+    <string name="ui_not_configured_811931" formatted="false">"غير مضبوط"</string>
+    <string name="ui_off_by_default_feabf2" formatted="false">"متوقف افتراضيًا."</string>
+    <string name="ui_off_e3de5a" formatted="false">"متوقف"</string>
+    <string name="ui_ok_9ce3bd" formatted="false">"حسنًا"</string>
+    <string name="ui_older_comments_trimmed_8e547e" formatted="false">" · أُزيلت التعليقات الأقدم"</string>
+    <string name="ui_oldest_first_6a99c6" formatted="false">"الأقدم أولًا"</string>
+    <string name="ui_on_this_device_a7f962" formatted="false">"على هذا الجهاز"</string>
+    <string name="ui_on_this_device_hold_a_playlist_to_edit_b152dc" formatted="false">"على هذا الجهاز · اضغط مطولًا على قائمة لتعديلها"</string>
+    <string name="ui_on_youtube_9114a8" formatted="false">"على YouTube"</string>
+    <string name="ui_open_a_video_or_playlist_link_85f78d" formatted="false">"فتح رابط فيديو أو قائمة تشغيل"</string>
+    <string name="ui_open_playlist_link_0e8cd6" formatted="false">"فتح رابط قائمة تشغيل"</string>
+    <string name="ui_open_source_notices_03c217" formatted="false">"إشعارات المصادر المفتوحة"</string>
+    <string name="ui_open_source_software_b07311" formatted="false">"برمجيات مفتوحة المصدر"</string>
+    <string name="ui_open_the_video_to_load_channel_details_first_e46f0c" formatted="false">"افتح الفيديو لتحميل تفاصيل القناة أولًا."</string>
+    <string name="ui_open_the_video_to_load_its_channel_first_b78b9f" formatted="false">"افتح الفيديو لتحميل قناته أولًا."</string>
+    <string name="ui_open_video_ce7781" formatted="false">"فتح فيديو"</string>
+    <string name="ui_optional_invidious_ratings_source_8b8a9e" formatted="false">"مصدر Invidious اختياري للتقييمات"</string>
+    <string name="ui_page_text_size_9cbed6" formatted="false">"حجم نص الصفحة"</string>
+    <string name="ui_panel_padding_3dc00b" formatted="false">"هوامش اللوحة الداخلية"</string>
+    <string name="ui_pause_781961" formatted="false">"إيقاف مؤقت"</string>
+    <string name="ui_paused_c7dfb6" formatted="false">"متوقف مؤقتًا"</string>
+    <string name="ui_play_5d12bd" formatted="false">"تشغيل"</string>
+    <string name="ui_play_audio_from_b6a4f8" formatted="false">"تشغيل الصوت من"</string>
+    <string name="ui_play_or_pause_fe13ca" formatted="false">"تشغيل أو إيقاف مؤقت"</string>
+    <string name="ui_play_queue_5d2d90" formatted="false">"تشغيل الطابور"</string>
+    <string name="ui_play_video_when_opened_f887c2" formatted="false">"تشغيل الفيديو عند فتحه"</string>
+    <string name="ui_playback_c8e308" formatted="false">"التشغيل"</string>
+    <string name="ui_playback_diagnostics_380464" formatted="false">"تشخيص التشغيل"</string>
+    <string name="ui_playback_engine_0255b8" formatted="false">"محرك التشغيل"</string>
+    <string name="ui_playback_failed_1_s_tap_player_options_to_retry_a0f7a9">"فشل التشغيل: %1$s. أعد المحاولة من خيارات المشغّل."</string>
+    <string name="ui_playback_speed_6ff42b" formatted="false">"سرعة التشغيل"</string>
+    <string name="ui_player_options_ee1ac2" formatted="false">"خيارات المشغّل"</string>
+    <string name="ui_playlist_c554c6" formatted="false">"قائمة تشغيل"</string>
+    <string name="ui_playlist_cd95b4" formatted="false">"قائمة تشغيل"</string>
+    <string name="ui_playlist_created_fe637f" formatted="false">"أُنشئت قائمة التشغيل"</string>
+    <string name="ui_playlist_name_544f75" formatted="false">"اسم قائمة التشغيل"</string>
+    <string name="ui_playlist_url_f6c539" formatted="false">"رابط قائمة التشغيل"</string>
+    <string name="ui_playlists_71f0f9" formatted="false">"‹ قوائم التشغيل"</string>
+    <string name="ui_playlists_77b69f" formatted="false">"قوائم التشغيل"</string>
+    <string name="ui_playlists_bbdff1" formatted="false">"قوائم التشغيل"</string>
+    <string name="ui_post_7858ac" formatted="false">"نشر"</string>
+    <string name="ui_posts_to_youtube_through_this_profile_s_in_app_w_7425b1" formatted="false">"يُنشر على YouTube عبر جلسة الويب لهذا الملف. تبقى المسودة هنا حتى تأكيد الإرسال."</string>
+    <string name="ui_prefer_captions_5bec54" formatted="false">"تفضيل الترجمة"</string>
+    <string name="ui_preferred_codecs_87f454" formatted="false">"الترميزات المفضلة"</string>
+    <string name="ui_preferred_maximum_resolution_a8e3c4" formatted="false">"الدقة القصوى المفضلة"</string>
+    <string name="ui_preparing_1_s_439e60">"جارٍ تجهيز %1$s…"</string>
+    <string name="ui_previous_50f942" formatted="false">"السابق"</string>
+    <string name="ui_previous_track_3963ec" formatted="false">"المقطع السابق"</string>
+    <string name="ui_profile_name_775747" formatted="false">"اسم الملف"</string>
+    <string name="ui_profiles_and_google_account_31b7e2" formatted="false">"الملفات وحساب Google"</string>
+    <string name="ui_profiles_and_library_0ae39e" formatted="false">"الملفات والمكتبة"</string>
+    <string name="ui_profiles_and_youtube_account_28303a" formatted="false">"الملفات وحساب YouTube"</string>
+    <string name="ui_pt_bc8112" formatted="false">"البرتغالية"</string>
+    <string name="ui_public_comments_and_rating_estimates_do_not_need_49def1" formatted="false">"لا تحتاج التعليقات العامة والتقييمات التقديرية إلى دخول. تستخدم الكتابة والتفاعل جلسة YouTube داخل SimpleToob."</string>
+    <string name="ui_public_comments_load_independently_of_login_and__bf5526" formatted="false">"تُحمّل التعليقات العامة بصرف النظر عن الدخول والتشغيل."</string>
+    <string name="ui_quality_a60f2c" formatted="false">"الجودة"</string>
+    <string name="ui_queue_and_sleep_timer_options_90987c" formatted="false">"خيارات الطابور ومؤقّت النوم"</string>
+    <string name="ui_queue_d325fc" formatted="false">"طابور التشغيل"</string>
+    <string name="ui_rating_source_information_dc2253" formatted="false">"معلومات مصدر التقييمات"</string>
+    <string name="ui_rating_sources_f31df6" formatted="false">"مصادر التقييم"</string>
+    <string name="ui_ratings_sources_892353" formatted="false">"مصادر التقييمات"</string>
+    <string name="ui_ratings_unavailable_89189b" formatted="false">"التقييمات غير متاحة"</string>
+    <string name="ui_read_comments_or_add_your_own_af7033" formatted="false">"اقرأ التعليقات أو أضف تعليقك"</string>
+    <string name="ui_read_replies_b5fe6a" formatted="false">"قراءة الردود"</string>
+    <string name="ui_reading_video_page_1d141c" formatted="false">"جارٍ قراءة صفحة الفيديو…"</string>
+    <string name="ui_ready_to_import_2555df" formatted="false">"جاهز للاستيراد"</string>
+    <string name="ui_record_watched_videos_in_this_profile_b2893d" formatted="false">"تسجيل الفيديوهات المشاهدة في هذا الملف."</string>
+    <string name="ui_reject_new_download_work_on_a_metered_connection_2ef5b6" formatted="false">"رفض التنزيلات الجديدة على اتصال محدود."</string>
+    <string name="ui_related_videos_038843" formatted="false">"فيديوهات ذات صلة"</string>
+    <string name="ui_reload_public_comments_71e1b1" formatted="false">"إعادة تحميل التعليقات العامة"</string>
+    <string name="ui_reload_sign_in_96d01c" formatted="false">"إعادة تحميل تسجيل الدخول"</string>
+    <string name="ui_remember_history_563d15" formatted="false">"حفظ السجل"</string>
+    <string name="ui_remove_app_session_79fd3b" formatted="false">"إزالة جلسة التطبيق"</string>
+    <string name="ui_remove_e96390" formatted="false">"إزالة"</string>
+    <string name="ui_remove_local_subscription_ca7c85" formatted="false">"إزالة الاشتراك المحلي؟"</string>
+    <string name="ui_remove_optional_ratings_source_6b4e83" formatted="false">"إزالة مصدر التقييمات الاختياري"</string>
+    <string name="ui_remove_saved_session_d9e024" formatted="false">"إزالة الجلسة المحفوظة"</string>
+    <string name="ui_remove_this_app_s_saved_session_ea2a70" formatted="false">"إزالة جلسة التطبيق المحفوظة؟"</string>
+    <string name="ui_remove_this_profile_s_session_734108" formatted="false">"إزالة جلسة هذا الملف؟"</string>
+    <string name="ui_rendering_mode_45b17a" formatted="false">"وضع العرض"</string>
+    <string name="ui_repeat_off_c4d7b8" formatted="false">"التكرار متوقف"</string>
+    <string name="ui_repeat_queue_2a9843" formatted="false">"تكرار الطابور"</string>
+    <string name="ui_repeat_track_07d5e1" formatted="false">"تكرار المقطع"</string>
+    <string name="ui_replace_local_edits_on_the_next_import_1d57a7" formatted="false">"استبدال التعديلات المحلية في الاستيراد القادم؟"</string>
+    <string name="ui_replay_after_it_finishes_dacc34" formatted="false">"إعادة التشغيل عند الانتهاء."</string>
+    <string name="ui_reset_hidden_channels_18cf99" formatted="false">"إعادة ضبط القنوات المخفية"</string>
+    <string name="ui_results_612e12" formatted="false">"النتائج"</string>
+    <string name="ui_resume_videos_1dbb9f" formatted="false">"استئناف الفيديوهات"</string>
+    <string name="ui_retrieve_rating_evidence_separately_from_account_fadba1" formatted="false">"جلب بيانات التقييم منفصلًا عن إجراءات الحساب."</string>
+    <string name="ui_retry_9f5cd8" formatted="false">"إعادة المحاولة"</string>
+    <string name="ui_return_youtube_dislike_bf087e" formatted="false">"Return YouTube Dislike"</string>
+    <string name="ui_return_youtube_dislike_https_returnyoutubedislik_298eb8" formatted="false">"Return YouTube Dislike: https://returnyoutubedislike.com\nواجهة Invidious: https://docs.invidious.io/api/\n\nأعداد عدم الإعجاب تقديرية. قد تتشارك المصادر البيانات، لذا لا تُجمع لصنع إجمالي وهمي."</string>
+    <string name="ui_rewind_1_s_seconds_303bb1">"ترجيع %1$s ثانية"</string>
+    <string name="ui_rounded_button_radius_b0f73e" formatted="false">"نصف قطر زوايا الأزرار"</string>
+    <string name="ui_run_search_181269" formatted="false">"بدء البحث"</string>
+    <string name="ui_sans_serif_411162" formatted="false">"بلا زوائد"</string>
+    <string name="ui_save_efc007" formatted="false">"حفظ"</string>
+    <string name="ui_save_loaded_videos_to_a_local_playlist_33e342" formatted="false">"حفظ الفيديوهات المحمّلة في قائمة محلية"</string>
+    <string name="ui_saved_838a49" formatted="false">"محفوظ ✓"</string>
+    <string name="ui_saved_c0ae8f" formatted="false">"المحفوظات"</string>
+    <string name="ui_saved_list_updated_fa6e5a" formatted="false">"حُدّثت قائمة المحفوظات"</string>
+    <string name="ui_saved_order_8d1c95" formatted="false">"ترتيب المحفوظات"</string>
+    <string name="ui_saved_videos_34b676" formatted="false">"الفيديوهات المحفوظة"</string>
+    <string name="ui_science_d2d066" formatted="false">"العلوم"</string>
+    <string name="ui_screen_off_playlist_playback_b0c194" formatted="false">"قوائم تشغيل مع إطفاء الشاشة"</string>
+    <string name="ui_search_above_no_account_or_api_key_is_required_bb7f8a" formatted="false">"ابحث أعلاه. لا يلزم حساب أو مفتاح API."</string>
+    <string name="ui_search_bce064" formatted="false">"بحث"</string>
+    <string name="ui_search_collections_c610c5" formatted="false">"بحث في المجموعات"</string>
+    <string name="ui_search_or_paste_a_link_87f212" formatted="false">"بحث أو لصق رابط"</string>
+    <string name="ui_search_topic_dbf185" formatted="false">"موضوع البحث"</string>
+    <string name="ui_search_type_16d2f2" formatted="false">"نوع البحث"</string>
+    <string name="ui_search_youtube_e17e23" formatted="false">"بحث في YouTube"</string>
+    <string name="ui_seek_buttons_seconds_2ebe46" formatted="false">"أزرار التقديم والترجيع (ثوانٍ)"</string>
+    <string name="ui_serif_a05794" formatted="false">"بزوائد"</string>
+    <string name="ui_settings_c7f73b" formatted="false">"الإعدادات"</string>
+    <string name="ui_share_09ca55" formatted="false">"مشاركة"</string>
+    <string name="ui_short_a0f4ea" formatted="false">"قصيرة"</string>
+    <string name="ui_show_aggregate_ratings_3e1f65" formatted="false">"عرض التقييمات المجمّعة"</string>
+    <string name="ui_show_all_channels_again_2a4a95" formatted="false">"إظهار جميع القنوات مجددًا"</string>
+    <string name="ui_show_channel_on_cards_9ef19a" formatted="false">"إظهار القناة على البطاقات"</string>
+    <string name="ui_show_duration_on_cards_6d3a36" formatted="false">"إظهار المدة على البطاقات"</string>
+    <string name="ui_shuffle_off_e59f97" formatted="false">"العشوائي متوقف"</string>
+    <string name="ui_shuffle_on_785728" formatted="false">"العشوائي مفعّل"</string>
+    <string name="ui_sign_in_ada2e9" formatted="false">"تسجيل الدخول"</string>
+    <string name="ui_sign_in_and_manage_your_session_8ce7d0" formatted="false">"تسجيل الدخول وإدارة جلستك"</string>
+    <string name="ui_sign_in_switch_account_3e93ad" formatted="false">"الدخول / تبديل الحساب"</string>
+    <string name="ui_sign_in_to_youtube_2bcb0f" formatted="false">"تسجيل الدخول إلى YouTube"</string>
+    <string name="ui_signed_in_as_1_s_aff3e2">"تم تسجيل الدخول باسم %1$s"</string>
+    <string name="ui_signed_out_automatic_imports_paused_737300" formatted="false">"غير مسجل · الاستيراد التلقائي متوقف"</string>
+    <string name="ui_simpletoob_download_49fcb2" formatted="false">"تنزيل SimpleToob"</string>
+    <string name="ui_sleep_timer_e90613" formatted="false">"مؤقّت النوم"</string>
+    <string name="ui_sleep_timer_off_1dbcb9" formatted="false">"مؤقّت النوم متوقف"</string>
+    <string name="ui_sleep_timer_set_b28b6d" formatted="false">"ضُبط مؤقّت النوم"</string>
+    <string name="ui_smaller_video_thumbnails_df8f9c" formatted="false">"صور مصغّرة أصغر للفيديو."</string>
+    <string name="ui_software_compatibility_9c3526" formatted="false">"توافق برمجي"</string>
+    <string name="ui_software_compatibility_enabled_d97fa3" formatted="false">"فُعّل التوافق البرمجي"</string>
+    <string name="ui_square_buttons_5f14d9" formatted="false">"أزرار مربعة"</string>
+    <string name="ui_start_audio_before_setting_a_sleep_timer_6be670" formatted="false">"ابدأ الصوت قبل ضبط مؤقّت النوم."</string>
+    <string name="ui_start_native_playback_after_loading_d4795a" formatted="false">"بدء التشغيل الأصلي بعد التحميل."</string>
+    <string name="ui_start_screen_e58663" formatted="false">"شاشة البدء"</string>
+    <string name="ui_starting_speed_d3b8ea" formatted="false">"سرعة البدء"</string>
+    <string name="ui_still_waiting_for_video_try_another_quality_or_r_b15450" formatted="false">"ما زال الفيديو قيد الانتظار. جرّب جودة أخرى أو أعد المحاولة من الخيارات."</string>
+    <string name="ui_stop_audio_after_d3a7b5" formatted="false">"إيقاف الصوت بعد"</string>
+    <string name="ui_stop_current_import_0959ff" formatted="false">"إيقاف الاستيراد الحالي"</string>
+    <string name="ui_stream_details_c97084" formatted="false">"تفاصيل التدفق"</string>
+    <string name="ui_subs_ce8813" formatted="false">"الاشتراكات"</string>
+    <string name="ui_subscribe_button_target_48e3f7" formatted="false">"وجهة زر الاشتراك"</string>
+    <string name="ui_subscribe_d6981f" formatted="false">"اشتراك"</string>
+    <string name="ui_subscribed_22c0c9" formatted="false">"مشترك ✓"</string>
+    <string name="ui_subscribed_in_this_profile_1e88b7" formatted="false">"تم الاشتراك في هذا الملف"</string>
+    <string name="ui_subscriptions_5697fd" formatted="false">"الاشتراكات"</string>
+    <string name="ui_subscriptions_and_playlists_in_one_local_library_addd6c" formatted="false">"اشتراكات وقوائم في مكتبة محلية واحدة"</string>
+    <string name="ui_subscriptions_playlists_and_automatic_intervals_2fac6d" formatted="false">"الاشتراكات والقوائم والفواصل التلقائية"</string>
+    <string name="ui_system_317f1e" formatted="false">"النظام"</string>
+    <string name="ui_system_bc0792" formatted="false">"النظام"</string>
+    <string name="ui_test_player_without_network_6d0a35" formatted="false">"اختبار المشغّل دون شبكة"</string>
+    <string name="ui_the_active_profile_changed_reopen_this_video_87548a" formatted="false">"تغيّر الملف النشط. افتح الفيديو مجددًا."</string>
+    <string name="ui_theme_a797e3" formatted="false">"السمة"</string>
+    <string name="ui_this_is_the_bundled_renderer_test_clip_a9accb" formatted="false">"هذا مقطع اختبار العرض المضمّن."</string>
+    <string name="ui_this_playlist_is_empty_4c4846" formatted="false">"قائمة التشغيل فارغة."</string>
+    <string name="ui_this_profile_only_subscriptions_stay_806912" formatted="false">"هذا الملف فقط؛ تبقى الاشتراكات"</string>
+    <string name="ui_thumbnail_for_1_s_ea2425">"صورة مصغّرة لـ %1$s"</string>
+    <string name="ui_title_768e0c" formatted="false">"العنوان"</string>
+    <string name="ui_toggle_fullscreen_751fc4" formatted="false">"تبديل ملء الشاشة"</string>
+    <string name="ui_tone_376990" formatted="false">"الدرجة"</string>
+    <string name="ui_try_another_available_decoder_after_a_codec_erro_8d5d04" formatted="false">"تجربة مفكك ترميز آخر عند حدوث خطأ."</string>
+    <string name="ui_try_another_extracted_stream_after_a_playback_fa_45a61f" formatted="false">"تجربة تدفق مستخرج آخر عند فشل التشغيل."</string>
+    <string name="ui_unedited_imported_playlists_refresh_their_conten_861a60" formatted="false">"تُحدّث القوائم المستوردة غير المعدّلة. تبقى النسخ المعدّلة حتى تسمح بتحديثها من قائمتها. لا تحذف المطابقة الاشتراكات أو القوائم المحلية فقط."</string>
+    <string name="ui_unsubscribe_834cc0" formatted="false">"إلغاء الاشتراك"</string>
+    <string name="ui_us_aa3093" formatted="false">"الولايات المتحدة"</string>
+    <string name="ui_use_15_10_080_minutes_380d2c" formatted="false">"استخدم 15–10,080 دقيقة"</string>
+    <string name="ui_use_available_captions_when_playback_starts_160879" formatted="false">"استخدام الترجمة المتاحة عند بدء التشغيل."</string>
+    <string name="ui_use_bounded_cdn_requests_for_progressive_playbac_516da7" formatted="false">"استخدام طلبات CDN محدودة للتشغيل التدريجي."</string>
+    <string name="ui_use_device_language_308648" formatted="false">"استخدام لغة الجهاز"</string>
+    <string name="ui_use_ryd_estimates_video_ids_are_sent_to_the_prov_5af642" formatted="false">"استخدام تقديرات RYD؛ تُرسل معرّفات الفيديو إلى المزوّد."</string>
+    <string name="ui_use_square_corners_instead_of_rounded_buttons_451abe" formatted="false">"استخدام زوايا مربعة بدل المستديرة."</string>
+    <string name="ui_use_this_account_d5d543" formatted="false">"استخدام هذا الحساب"</string>
+    <string name="ui_verify_saved_session_7dd5a6" formatted="false">"التحقق من الجلسة المحفوظة"</string>
+    <string name="ui_verify_your_session_d8972f" formatted="false">"تحقق من جلستك"</string>
+    <string name="ui_verifying_your_youtube_account_22621b" formatted="false">"جارٍ التحقق من حساب YouTube…"</string>
+    <string name="ui_video_data_cleared_ee618b" formatted="false">"مُسحت بيانات الفيديو"</string>
+    <string name="ui_video_ffbaf5" formatted="false">"فيديو"</string>
+    <string name="ui_video_fit_be87a4" formatted="false">"ملاءمة الفيديو"</string>
+    <string name="ui_video_information_a6b831" formatted="false">"معلومات الفيديو"</string>
+    <string name="ui_video_metadata_is_still_loading_c90e9b" formatted="false">"ما زالت بيانات الفيديو الوصفية تُحمّل."</string>
+    <string name="ui_video_options_45fdab" formatted="false">"خيارات الفيديو"</string>
+    <string name="ui_video_quality_baf4d0" formatted="false">"جودة الفيديو"</string>
+    <string name="ui_video_surface_bb2121" formatted="false">"سطح عرض الفيديو"</string>
+    <string name="ui_view_recent_states_and_error_codes_no_session_co_46170c" formatted="false">"عرض الحالات ورموز الأخطاء الأخيرة دون ملفات ارتباط أو روابط التدفقات"</string>
+    <string name="ui_vp9_first_d21425" formatted="false">"VP9 أولًا"</string>
+    <string name="ui_wait_for_video_details_to_load_01e8d3" formatted="false">"انتظر تحميل تفاصيل الفيديو."</string>
+    <string name="ui_warm_63e498" formatted="false">"دافئ"</string>
+    <string name="ui_watch_history_2a8498" formatted="false">"سجل المشاهدة"</string>
+    <string name="ui_watch_videos_read_comments_and_use_local_playlis_a6951e" formatted="false">"شاهد الفيديوهات واقرأ التعليقات واستخدم القوائم المحلية دون دخول."</string>
+    <string name="ui_write_a_comment_9ea900" formatted="false">"كتابة تعليق"</string>
+    <string name="ui_you_re_browsing_signed_out_dfe958" formatted="false">"أنت تتصفّح دون تسجيل الدخول"</string>
+    <string name="ui_your_home_feed_5a069a" formatted="false">"خلاصتك الرئيسية"</string>
+    <string name="ui_your_local_subscriptions_and_account_imports_56c59d" formatted="false">"اشتراكاتك المحلية واستيرادات الحساب"</string>
+    <string name="ui_your_music_your_queue_cd6677" formatted="false">"موسيقاك. طابورك."</string>
+    <string name="ui_your_playlists_and_account_imports_8ff4e7" formatted="false">"قوائمك واستيرادات الحساب"</string>
+    <string name="ui_your_watch_list_and_queue_25db6a" formatted="false">"قائمة المشاهدة والطابور الخاصان بك"</string>
+    <string name="ui_youtube_1_s_fe214a">" · YouTube%1$s"</string>
+    <string name="ui_youtube_558865" formatted="false">"YouTube"</string>
+    <string name="ui_youtube_accepted_the_reaction_request_f7129c" formatted="false">"قبل YouTube طلب التفاعل"</string>
+    <string name="ui_youtube_accepted_the_subscription_request_66417c" formatted="false">"قبل YouTube طلب الاشتراك"</string>
+    <string name="ui_youtube_account_cba2dc" formatted="false">"حساب YouTube"</string>
+    <string name="ui_youtube_confirmed_submission_moderation_can_dela_d955ee" formatted="false">"أكد YouTube الإرسال. قد تؤخّر المراجعة ظهوره."</string>
+    <string name="ui_youtube_didn_t_provide_related_video_rows_08feab" formatted="false">"لم يوفّر YouTube فيديوهات ذات صلة."</string>
+    <string name="ui_youtube_playlist_created_9d1e2a" formatted="false">"أُنشئت قائمة YouTube"</string>
+    <string name="ui_youtube_reported_likes_and_labeled_provider_esti_6eba33" formatted="false">"إعجابات YouTube وتقديرات المزوّدين المميّزة"</string>
+    <string name="ui_youtube_s_version_will_replace_the_edited_local__e7af6f" formatted="false">"ستستبدل نسخة YouTube النسخة المحلية المعدّلة في الاستيراد القادم."</string>
+    <string name="ui_youtube_session_7ee0a7" formatted="false">"جلسة YouTube"</string>
+    <string name="ui_youtube_session_verified_1_s_8e59aa">"جلسة YouTube موثّقة · %1$s"</string>
+    <string name="ui_youtube_sign_in_required_603d9f" formatted="false">"يلزم تسجيل الدخول إلى YouTube"</string>
+    <string name="ui_youtube_subscription_a671d2" formatted="false">"اشتراك YouTube"</string>
+    <string name="ui_youtube_url_embed_code_or_video_id_190223" formatted="false">"رابط YouTube أو رمز تضمين أو معرّف فيديو"</string>
+    <string name="ui_zoom_9b3cbe" formatted="false">"تكبير"</string>
+    <string name="ui_search_playlists_channels_34e368" formatted="false">"بحث عن قوائم / قنوات"</string>
+    <string name="ui_filter_duration_1f13fc" formatted="false">"تصفية المدة"</string>
+    <string name="ui_sort_videos_cf988d" formatted="false">"ترتيب الفيديوهات"</string>
+    <string name="ui_refresh_56e3ba" formatted="false">"تحديث"</string>
+    <string name="ui_theme_colors_and_app_icon_4d36b5" formatted="false">"السمة والألوان وأيقونة التطبيق"</string>
+    <string name="ui_quality_history_and_queue_4f079d" formatted="false">"الجودة والسجل والطابور"</string>
+    <string name="ui_fonts_spacing_and_button_shape_fab99c" formatted="false">"الخطوط والتباعد وشكل الأزرار"</string>
+    <string name="ui_rendering_codecs_and_captions_90989d" formatted="false">"العرض والترميزات والترجمة"</string>
+    <string name="ui_loading_providers_and_limits_516512" formatted="false">"التحميل والمزوّدون والحدود"</string>
+    <string name="ui_language_session_and_diagnostics_d5f81d" formatted="false">"اللغة والجلسة والتشخيص"</string>
+    <string name="ui_local_profiles_and_saved_data_aef30d" formatted="false">"الملفات المحلية والبيانات المحفوظة"</string>
+    <string name="ui_version_and_open_source_software_3badeb" formatted="false">"الإصدار والبرمجيات المفتوحة"</string>
+    <string name="ui_sign_out_dc1649" formatted="false">"تسجيل الخروج"</string>
+    <string name="ui_no_captions_available_c3909c" formatted="false">"لا ترجمة متاحة"</string>
+    <string name="ui_speed_2d2cb0" formatted="false">"السرعة"</string>
+    <string name="ui_loading_8f26c6" formatted="false">"جارٍ التحميل"</string>
+    <string name="ui_turn_captions_off_f09d74" formatted="false">"إيقاف الترجمة"</string>
+    <string name="ui_turn_captions_on_a36754" formatted="false">"تفعيل الترجمة"</string>
+    <string name="ui_retry_playback_075821" formatted="false">"إعادة محاولة التشغيل"</string>
+    <string name="ui_clear_youtube_reaction_75418d" formatted="false">"مسح تفاعل YouTube"</string>
+    <string name="ui_import_subscriptions_now_6018ab" formatted="false">"استيراد الاشتراكات الآن"</string>
+    <string name="ui_import_playlists_now_0d3bf3" formatted="false">"استيراد القوائم الآن"</string>
+    <string name="ui_starting_download_43a6a6" formatted="false">"جارٍ بدء التنزيل…"</string>
+    <string name="ui_joining_audio_and_video_9bd756" formatted="false">"جارٍ دمج الصوت والفيديو…"</string>
+    <string name="ui_saving_file_3218d9" formatted="false">"جارٍ حفظ الملف…"</string>
+    <string name="ui_download_complete_95efb3" formatted="false">"اكتمل التنزيل"</string>
+    <string name="ui_download_cancelled_ba5475" formatted="false">"أُلغي التنزيل"</string>
+    <string name="ui_download_failed_1_s_af7f8f">"فشل التنزيل: %1$s"</string>
+    <string name="ui_video_downloads_497449" formatted="false">"تنزيلات الفيديو"</string>
+    <string name="ui_local_copy_a3a04f" formatted="false">"نسخة محلية"</string>
+    <string name="ui_local_939bb4" formatted="false">"محلي"</string>
+    <string name="ui_not_subscribed_bbf5d7" formatted="false">"غير مشترك"</string>
+    <string name="ui_subscribed_dd1242" formatted="false">"مشترك"</string>
+    <string name="ui_saved_locally_f7fe28" formatted="false">"محفوظ محليًا"</string>
+    <string name="ui_save_for_later_d88215" formatted="false">"الحفظ لوقت لاحق"</string>
+    <string name="ui_remove_from_saved_350381" formatted="false">"إزالة من المحفوظات"</string>
+    <string name="ui_subscribe_locally_19114c" formatted="false">"اشتراك محلي"</string>
+    <string name="ui_browse_channel_90c03b" formatted="false">"تصفّح القناة"</string>
+    <string name="ui_hide_channel_461211" formatted="false">"إخفاء القناة"</string>
+    <string name="ui_share_link_3c1362" formatted="false">"مشاركة الرابط"</string>
+    <string name="ui_rename_d3f4cb" formatted="false">"إعادة تسمية"</string>
+    <string name="ui_allow_refresh_from_youtube_9b47b7" formatted="false">"السماح بالتحديث من YouTube"</string>
+    <string name="ui_new_local_playlist_ce1813" formatted="false">"قائمة محلية جديدة"</string>
+    <string name="ui_import_schedule_playlists_f5a59f" formatted="false">"استيراد / جدولة القوائم"</string>
+    <string name="ui_create_new_playlist_327b33" formatted="false">"إنشاء قائمة جديدة"</string>
+    <string name="ui_create_on_youtube_a854d8" formatted="false">"الإنشاء على YouTube"</string>
+    <string name="ui_signed_out_imports_paused_c503ad" formatted="false">"غير مسجل · الاستيراد متوقف"</string>
+    <string name="ui_importing_subscriptions_bdae82" formatted="false">"جارٍ استيراد الاشتراكات…"</string>
+    <string name="ui_importing_playlists_ff0d00" formatted="false">"جارٍ استيراد القوائم…"</string>
+    <string name="ui_import_complete_133f50" formatted="false">"اكتمل الاستيراد"</string>
+    <string name="ui_comment_author_avatar_898fbe" formatted="false">"صورة كاتب التعليق"</string>
+    <string name="ui_surfaceview_4341cb" formatted="false">"SurfaceView"</string>
+    <string name="ui_textureview_6fbced" formatted="false">"TextureView"</string>
+    <string name="ui_crayonicon_abb0d7" formatted="false">"CrayonIcon"</string>
+    <string name="ui_blueicon_58f8ec" formatted="false">"BlueIcon"</string>
+    <string name="ui_monoicon_0f080a" formatted="false">"MonoIcon"</string>
+    <string name="ui_account_image_refresh_unavailable_8933ca" formatted="false">"تحديث صورة الحساب غير متاح"</string>
+    <string name="ui_account_changed_import_stopped_9c2b72" formatted="false">"تغيّر الحساب؛ توقف الاستيراد"</string>
+    <string name="ui_waiting_for_an_unmetered_connection_87299f" formatted="false">"بانتظار اتصال غير محدود"</string>
+    <string name="ui_checking_the_signed_in_account_c368c0" formatted="false">"جارٍ فحص الحساب المسجّل…"</string>
+    <string name="ui_http_401_de5511" formatted="false">"HTTP 401"</string>
+    <string name="ui_http_403_a4fd11" formatted="false">"HTTP 403"</string>
+    <string name="ui_youtube_did_not_expose_a_stable_account_channel__2ca98f" formatted="false">"لم يوفّر YouTube هوية ثابتة للحساب/القناة. احتُفظ بالعناصر المحلية."</string>
+    <string name="ui_imported_eec56a" formatted="false">"تم استيراد "</string>
+    <string name="ui_subscriptions_f55e91" formatted="false">" اشتراك"</string>
+    <string name="ui_subscriptions_could_not_refresh_existing_local_c_aebcc2" formatted="false">"تعذّر تحديث الاشتراكات؛ احتُفظ بالنسخ المحلية"</string>
+    <string name="ui_some_playlists_could_not_refresh_existing_local__2738ad" formatted="false">"تعذّر تحديث بعض القوائم؛ احتُفظ بالنسخ المحلية"</string>
+    <string name="ui_playlists_ce7356" formatted="false">" قائمة تشغيل"</string>
+    <string name="ui_import_finished_2b9126" formatted="false">"انتهى الاستيراد · "</string>
+    <string name="ui_subscriptions_b02912" formatted="false">" اشتراك · "</string>
+    <string name="ui_subscriptions_could_not_refresh_02a050" formatted="false">" · تعذّر تحديث الاشتراكات"</string>
+    <string name="ui_could_not_refresh_previous_copies_kept_98b5db" formatted="false">" تعذّر تحديثها؛ احتُفظ بالنسخ السابقة"</string>
+    <string name="ui_import_failed_existing_local_items_kept_ea1365" formatted="false">"فشل الاستيراد؛ احتُفظ بالعناصر المحلية"</string>
+    <string name="ui_import_workers_are_busy_try_again_shortly_6d23ce" formatted="false">"مهام الاستيراد مشغولة. حاول بعد قليل."</string>
+    <string name="ui_youtube_repeated_a_subscription_page_local_subsc_c2f913" formatted="false">"كرر YouTube صفحة اشتراكات؛ احتُفظ بالاشتراكات المحلية"</string>
+    <string name="ui_subscription_import_exceeded_its_page_limit_loca_2a12d8" formatted="false">"تجاوز الاستيراد حد الصفحات؛ احتُفظ بالاشتراكات المحلية"</string>
+    <string name="ui_playlist_exceeds_50_000_playable_videos_existing_08358c" formatted="false">"تتجاوز القائمة 50,000 فيديو قابل للتشغيل؛ احتُفظ بالنسخة المحلية"</string>
+    <string name="ui_youtube_repeated_a_playlist_page_existing_local__066ca9" formatted="false">"كرر YouTube صفحة قائمة؛ احتُفظ بالنسخة المحلية"</string>
+    <string name="ui_playlist_page_limit_reached_existing_local_copy__d4dbda" formatted="false">"بُلغ حد صفحات القائمة؛ احتُفظ بالنسخة المحلية"</string>
+    <string name="ui_audio_track_8ff5fe" formatted="false">"المسار الصوتي"</string>
+    <string name="ui_original_audio_72f1be" formatted="false">"الصوت الأصلي"</string>
+    <string name="ui_dubbed_audio_1d5afe" formatted="false">"صوت مدبلج"</string>
+    <string name="ui_audio_description_fdf88c" formatted="false">"وصف صوتي"</string>
+    <string name="ui_alternate_audio_2db6c4" formatted="false">"صوت بديل"</string>
+    <string name="ui_no_audio_tracks_available_f401c5" formatted="false">"لا مسارات صوتية متاحة"</string>
+    <string name="ui_original_audio_is_preferred_interface_language_d_40cca1" formatted="false">"يُفضّل الصوت الأصلي؛ لغة الواجهة لا تختار دبلجة."</string>
+    <string name="ui_unknown_language_e4f2ad" formatted="false">"لغة غير معروفة"</string>
+    <string name="ui_audio_track_changed_170512" formatted="false">"تغيّر المسار الصوتي"</string>
+    <string name="ui_original_unlabelled_audio_67966f" formatted="false">"صوت بلا تسمية"</string>
+    <string name="ui_add_local_profile_054ba7" formatted="false">"إضافة ملف محلي"</string>
+    <string name="ui_youtube_account_inside_simpletoob_5c6fa5" formatted="false">"حساب YouTube داخل SimpleToob"</string>
+    <string name="ui_couldn_t_complete_that_action_please_retry_46b742" formatted="false">"تعذّر إكمال الإجراء. حاول مجددًا."</string>
+    <string name="ui_busy_finishing_earlier_requests_please_retry_in__8fa3b8" formatted="false">"جارٍ إكمال الطلبات السابقة. حاول بعد قليل."</string>
+    <string name="ui_a_download_is_already_running_cancel_it_before_s_129df3" formatted="false">"هناك تنزيل جارٍ. ألغِه قبل بدء آخر."</string>
+    <string name="ui_this_account_window_only_opens_google_and_youtub_87e844" formatted="false">"تفتح نافذة الحساب صفحات Google وYouTube فقط."</string>
+    <string name="ui_uploads_are_not_included_b4c9d3" formatted="false">"رفع الفيديو غير مدعوم."</string>
+    <string name="ui_navigation_stopped_outside_google_youtube_e57b0b" formatted="false">"توقّف الانتقال خارج Google/YouTube."</string>
+    <string name="ui_repeated_account_page_redirects_were_stopped_rel_b0ea34" formatted="false">"أُوقفت التحويلات المتكررة. أعد التحميل من القائمة."</string>
+    <string name="ui_the_account_page_couldn_t_load_check_your_connec_04ae12" formatted="false">"تعذّر تحميل صفحة الحساب. تحقق من الاتصال أو أعد التحميل من القائمة."</string>
+    <string name="ui_secure_connection_failed_loading_was_stopped_bb2576" formatted="false">"فشل الاتصال الآمن. توقف التحميل."</string>
+    <string name="ui_the_account_page_renderer_stopped_close_and_reop_7b8848" formatted="false">"توقف عارض صفحة الحساب. أغلق النافذة وافتحها مجددًا."</string>
+    <string name="ui_the_active_profile_changed_reopen_this_account_w_dbe262" formatted="false">"تغيّر الملف النشط. افتح نافذة الحساب مجددًا."</string>
+    <string name="ui_finish_signing_in_and_return_to_youtube_first_4ca78c" formatted="false">"أكمل الدخول وارجع إلى YouTube أولًا."</string>
+    <string name="ui_couldn_t_read_the_selected_youtube_account_yet_l_a25b25" formatted="false">"تعذّرت قراءة الحساب المحدّد. انتظر اكتمال صفحة YouTube ثم حاول مجددًا."</string>
+    <string name="ui_close_and_reopen_this_window_to_restart_the_page_b18588" formatted="false">"أغلق النافذة وافتحها لإعادة تشغيل عارض الصفحة."</string>
+    <string name="ui_close_and_reopen_this_window_to_restart_the_rend_45d0cd" formatted="false">"أغلق النافذة وافتحها لإعادة تشغيل العارض."</string>
+    <string name="ui_finish_the_current_account_check_first_c56448" formatted="false">"أكمل فحص الحساب الحالي أولًا."</string>
+    <string name="ui_this_audio_track_is_no_longer_available_reload_t_387bdc" formatted="false">"هذا المسار لم يعد متاحًا. أعد تحميل الفيديو."</string>
+    <string name="ui_no_public_audio_only_stream_is_available_for_thi_c758be" formatted="false">"لا يوجد تدفق صوتي عام لهذا الفيديو."</string>
+    <string name="ui_likes_e9f009" formatted="false">"الإعجابات"</string>
+    <string name="ui_dislikes_7d2cc8" formatted="false">"عدم الإعجاب"</string>
+    <string name="ui_unavailable_1d5ee3" formatted="false">"غير متاح"</string>
+    <string name="ui_estimated_781012" formatted="false">"تقديري"</string>
+    <string name="ui_1_s_likes_0c10a5">"%1$s إعجاب"</string>
+    <string name="ui_1_s_replies_f40704">"%1$s رد"</string>
+    <string name="ui_1_ss_left_72cd1d">"متبقي %1$s ثانية"</string>
+</resources>

@@ -18,6 +18,7 @@ public final class SimpleToobApp extends Application {
     public ImageLoader thumbnails;
     Avatars avatars;
     public volatile boolean videoActive,audioActive;
+    @Override protected void attachBaseContext(android.content.Context base){super.attachBaseContext(AppLanguage.wrap(base));}
     @Override public void onCreate() {
         super.onCreate();
         importReads=pool(3,12,"simpletoob-import-read");importControl=pool(1,4,"simpletoob-import-control");network=pool(3,48,"simpletoob-network");

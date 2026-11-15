@@ -17,7 +17,7 @@ final class Avatars {
     private final Map<String,List<WeakReference<ImageView>>> waiting=new HashMap<>();
     private final LinkedHashMap<String,JSONObject> saved=new LinkedHashMap<>();
     Avatars(SimpleToobApp app){this.app=app;worker.execute(()->{try{JSONObject data=new JSONObject(app.prefs.text("channel_art_v1","{}"));Iterator<String> keys=data.keys();while(keys.hasNext()){String k=keys.next();JSONObject v=data.optJSONObject(k);if(v!=null&&System.currentTimeMillis()-v.optLong("time")<7L*86400000&&AccountCollections.imageUrl(v.optString("url"))){saved.put(k,v);known.put(k,v.optString("url"));}}}catch(Exception ignored){}});}
-    static ImageView view(android.content.Context context,Ui ui){ImageView v=new ImageView(context);v.setScaleType(ImageView.ScaleType.CENTER_CROP);v.setBackground(ui.rounded(ui.surface,100));v.setClipToOutline(true);v.setContentDescription("Channel avatar");return v;}
+    static ImageView view(android.content.Context context,Ui ui){ImageView v=new ImageView(context);v.setScaleType(ImageView.ScaleType.CENTER_CROP);v.setBackground(ui.rounded(ui.surface,100));v.setClipToOutline(true);v.setContentDescription(I18n.text(context,"Channel avatar"));return v;}
     void image(String url,ImageView target,int tint){target.setTag(null);target.setImageDrawable(new AppIcons("account",tint));if(AccountCollections.imageUrl(url))app.thumbnails.load(url,target,true);}
     void bind(String channel,String supplied,ImageView target,int tint,boolean resolve){
         String key=ChannelUrls.parse(channel);if(key==null)key="";String url=AccountCollections.imageUrl(supplied)?supplied:known.getOrDefault(key,"");image(url,target,tint);
