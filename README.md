@@ -1,5 +1,5 @@
 # SimpleToob
-## Version 0.6.1
+## Version 0.7.0
 
 I built SimpleToob for people who want to watch YouTube without surrendering the interface to a marketing department.
 
@@ -337,6 +337,27 @@ Current limits include:
 <p><img src="./screenshots/6.png" alt="Screenshot 6" width="700"></p>
 
 ## Complete changelog
+
+## 0.7.0 — interface languages and original audio
+
+Added:
+- English, Simplified Chinese, Hindi, Spanish, Arabic, French and Bengali interface resources, bundled offline.
+- First-launch selection of the closest supported language in the device's ordered language list, falling back to English. This also runs on the first 0.7 launch after upgrading when no interface-language preference exists.
+- Settings → Appearance → Interface language, with persistent manual selection and an optional Use device language mode.
+- Arabic right-to-left configuration, mirrored Back/chevron icons, relative button icons and full navigation accessibility labels.
+- A maintained translation catalogue and dependency-free resource generator; 595 entries per language with placeholder/parity checks.
+- Audio track controls on the watch page and in Audio → options, including original, dubbed, descriptive and alternate tracks when exposed.
+
+Fixed / changed:
+- Prefer the extractor's ORIGINAL audio role before bitrate; a high-bitrate German dub no longer outranks a marked original track. Unlabelled audio is preferred over explicitly dubbed audio when original metadata is absent.
+- Choose matching containers within the selected audio track for video playback, downloads and the audio-only player.
+- When multiple audio tracks and controlled split streams are available, avoid baked-in/default-audio combined streams as silent fallbacks.
+- Preserve the current video position and playback state when switching tracks; explicit per-video choices are retained in memory for the running process.
+- Keep interface language separate from YouTube content language, region, captions and audio-track selection.
+- Preserve stable preference/navigation IDs while translating their display labels, including Back history across language changes.
+- Keep video/channel/playlist titles, author names and comment bodies as supplied. Translate app-owned comment counters and rating summary labels separately.
+- Add supported content-language/region choices without changing the saved defaults automatically.
+- Use explicit UTF-8 for Java compilation and translation maintenance on Windows.
 
 ## 0.6.1 — Android Back navigation
 
