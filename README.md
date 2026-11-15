@@ -338,6 +338,42 @@ Current limits include:
 
 ## Complete changelog
 
+## 0.6.1 — Android Back navigation
+
+Fixed:
+- Keep a bounded section history so Android Back returns to the previous interface section instead of leaving the app immediately.
+- Restore the previous search query/channel and settings category when stepping back.
+- Ignore refreshes, import updates and repeated selections of the current section when recording visits.
+- Save navigation history across Activity recreation; only apply launch destinations on the first creation.
+- Handle Android 13+ system Back through OnBackInvokedDispatcher, alongside the legacy Back override for older Android versions.
+- Return from playlist contents to the playlist list with system/toolbar Back, and preserve the opened playlist across recreation.
+- Preserve normal task/activity Back behavior after section history is exhausted; non-root entry Activities return to the Activity beneath them.
+
+Validation: 24 new navigation host assertions; total 4,542 Java assertions and 18 SQLite checks. NavigationTest adds an Android system-key/recreation regression scenario, supplied but not run here because no device/emulator is available.
+
+## 0.6.0 — avatars, screen-off audio and transfer work
+
+Added:
+- A dedicated Audio tab for Saved videos and local/imported playlists, with no account requirement.
+- Audio-only stream resolution, a Media3 background service and media notification/lock-screen controls.
+- Shuffle, repeat track/queue, seeking, previous/next, retry and a 15/30/60/120-minute sleep timer.
+- Listen on the watch page and Audio on a local playlist; playlist queues load by database ID in the service.
+- Channel pictures in feed cards, subscriptions and the watch header; author pictures on comments and replies.
+- A bounded seven-day public channel-art cache, shared image-request deduplication and recycled-row guards.
+- Configurable progressive CDN chunking, 15–120-second buffering budgets and 1–3 download connections.
+- Download transfer rate and estimated remaining time; sanitized playback bandwidth/buffer/dropped-frame diagnostics.
+
+Fixed / changed:
+- Download audio/video through one bounded worker pool instead of fetching each track serially.
+- Verify Content-Range and total lengths, retry interrupted chunks and reject changed/invalid ranges.
+- Fall back to a standard whole-file transfer when the server ignores byte ranges; cancel all active connections together.
+- Reserve temporary/destination storage, retain MP4 muxing and remove partial outputs on failure/cancellation.
+- Use bounded progressive requests with a standard-stream fallback and explicit startup/rebuffer budgets.
+- Share concurrent extraction of the same video, and skip stale queued image/channel lookups.
+- Defer new automatic imports during active/buffering playback by default; ongoing/manual imports retain their existing behavior.
+- Stop the music queue when the local profile changes; release service/player resources and pause on headphone unplug/audio-focus loss.
+- Scroll playlist actions horizontally to accommodate the added Audio button on narrow displays.
+
 ### 0.5.0 — Shared collections and account imports
 
 Added:
