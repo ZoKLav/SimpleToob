@@ -370,8 +370,6 @@ Fixed:
 - Return from playlist contents to the playlist list with system/toolbar Back, and preserve the opened playlist across recreation.
 - Preserve normal task/activity Back behavior after section history is exhausted; non-root entry Activities return to the Activity beneath them.
 
-Validation: 24 new navigation host assertions; total 4,542 Java assertions and 18 SQLite checks. NavigationTest adds an Android system-key/recreation regression scenario, supplied but not run here because no device/emulator is available.
-
 ## 0.6.0 — avatars, screen-off audio and transfer work
 
 Added:
@@ -474,8 +472,6 @@ Added and changed:
 - Added display information showing the WebView version, drawing mode, dimensions, density, and text zoom.
 - Added copying of sanitized display diagnostics.
 - Extended offline viewport test coverage to both rendering modes.
-
-This was a targeted workaround for distorted form text, not proof that every WebView rendering problem was resolved.
 
 ### 0.4.1 — Sign-in loops, session persistence, and page sizing
 
@@ -635,10 +631,6 @@ Removed:
 - The earlier iframe playback path.
 - Personal API-key setup and stored key preferences.
 - Terms of Service and privacy-policy entries from Settings.
-
-At this stage, account actions still used a browser handoff. That was replaced in 0.3.0.
-
-Uploads remained deliberately omitted.
 
 ### 0.1.0 — Initial implementation
 
