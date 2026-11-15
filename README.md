@@ -1,5 +1,5 @@
 # SimpleToob
-## Version 0.7.0
+## Version 0.8.1
 
 I built SimpleToob for people who want to watch YouTube without surrendering the interface to a marketing department.
 
