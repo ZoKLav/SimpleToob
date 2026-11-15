@@ -19,7 +19,7 @@
     <string name="ui_60_minutes_ee8eb1" formatted="false">"60 minutes"</string>
     <string name="ui_6_hours_1e35c2" formatted="false">"6 heures"</string>
     <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"Une session est enregistrée, mais l'identité du compte doit être vérifiée."</string>
-    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"À propos de SimpleToob 0.7.0"</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"À propos de SimpleToob 0.8.1"</string>
     <string name="ui_accent_1_s_6d6c3e">"Accent %1$s"</string>
     <string name="ui_accent_color_e49578" formatted="false">"Couleur d'accentuation"</string>
     <string name="ui_account_imports_25ea2a" formatted="false">"Imports du compte"</string>
@@ -167,7 +167,7 @@
     <string name="ui_history_90ccd6" formatted="false">"Historique"</string>
     <string name="ui_history_cleared_5a2d82" formatted="false">"Historique effacé"</string>
     <string name="ui_home_70f8bb" formatted="false">"Accueil"</string>
-    <string name="ui_home_discovery_query_dafc3a" formatted="false">"Recherche de découverte de l'accueil"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"Sujet de recherche de découverte"</string>
     <string name="ui_home_topic_fa8a18" formatted="false">"Sujet de l'accueil"</string>
     <string name="ui_https_instance_url_f0ca6a" formatted="false">"URL HTTPS de l'instance"</string>
     <string name="ui_import_1_s_now_f3f9af">"Importer %1$s maintenant"</string>
@@ -595,4 +595,44 @@
     <string name="ui_1_s_likes_0c10a5">"%1$s J'aime"</string>
     <string name="ui_1_s_replies_f40704">"%1$s réponses"</string>
     <string name="ui_1_ss_left_72cd1d">"%1$s s restantes"</string>
+    <string name="ui_popular_now_a2e22d" formatted="false">"Populaire"</string>
+    <string name="ui_for_you_7e13d9" formatted="false">"Pour vous"</string>
+    <string name="ui_trailers_20323e" formatted="false">"Bandes-annonces"</string>
+    <string name="ui_your_recommendations_fa8ea3" formatted="false">"Vos recommandations"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b" formatted="false">"Connectez-vous pour voir vos recommandations YouTube. Populaire fonctionne sans compte."</string>
+    <string name="ui_browse_popular_now_a147f1" formatted="false">"Voir Populaire"</string>
+    <string name="ui_refresh_home_f48c2a" formatted="false">"Actualiser l'accueil"</string>
+    <string name="ui_home_options_f736c0" formatted="false">"Options de l'accueil"</string>
+    <string name="ui_from_your_youtube_home_9d7c69" formatted="false">"Depuis votre accueil YouTube"</string>
+    <string name="ui_about_home_ce89a6" formatted="false">"À propos de l'accueil"</string>
+    <string name="ui_popular_now_shows_youtube_s_category_charts_for__d3385c" formatted="false">"Populaire affiche les classements YouTube par catégorie pour votre région. Pour vous affiche les recommandations de l'accueil de votre compte. L'historique local reste sur cet appareil."</string>
+    <string name="ui_home_grid_on_wide_screens_a2959f" formatted="false">"Grille d'accueil sur grand écran"</string>
+    <string name="ui_use_two_or_three_columns_on_larger_windows_compa_fb061d" formatted="false">"Utiliser deux ou trois colonnes dans les grandes fenêtres. Les cartes compactes restent en liste."</string>
+    <string name="ui_your_youtube_account_returned_no_recommendations_95d2e4" formatted="false">"Votre compte n'a renvoyé aucune recommandation. Actualisez ou consultez Populaire."</string>
+    <string name="ui_no_chart_videos_match_your_filters_for_this_regi_436a92" formatted="false">"Aucune vidéo du classement ne correspond aux filtres dans cette région."</string>
+    <string name="ui_this_chart_page_expired_refresh_popular_now_5ab5c7" formatted="false">"Cette page a expiré. Actualisez Populaire."</string>
+    <string name="ui_this_chart_is_unavailable_in_the_selected_region_53af3a" formatted="false">"Ce classement n'est pas disponible dans cette région. Choisissez une autre région ou catégorie."</string>
+    <string name="ui_the_account_changed_reload_for_you_6542f7" formatted="false">"Le compte a changé. Rechargez Pour vous."</string>
+    <string name="ui_recommendations_changed_refresh_for_you_10ac6b" formatted="false">"Les recommandations ont changé. Actualisez Pour vous."</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_cc4b8e" formatted="false">"Connectez-vous pour voir vos recommandations YouTube."</string>
+    <string name="ui_this_recommendations_page_expired_refresh_for_yo_1bddce" formatted="false">"Cette page de recommandations a expiré. Actualisez Pour vous."</string>
+    <string name="ui_your_youtube_session_needs_verification_open_acc_80c680" formatted="false">"Votre session doit être vérifiée. Ouvrez Compte ou reconnectez-vous."</string>
+    <string name="ui_youtube_returned_an_unsupported_recommendations__af659e" formatted="false">"YouTube a renvoyé un format de recommandations non pris en charge. Réessayez ou utilisez Populaire."</string>
+    <string name="ui_youtube_repeated_or_limited_this_recommendations_724a67" formatted="false">"YouTube a répété ou limité ce flux. Actualisez pour en voir plus."</string>
+    <string name="ui_1_s_views_773c4e">"%1$s vues"</string>
+    <string name="ui_show_view_counts_17b8b0" formatted="false">"Afficher les vues"</string>
+    <string name="ui_use_view_counts_already_supplied_with_videos_e5141b" formatted="false">"Utiliser les vues déjà fournies avec les vidéos."</string>
+    <string name="ui_show_upload_dates_8b9d0b" formatted="false">"Afficher les dates de publication"</string>
+    <string name="ui_use_exact_dates_when_available_otherwise_youtube_55fe11" formatted="false">"Utiliser les dates exactes si disponibles, sinon le texte de YouTube."</string>
+    <string name="ui_show_all_account_imports_ebd11f" formatted="false">"Afficher les imports de tous les comptes"</string>
+    <string name="ui_combine_saved_imports_from_every_account_local_c_dc33c6" formatted="false">"Regrouper les imports enregistrés de tous les comptes. Les collections locales restent accessibles."</string>
+    <string name="ui_refresh_imports_after_account_switching_e5369a" formatted="false">"Actualiser les imports après un changement de compte"</string>
+    <string name="ui_import_subscriptions_and_playlists_once_after_ch_7185de" formatted="false">"Importer une fois les abonnements et playlists après le choix d'un autre compte YouTube."</string>
+    <string name="ui_account_ready_84a95d" formatted="false">"Compte prêt"</string>
+    <string name="ui_authorization_returned_to_youtube_use_this_accou_6bc626" formatted="false">"L'autorisation est revenue sur YouTube. Utilisez ce compte pour terminer ou choisissez-en un autre."</string>
+    <string name="ui_choose_another_account_b85639" formatted="false">"Choisir un autre compte"</string>
+    <string name="ui_choose_a_youtube_channel_91101f" formatted="false">"Choisir une chaîne YouTube"</string>
+    <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube n'a pas confirmé un seul compte ou une seule chaîne. Le compte précédent a été conservé."</string>
+    <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"Votre session YouTube doit être vérifiée. Les éléments locaux ont été conservés."</string>
+    <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube a renvoyé le contexte d’un autre compte. Choisissez à nouveau le compte."</string>
 </resources>

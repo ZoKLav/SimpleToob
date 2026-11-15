@@ -10,6 +10,8 @@ import org.schabi.newpipe.extractor.channel.ChannelInfo;
 import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
 import org.schabi.newpipe.extractor.comments.*;
 import org.schabi.newpipe.extractor.localization.Localization;
+import org.schabi.newpipe.extractor.localization.ContentCountry;
+import org.schabi.newpipe.extractor.kiosk.*;
 import java.util.*;
 
 /** Anonymous public website extraction. No developer API keys, embedded players or ad sources. */
@@ -40,7 +42,7 @@ public final class YoutubeRepository {
         public boolean separate(){return !audioUrl.isEmpty();}
     }
     private static final class Continuation {
-        org.schabi.newpipe.extractor.Page page;SearchQueryHandler search;ListLinkHandler channel;String comments;
+        org.schabi.newpipe.extractor.Page page;SearchQueryHandler search;ListLinkHandler channel;String comments,kiosk,language,region;
         Continuation(org.schabi.newpipe.extractor.Page p){page=p;}
     }
     private final LinkedHashMap<String,Continuation> pages=new LinkedHashMap<>();
@@ -48,11 +50,13 @@ public final class YoutubeRepository {
     private final LinkedHashMap<String,Media> mediaCache=new LinkedHashMap<>();
     private final java.util.concurrent.ConcurrentHashMap<String,java.util.concurrent.FutureTask<Media>> inFlight=new java.util.concurrent.ConcurrentHashMap<>();
     private final Map<String,Long> fetched=new HashMap<>();
+    private static final class ChartCache {final Page page;final long at;ChartCache(Page page){this.page=page;at=System.currentTimeMillis();}}
+    private final LinkedHashMap<String,ChartCache> charts=new LinkedHashMap<>();
     private final Prefs prefs;private volatile boolean initialized;private volatile String localeKey="";
     YoutubeRepository(Context context,Prefs prefs){this.prefs=prefs;}
     private void initialize(){if(android.os.Looper.myLooper()==android.os.Looper.getMainLooper())throw new IllegalStateException("Extraction must run off the UI thread");String key=prefs.text("language","en")+":"+prefs.text("region","US");if(!initialized||!localeKey.equals(key))synchronized(this){Localization locale=new Localization(prefs.text("language","en"),prefs.text("region","US"));if(!initialized){NewPipe.init(new WebDownloader(),locale);initialized=true;}else NewPipe.setupLocalization(locale);localeKey=key;}}
     public synchronized void invalidateMedia(String id){mediaCache.remove(id);fetched.remove(id);}
-    public synchronized void clearCache(){pages.clear();mediaCache.clear();fetched.clear();}
+    public synchronized void clearCache(){pages.clear();mediaCache.clear();fetched.clear();charts.clear();}
     private synchronized String remember(Continuation c) {
         if(!org.schabi.newpipe.extractor.Page.isValid(c.page))return "";
         if(pages.size()>=64)pages.remove(pages.keySet().iterator().next());String key=UUID.randomUUID().toString();pages.put(key,c);return key;
@@ -60,7 +64,16 @@ public final class YoutubeRepository {
     private synchronized Continuation continuation(String key) throws ApiException {
         Continuation c=pages.get(key);if(c==null)throw new ApiException("This page expired. Refresh the list.");return c;
     }
-    public Page popular(String token)throws Exception{return search(prefs.text("home_query","new videos"),"relevance","any",token,"");}
+    public Page popular(String token)throws Exception{return popular("music",token,false);}
+    public Page popular(String chart,String token,boolean refresh)throws Exception {
+        initialize();String category=HomePolicy.chart(chart),language=prefs.text("language","en"),region=prefs.text("region","US");String key=category+":"+language+":"+region;
+        if(token.isEmpty())synchronized(this){if(refresh)charts.remove(key);ChartCache cached=charts.get(key);if(cached!=null&&System.currentTimeMillis()-cached.at<5*60*1000L)return cached.page;}
+        try{Continuation continuation=token.isEmpty()?null:continuation(token);String kiosk=HomePolicy.kiosk(category);
+            if(continuation!=null){if(!kiosk.equals(continuation.kiosk)||!language.equals(continuation.language)||!region.equals(continuation.region))throw new ApiException("This chart page expired. Refresh Popular now.");}
+            ChartFeed.Page result=ChartFeed.fetch(category,language,region,continuation==null?null:continuation.page);List<Video> rows=result.videos;org.schabi.newpipe.extractor.Page next=result.next;Continuation c=new Continuation(next);c.kiosk=kiosk;c.language=language;c.region=region;Page page=new Page(Collections.unmodifiableList(rows),remember(c));
+            if(token.isEmpty())synchronized(this){if(charts.size()>=9)charts.remove(charts.keySet().iterator().next());charts.put(key,new ChartCache(page));}return page;
+        }catch(org.schabi.newpipe.extractor.exceptions.UnsupportedContentInCountryException e){throw new ApiException("This chart is unavailable in the selected region. Choose another region or category.");}catch(ApiException e){throw e;}catch(Exception e){throw extractionError(e);}
+    }
     public Page search(String query,String order,String duration,String token,String channelUrl)throws Exception {
         initialize();try {
             List<? extends InfoItem> items;org.schabi.newpipe.extractor.Page next;Continuation c;
@@ -107,7 +120,7 @@ public final class YoutubeRepository {
         }catch(Exception e){throw extractionError(e);}
     }
     private Media compose(String id,StreamInfo info){
-        Video v=new Video(id,info.getName(),info.getUploaderName(),info.getUploaderUrl(),thumbnail(info.getThumbnails()),plain(info.getDescription()),info.getTextualUploadDate(),info.getDuration()).withAvatar(thumbnail(info.getUploaderAvatars()));
+        Video v=VideoMetadata.info(new Video(id,info.getName(),info.getUploaderName(),info.getUploaderUrl(),thumbnail(info.getThumbnails()),plain(info.getDescription()),info.getTextualUploadDate(),info.getDuration()).withAvatar(thumbnail(info.getUploaderAvatars())),info);
             List<Choice> choices=new ArrayList<>();List<AudioStream> valid=validAudio(info);String explicit;synchronized(this){explicit=chosenAudio.getOrDefault(id,"");}List<AudioStream> pool=AudioTrackPolicy.selected(valid,explicit);List<AudioStream> tracks=AudioTrackPolicy.tracks(valid);
             AudioStream mp4=pool.stream().filter(a->a.isUrl()&&a.getFormat()==MediaFormat.M4A&&WebDownloader.mediaUrl(a.getContent())).max(Comparator.comparingInt(AudioStream::getAverageBitrate)).orElse(null);
             AudioStream webm=pool.stream().filter(a->a.isUrl()&&a.getFormat()!=MediaFormat.M4A&&WebDownloader.mediaUrl(a.getContent())).max(Comparator.comparingInt(AudioStream::getAverageBitrate)).orElse(null);
@@ -149,7 +162,7 @@ public final class YoutubeRepository {
             java.util.List<Video> rows=new java.util.ArrayList<>();for(org.schabi.newpipe.extractor.stream.StreamInfoItem i:items){Video v=video(i);if(v!=null)rows.add(v);}return new PlaylistResult(title,new Page(rows,remember(new Continuation(next))));
         }catch(Exception e){throw extractionError(e);}
     }
-    private static Video video(StreamInfoItem i){String id=VideoIds.parse(i.getUrl());if(id==null)return null;return new Video(id,i.getName(),i.getUploaderName(),i.getUploaderUrl(),thumbnail(i.getThumbnails()),i.getShortDescription()==null?"":i.getShortDescription(),i.getTextualUploadDate()==null?"":i.getTextualUploadDate(),i.getDuration()).withAvatar(thumbnail(i.getUploaderAvatars()));}
+    private static Video video(StreamInfoItem i){String id=VideoIds.parse(i.getUrl());if(id==null)return null;return VideoMetadata.item(new Video(id,i.getName(),i.getUploaderName(),i.getUploaderUrl(),thumbnail(i.getThumbnails()),i.getShortDescription()==null?"":i.getShortDescription(),i.getTextualUploadDate()==null?"":i.getTextualUploadDate(),i.getDuration()).withAvatar(thumbnail(i.getUploaderAvatars())),i);}
     private static String thumbnail(List<Image> images){return images==null||images.isEmpty()?"":images.get(images.size()-1).getUrl();}
     private static String plain(Description d){if(d==null)return "";return d.type()==Description.Type.HTML?Html.fromHtml(d.content(),Html.FROM_HTML_MODE_LEGACY).toString():d.content();}
     public static int resolution(String label){try{String n=label.split("p")[0].replaceAll("[^0-9]","");return Integer.parseInt(n);}catch(Exception e){return 0;}}

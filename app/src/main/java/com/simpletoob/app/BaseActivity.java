@@ -39,7 +39,7 @@ abstract class BaseActivity extends Activity {
                 if(!Thread.currentThread().isInterrupted()) runOnUiThread(()-> { if(!isFinishing() && !isDestroyed()) success.accept(result); });
             } catch(Exception e) {
                 if(!Thread.currentThread().isInterrupted()) {
-                    String message=e instanceof YoutubeRepository.ApiException?e.getMessage():"Couldn't complete that action. Please retry.";
+                    String message=(e instanceof YoutubeRepository.ApiException||e instanceof HomeRecommendations.FeedException)?e.getMessage():"Couldn't complete that action. Please retry.";
                     runOnUiThread(()-> { if(!isFinishing() && !isDestroyed()) failure.accept(tx(message)); });
                 }
             }

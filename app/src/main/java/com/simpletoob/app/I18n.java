@@ -605,6 +605,46 @@ final class I18n {
         LABELS.put("%1$s likes",R.string.ui_1_s_likes_0c10a5);
         LABELS.put("%1$s replies",R.string.ui_1_s_replies_f40704);
         LABELS.put("%1$ss left",R.string.ui_1_ss_left_72cd1d);
+        LABELS.put("Popular now",R.string.ui_popular_now_a2e22d);
+        LABELS.put("For you",R.string.ui_for_you_7e13d9);
+        LABELS.put("Trailers",R.string.ui_trailers_20323e);
+        LABELS.put("Your recommendations",R.string.ui_your_recommendations_fa8ea3);
+        LABELS.put("Sign in to see your YouTube recommendations. Popular now works without an account.",R.string.ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b);
+        LABELS.put("Browse Popular now",R.string.ui_browse_popular_now_a147f1);
+        LABELS.put("Refresh Home",R.string.ui_refresh_home_f48c2a);
+        LABELS.put("Home options",R.string.ui_home_options_f736c0);
+        LABELS.put("From your YouTube Home",R.string.ui_from_your_youtube_home_9d7c69);
+        LABELS.put("About Home",R.string.ui_about_home_ce89a6);
+        LABELS.put("Popular now shows YouTube's category charts for your chosen region. For you shows your account's YouTube Home recommendations. Local watch history stays on this device.",R.string.ui_popular_now_shows_youtube_s_category_charts_for__d3385c);
+        LABELS.put("Home grid on wide screens",R.string.ui_home_grid_on_wide_screens_a2959f);
+        LABELS.put("Use two or three columns on larger windows. Compact cards stay in a list.",R.string.ui_use_two_or_three_columns_on_larger_windows_compa_fb061d);
+        LABELS.put("Your YouTube account returned no recommendations. You can refresh or browse Popular now.",R.string.ui_your_youtube_account_returned_no_recommendations_95d2e4);
+        LABELS.put("No chart videos match your filters for this region.",R.string.ui_no_chart_videos_match_your_filters_for_this_regi_436a92);
+        LABELS.put("This chart page expired. Refresh Popular now.",R.string.ui_this_chart_page_expired_refresh_popular_now_5ab5c7);
+        LABELS.put("This chart is unavailable in the selected region. Choose another region or category.",R.string.ui_this_chart_is_unavailable_in_the_selected_region_53af3a);
+        LABELS.put("The account changed. Reload For you.",R.string.ui_the_account_changed_reload_for_you_6542f7);
+        LABELS.put("Recommendations changed. Refresh For you.",R.string.ui_recommendations_changed_refresh_for_you_10ac6b);
+        LABELS.put("Sign in to see your YouTube recommendations.",R.string.ui_sign_in_to_see_your_youtube_recommendations_cc4b8e);
+        LABELS.put("This recommendations page expired. Refresh For you.",R.string.ui_this_recommendations_page_expired_refresh_for_yo_1bddce);
+        LABELS.put("Your YouTube session needs verification. Open Account or sign in again.",R.string.ui_your_youtube_session_needs_verification_open_acc_80c680);
+        LABELS.put("YouTube returned an unsupported recommendations layout. Retry or use Popular now.",R.string.ui_youtube_returned_an_unsupported_recommendations__af659e);
+        LABELS.put("YouTube repeated or limited this recommendations feed. Refresh for more.",R.string.ui_youtube_repeated_or_limited_this_recommendations_724a67);
+        LABELS.put("%1$s views",R.string.ui_1_s_views_773c4e);
+        LABELS.put("Show view counts",R.string.ui_show_view_counts_17b8b0);
+        LABELS.put("Use view counts already supplied with videos.",R.string.ui_use_view_counts_already_supplied_with_videos_e5141b);
+        LABELS.put("Show upload dates",R.string.ui_show_upload_dates_8b9d0b);
+        LABELS.put("Use exact dates when available, otherwise YouTube\u2019s date text.",R.string.ui_use_exact_dates_when_available_otherwise_youtube_55fe11);
+        LABELS.put("Show all account imports",R.string.ui_show_all_account_imports_ebd11f);
+        LABELS.put("Combine saved imports from every account. Local collections always stay available.",R.string.ui_combine_saved_imports_from_every_account_local_c_dc33c6);
+        LABELS.put("Refresh imports after account switching",R.string.ui_refresh_imports_after_account_switching_e5369a);
+        LABELS.put("Import subscriptions and playlists once after choosing a different YouTube account.",R.string.ui_import_subscriptions_and_playlists_once_after_ch_7185de);
+        LABELS.put("Account ready",R.string.ui_account_ready_84a95d);
+        LABELS.put("Authorization returned to YouTube. Use this account to finish, or choose another account.",R.string.ui_authorization_returned_to_youtube_use_this_accou_6bc626);
+        LABELS.put("Choose another account",R.string.ui_choose_another_account_b85639);
+        LABELS.put("Choose a YouTube channel",R.string.ui_choose_a_youtube_channel_91101f);
+        LABELS.put("YouTube didn't confirm one selected account/channel. The previous app account was kept.",R.string.ui_youtube_didn_t_confirm_one_selected_account_chan_b82623);
+        LABELS.put("Your YouTube session needs verification. Existing local items were kept.",R.string.ui_your_youtube_session_needs_verification_existing_e13264);
+        LABELS.put("YouTube returned a different account context. Choose the account again.",R.string.ui_youtube_returned_a_different_account_context_cho_14d165);
         // END GENERATED LABELS
     }
     private I18n(){}

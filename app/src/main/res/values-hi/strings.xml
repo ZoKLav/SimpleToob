@@ -19,7 +19,7 @@
     <string name="ui_60_minutes_ee8eb1" formatted="false">"60 मिनट"</string>
     <string name="ui_6_hours_1e35c2" formatted="false">"6 घंटे"</string>
     <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"सत्र सहेजा गया है, लेकिन खाते की पहचान सत्यापित करनी होगी।"</string>
-    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"SimpleToob 0.7.0 के बारे में"</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"SimpleToob 0.8.1 के बारे में"</string>
     <string name="ui_accent_1_s_6d6c3e">"ऐक्सेंट %1$s"</string>
     <string name="ui_accent_color_e49578" formatted="false">"ऐक्सेंट रंग"</string>
     <string name="ui_account_imports_25ea2a" formatted="false">"खाते से आयात"</string>
@@ -167,7 +167,7 @@
     <string name="ui_history_90ccd6" formatted="false">"इतिहास"</string>
     <string name="ui_history_cleared_5a2d82" formatted="false">"इतिहास साफ़ हुआ"</string>
     <string name="ui_home_70f8bb" formatted="false">"होम"</string>
-    <string name="ui_home_discovery_query_dafc3a" formatted="false">"होम की खोज का विषय"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"खोज का विषय"</string>
     <string name="ui_home_topic_fa8a18" formatted="false">"होम का विषय"</string>
     <string name="ui_https_instance_url_f0ca6a" formatted="false">"इंस्टेंस का HTTPS URL"</string>
     <string name="ui_import_1_s_now_f3f9af">"अभी %1$s आयात करें"</string>
@@ -595,4 +595,44 @@
     <string name="ui_1_s_likes_0c10a5">"%1$s पसंद"</string>
     <string name="ui_1_s_replies_f40704">"%1$s जवाब"</string>
     <string name="ui_1_ss_left_72cd1d">"%1$s सेकंड बाकी"</string>
+    <string name="ui_popular_now_a2e22d" formatted="false">"अभी लोकप्रिय"</string>
+    <string name="ui_for_you_7e13d9" formatted="false">"आपके लिए"</string>
+    <string name="ui_trailers_20323e" formatted="false">"ट्रेलर"</string>
+    <string name="ui_your_recommendations_fa8ea3" formatted="false">"आपके सुझाव"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b" formatted="false">"YouTube के अपने सुझाव देखने के लिए साइन इन करें। लोकप्रिय सामग्री के लिए खाता नहीं चाहिए।"</string>
+    <string name="ui_browse_popular_now_a147f1" formatted="false">"लोकप्रिय सामग्री देखें"</string>
+    <string name="ui_refresh_home_f48c2a" formatted="false">"होम रीफ़्रेश करें"</string>
+    <string name="ui_home_options_f736c0" formatted="false">"होम विकल्प"</string>
+    <string name="ui_from_your_youtube_home_9d7c69" formatted="false">"आपके YouTube होम से"</string>
+    <string name="ui_about_home_ce89a6" formatted="false">"होम के बारे में"</string>
+    <string name="ui_popular_now_shows_youtube_s_category_charts_for__d3385c" formatted="false">"लोकप्रिय में चुने हुए क्षेत्र की YouTube श्रेणी सूचियाँ हैं। आपके लिए में आपके खाते के YouTube होम के सुझाव हैं। स्थानीय देखने का इतिहास इसी डिवाइस पर रहता है।"</string>
+    <string name="ui_home_grid_on_wide_screens_a2959f" formatted="false">"बड़ी स्क्रीन पर होम ग्रिड"</string>
+    <string name="ui_use_two_or_three_columns_on_larger_windows_compa_fb061d" formatted="false">"बड़ी विंडो में दो या तीन कॉलम रखें। छोटे कार्ड सूची में रहते हैं।"</string>
+    <string name="ui_your_youtube_account_returned_no_recommendations_95d2e4" formatted="false">"आपके YouTube खाते से सुझाव नहीं मिले। रीफ़्रेश करें या लोकप्रिय सामग्री देखें।"</string>
+    <string name="ui_no_chart_videos_match_your_filters_for_this_regi_436a92" formatted="false">"इस क्षेत्र में फ़िल्टर से मेल खाते वीडियो नहीं मिले।"</string>
+    <string name="ui_this_chart_page_expired_refresh_popular_now_5ab5c7" formatted="false">"सूची का पेज समाप्त हुआ। लोकप्रिय को रीफ़्रेश करें।"</string>
+    <string name="ui_this_chart_is_unavailable_in_the_selected_region_53af3a" formatted="false">"यह सूची चुने क्षेत्र में नहीं है। दूसरा क्षेत्र या श्रेणी चुनें।"</string>
+    <string name="ui_the_account_changed_reload_for_you_6542f7" formatted="false">"खाता बदला गया। आपके लिए फिर लोड करें।"</string>
+    <string name="ui_recommendations_changed_refresh_for_you_10ac6b" formatted="false">"सुझाव बदल गए। आपके लिए रीफ़्रेश करें।"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_cc4b8e" formatted="false">"YouTube सुझाव देखने के लिए साइन इन करें।"</string>
+    <string name="ui_this_recommendations_page_expired_refresh_for_yo_1bddce" formatted="false">"सुझावों का पेज समाप्त हुआ। आपके लिए रीफ़्रेश करें।"</string>
+    <string name="ui_your_youtube_session_needs_verification_open_acc_80c680" formatted="false">"YouTube सत्र सत्यापित करना होगा। खाता खोलें या फिर साइन इन करें।"</string>
+    <string name="ui_youtube_returned_an_unsupported_recommendations__af659e" formatted="false">"YouTube ने असमर्थित सुझाव लेआउट दिया। फिर कोशिश करें या लोकप्रिय देखें।"</string>
+    <string name="ui_youtube_repeated_or_limited_this_recommendations_724a67" formatted="false">"YouTube ने सुझाव दोहराए या सीमित किए। और देखने के लिए रीफ़्रेश करें।"</string>
+    <string name="ui_1_s_views_773c4e">"%1$s बार देखा गया"</string>
+    <string name="ui_show_view_counts_17b8b0" formatted="false">"देखे जाने की संख्या दिखाएँ"</string>
+    <string name="ui_use_view_counts_already_supplied_with_videos_e5141b" formatted="false">"वीडियो के साथ मिली संख्या का उपयोग करें।"</string>
+    <string name="ui_show_upload_dates_8b9d0b" formatted="false">"अपलोड की तारीखें दिखाएँ"</string>
+    <string name="ui_use_exact_dates_when_available_otherwise_youtube_55fe11" formatted="false">"सटीक तारीख मिले तो दिखाएँ, वरना YouTube का तारीख वाला पाठ।"</string>
+    <string name="ui_show_all_account_imports_ebd11f" formatted="false">"सभी खातों के आयात दिखाएँ"</string>
+    <string name="ui_combine_saved_imports_from_every_account_local_c_dc33c6" formatted="false">"सभी खातों के सहेजे आयात मिलाएँ। स्थानीय संग्रह हमेशा उपलब्ध रहते हैं।"</string>
+    <string name="ui_refresh_imports_after_account_switching_e5369a" formatted="false">"खाता बदलने के बाद आयात रीफ़्रेश करें"</string>
+    <string name="ui_import_subscriptions_and_playlists_once_after_ch_7185de" formatted="false">"दूसरा YouTube खाता चुनने पर सदस्यताएँ और प्लेलिस्ट एक बार आयात करें।"</string>
+    <string name="ui_account_ready_84a95d" formatted="false">"खाता तैयार है"</string>
+    <string name="ui_authorization_returned_to_youtube_use_this_accou_6bc626" formatted="false">"अनुमति प्रक्रिया YouTube पर लौट आई है। पूरा करने के लिए यह खाता चुनें या दूसरा खाता चुनें।"</string>
+    <string name="ui_choose_another_account_b85639" formatted="false">"दूसरा खाता चुनें"</string>
+    <string name="ui_choose_a_youtube_channel_91101f" formatted="false">"YouTube चैनल चुनें"</string>
+    <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube ने एक चुने खाते या चैनल की पुष्टि नहीं की। ऐप का पिछला खाता रखा गया है।"</string>
+    <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"आपके YouTube सत्र का सत्यापन चाहिए। मौजूदा स्थानीय सामग्री रखी गई है।"</string>
+    <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube ने दूसरे खाते की जानकारी लौटाई। खाता फिर चुनें।"</string>
 </resources>

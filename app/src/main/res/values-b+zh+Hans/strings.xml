@@ -19,7 +19,7 @@
     <string name="ui_60_minutes_ee8eb1" formatted="false">"60分钟"</string>
     <string name="ui_6_hours_1e35c2" formatted="false">"6小时"</string>
     <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"已保存会话，但需要验证账号身份。"</string>
-    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"关于SimpleToob 0.7.0"</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"关于SimpleToob 0.8.1"</string>
     <string name="ui_accent_1_s_6d6c3e">"强调色%1$s"</string>
     <string name="ui_accent_color_e49578" formatted="false">"强调色"</string>
     <string name="ui_account_imports_25ea2a" formatted="false">"账号导入"</string>
@@ -167,7 +167,7 @@
     <string name="ui_history_90ccd6" formatted="false">"历史记录"</string>
     <string name="ui_history_cleared_5a2d82" formatted="false">"历史记录已清除"</string>
     <string name="ui_home_70f8bb" formatted="false">"首页"</string>
-    <string name="ui_home_discovery_query_dafc3a" formatted="false">"首页发现关键词"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"发现搜索主题"</string>
     <string name="ui_home_topic_fa8a18" formatted="false">"首页主题"</string>
     <string name="ui_https_instance_url_f0ca6a" formatted="false">"实例HTTPS网址"</string>
     <string name="ui_import_1_s_now_f3f9af">"立即导入%1$s"</string>
@@ -595,4 +595,44 @@
     <string name="ui_1_s_likes_0c10a5">"%1$s次喜欢"</string>
     <string name="ui_1_s_replies_f40704">"%1$s条回复"</string>
     <string name="ui_1_ss_left_72cd1d">"剩余%1$s秒"</string>
+    <string name="ui_popular_now_a2e22d" formatted="false">"热门"</string>
+    <string name="ui_for_you_7e13d9" formatted="false">"为你推荐"</string>
+    <string name="ui_trailers_20323e" formatted="false">"预告片"</string>
+    <string name="ui_your_recommendations_fa8ea3" formatted="false">"你的推荐"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b" formatted="false">"登录后查看你的YouTube推荐，热门内容无需账号。"</string>
+    <string name="ui_browse_popular_now_a147f1" formatted="false">"浏览热门内容"</string>
+    <string name="ui_refresh_home_f48c2a" formatted="false">"刷新首页"</string>
+    <string name="ui_home_options_f736c0" formatted="false">"首页选项"</string>
+    <string name="ui_from_your_youtube_home_9d7c69" formatted="false">"来自你的YouTube首页"</string>
+    <string name="ui_about_home_ce89a6" formatted="false">"关于首页"</string>
+    <string name="ui_popular_now_shows_youtube_s_category_charts_for__d3385c" formatted="false">"热门内容显示所选地区的YouTube分类榜单。为你推荐显示账号的YouTube首页推荐。本地观看记录保留在此设备。"</string>
+    <string name="ui_home_grid_on_wide_screens_a2959f" formatted="false">"宽屏首页网格"</string>
+    <string name="ui_use_two_or_three_columns_on_larger_windows_compa_fb061d" formatted="false">"较大窗口使用两列或三列，紧凑卡片仍使用列表。"</string>
+    <string name="ui_your_youtube_account_returned_no_recommendations_95d2e4" formatted="false">"账号未返回推荐，你可以刷新或浏览热门内容。"</string>
+    <string name="ui_no_chart_videos_match_your_filters_for_this_regi_436a92" formatted="false">"此地区没有符合筛选条件的榜单视频。"</string>
+    <string name="ui_this_chart_page_expired_refresh_popular_now_5ab5c7" formatted="false">"榜单页面已过期，请刷新热门内容。"</string>
+    <string name="ui_this_chart_is_unavailable_in_the_selected_region_53af3a" formatted="false">"所选地区不提供此榜单，请选择其他地区或分类。"</string>
+    <string name="ui_the_account_changed_reload_for_you_6542f7" formatted="false">"账号已更改，请重新加载为你推荐。"</string>
+    <string name="ui_recommendations_changed_refresh_for_you_10ac6b" formatted="false">"推荐已更改，请刷新为你推荐。"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_cc4b8e" formatted="false">"登录以查看你的YouTube推荐。"</string>
+    <string name="ui_this_recommendations_page_expired_refresh_for_yo_1bddce" formatted="false">"推荐页面已过期，请刷新为你推荐。"</string>
+    <string name="ui_your_youtube_session_needs_verification_open_acc_80c680" formatted="false">"YouTube会话需要验证，请打开账号页面或重新登录。"</string>
+    <string name="ui_youtube_returned_an_unsupported_recommendations__af659e" formatted="false">"YouTube返回了不支持的推荐布局，请重试或使用热门内容。"</string>
+    <string name="ui_youtube_repeated_or_limited_this_recommendations_724a67" formatted="false">"YouTube重复或限制了此推荐信息流，请刷新以查看更多。"</string>
+    <string name="ui_1_s_views_773c4e">"%1$s次观看"</string>
+    <string name="ui_show_view_counts_17b8b0" formatted="false">"显示观看次数"</string>
+    <string name="ui_use_view_counts_already_supplied_with_videos_e5141b" formatted="false">"使用视频已提供的观看次数。"</string>
+    <string name="ui_show_upload_dates_8b9d0b" formatted="false">"显示上传日期"</string>
+    <string name="ui_use_exact_dates_when_available_otherwise_youtube_55fe11" formatted="false">"有确切日期时使用该日期，否则显示YouTube的日期文字。"</string>
+    <string name="ui_show_all_account_imports_ebd11f" formatted="false">"显示所有账号的导入内容"</string>
+    <string name="ui_combine_saved_imports_from_every_account_local_c_dc33c6" formatted="false">"合并所有账号已保存的导入内容，本地收藏始终可用。"</string>
+    <string name="ui_refresh_imports_after_account_switching_e5369a" formatted="false">"切换账号后刷新导入内容"</string>
+    <string name="ui_import_subscriptions_and_playlists_once_after_ch_7185de" formatted="false">"选择其他YouTube账号后，导入一次订阅和播放列表。"</string>
+    <string name="ui_account_ready_84a95d" formatted="false">"账号已就绪"</string>
+    <string name="ui_authorization_returned_to_youtube_use_this_accou_6bc626" formatted="false">"授权已返回YouTube，使用此账号完成登录，或选择其他账号。"</string>
+    <string name="ui_choose_another_account_b85639" formatted="false">"选择其他账号"</string>
+    <string name="ui_choose_a_youtube_channel_91101f" formatted="false">"选择YouTube频道"</string>
+    <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube未确认唯一选中的账号或频道，应用已保留原账号。"</string>
+    <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"你的YouTube会话需要验证，现有本地内容已保留。"</string>
+    <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube返回了其他账号的上下文，请重新选择账号。"</string>
 </resources>

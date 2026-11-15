@@ -19,7 +19,7 @@
     <string name="ui_60_minutes_ee8eb1" formatted="false">"৬০ মিনিট"</string>
     <string name="ui_6_hours_1e35c2" formatted="false">"৬ ঘণ্টা"</string>
     <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"একটি সেশন সংরক্ষিত আছে, তবে অ্যাকাউন্টের পরিচয় যাচাই করতে হবে।"</string>
-    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"SimpleToob 0.7.0 সম্পর্কে"</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"SimpleToob 0.8.1 সম্পর্কে"</string>
     <string name="ui_accent_1_s_6d6c3e">"অ্যাকসেন্ট %1$s"</string>
     <string name="ui_accent_color_e49578" formatted="false">"অ্যাকসেন্ট রং"</string>
     <string name="ui_account_imports_25ea2a" formatted="false">"অ্যাকাউন্ট থেকে আমদানি"</string>
@@ -167,7 +167,7 @@
     <string name="ui_history_90ccd6" formatted="false">"ইতিহাস"</string>
     <string name="ui_history_cleared_5a2d82" formatted="false">"ইতিহাস মুছে গেছে"</string>
     <string name="ui_home_70f8bb" formatted="false">"হোম"</string>
-    <string name="ui_home_discovery_query_dafc3a" formatted="false">"হোমে আবিষ্কারের অনুসন্ধান"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"আবিষ্কারের অনুসন্ধানের বিষয়"</string>
     <string name="ui_home_topic_fa8a18" formatted="false">"হোমের বিষয়"</string>
     <string name="ui_https_instance_url_f0ca6a" formatted="false">"ইনস্ট্যান্সের HTTPS URL"</string>
     <string name="ui_import_1_s_now_f3f9af">"এখন %1$s আমদানি করুন"</string>
@@ -595,4 +595,44 @@
     <string name="ui_1_s_likes_0c10a5">"%1$sটি পছন্দ"</string>
     <string name="ui_1_s_replies_f40704">"%1$sটি উত্তর"</string>
     <string name="ui_1_ss_left_72cd1d">"আর %1$s সেকেন্ড"</string>
+    <string name="ui_popular_now_a2e22d" formatted="false">"এখন জনপ্রিয়"</string>
+    <string name="ui_for_you_7e13d9" formatted="false">"আপনার জন্য"</string>
+    <string name="ui_trailers_20323e" formatted="false">"ট্রেলার"</string>
+    <string name="ui_your_recommendations_fa8ea3" formatted="false">"আপনার সুপারিশ"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b" formatted="false">"আপনার YouTube সুপারিশ দেখতে সাইন ইন করুন। জনপ্রিয় দেখতে অ্যাকাউন্ট লাগে না।"</string>
+    <string name="ui_browse_popular_now_a147f1" formatted="false">"জনপ্রিয় দেখুন"</string>
+    <string name="ui_refresh_home_f48c2a" formatted="false">"হোম রিফ্রেশ"</string>
+    <string name="ui_home_options_f736c0" formatted="false">"হোমের বিকল্প"</string>
+    <string name="ui_from_your_youtube_home_9d7c69" formatted="false">"আপনার YouTube হোম থেকে"</string>
+    <string name="ui_about_home_ce89a6" formatted="false">"হোম সম্পর্কে"</string>
+    <string name="ui_popular_now_shows_youtube_s_category_charts_for__d3385c" formatted="false">"জনপ্রিয় আপনার অঞ্চলের YouTube বিভাগের তালিকা দেখায়। আপনার জন্য অ্যাকাউন্টের YouTube হোমের সুপারিশ দেখায়। স্থানীয় দেখার ইতিহাস এই ডিভাইসেই থাকে।"</string>
+    <string name="ui_home_grid_on_wide_screens_a2959f" formatted="false">"বড় পর্দায় হোম গ্রিড"</string>
+    <string name="ui_use_two_or_three_columns_on_larger_windows_compa_fb061d" formatted="false">"বড় উইন্ডোতে দুই বা তিন কলাম ব্যবহার করুন। ছোট কার্ড তালিকাতেই থাকে।"</string>
+    <string name="ui_your_youtube_account_returned_no_recommendations_95d2e4" formatted="false">"আপনার YouTube অ্যাকাউন্ট সুপারিশ দেয়নি। রিফ্রেশ করুন বা জনপ্রিয় দেখুন।"</string>
+    <string name="ui_no_chart_videos_match_your_filters_for_this_regi_436a92" formatted="false">"এই অঞ্চলে ফিল্টারের সাথে মেলা তালিকার ভিডিও নেই।"</string>
+    <string name="ui_this_chart_page_expired_refresh_popular_now_5ab5c7" formatted="false">"তালিকার পাতার মেয়াদ শেষ। জনপ্রিয় রিফ্রেশ করুন।"</string>
+    <string name="ui_this_chart_is_unavailable_in_the_selected_region_53af3a" formatted="false">"এই অঞ্চলে তালিকা নেই। অন্য অঞ্চল বা বিভাগ বাছুন।"</string>
+    <string name="ui_the_account_changed_reload_for_you_6542f7" formatted="false">"অ্যাকাউন্ট বদলেছে। আপনার জন্য আবার লোড করুন।"</string>
+    <string name="ui_recommendations_changed_refresh_for_you_10ac6b" formatted="false">"সুপারিশ বদলেছে। আপনার জন্য রিফ্রেশ করুন।"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_cc4b8e" formatted="false">"YouTube সুপারিশ দেখতে সাইন ইন করুন।"</string>
+    <string name="ui_this_recommendations_page_expired_refresh_for_yo_1bddce" formatted="false">"সুপারিশের পাতার মেয়াদ শেষ। আপনার জন্য রিফ্রেশ করুন।"</string>
+    <string name="ui_your_youtube_session_needs_verification_open_acc_80c680" formatted="false">"YouTube সেশন যাচাই দরকার। অ্যাকাউন্ট খুলুন বা আবার সাইন ইন করুন।"</string>
+    <string name="ui_youtube_returned_an_unsupported_recommendations__af659e" formatted="false">"YouTube অসমর্থিত সুপারিশ বিন্যাস দিয়েছে। আবার চেষ্টা করুন বা জনপ্রিয় দেখুন।"</string>
+    <string name="ui_youtube_repeated_or_limited_this_recommendations_724a67" formatted="false">"YouTube সুপারিশ পুনরাবৃত্তি বা সীমিত করেছে। আরও দেখতে রিফ্রেশ করুন।"</string>
+    <string name="ui_1_s_views_773c4e">"%1$s বার দেখা হয়েছে"</string>
+    <string name="ui_show_view_counts_17b8b0" formatted="false">"দেখার সংখ্যা দেখান"</string>
+    <string name="ui_use_view_counts_already_supplied_with_videos_e5141b" formatted="false">"ভিডিওর সঙ্গে পাওয়া দেখার সংখ্যা ব্যবহার করুন।"</string>
+    <string name="ui_show_upload_dates_8b9d0b" formatted="false">"আপলোডের তারিখ দেখান"</string>
+    <string name="ui_use_exact_dates_when_available_otherwise_youtube_55fe11" formatted="false">"সঠিক তারিখ পাওয়া গেলে দেখান, নইলে YouTube-এর তারিখের লেখা।"</string>
+    <string name="ui_show_all_account_imports_ebd11f" formatted="false">"সব অ্যাকাউন্টের আমদানি দেখান"</string>
+    <string name="ui_combine_saved_imports_from_every_account_local_c_dc33c6" formatted="false">"সব অ্যাকাউন্টের সংরক্ষিত আমদানি একসঙ্গে দেখান। স্থানীয় সংগ্রহ সবসময় পাওয়া যাবে।"</string>
+    <string name="ui_refresh_imports_after_account_switching_e5369a" formatted="false">"অ্যাকাউন্ট বদলানোর পর আমদানি রিফ্রেশ করুন"</string>
+    <string name="ui_import_subscriptions_and_playlists_once_after_ch_7185de" formatted="false">"অন্য YouTube অ্যাকাউন্ট বেছে নিলে সদস্যতা ও প্লেলিস্ট একবার আমদানি করুন।"</string>
+    <string name="ui_account_ready_84a95d" formatted="false">"অ্যাকাউন্ট প্রস্তুত"</string>
+    <string name="ui_authorization_returned_to_youtube_use_this_accou_6bc626" formatted="false">"অনুমোদন YouTube-এ ফিরেছে। শেষ করতে এই অ্যাকাউন্ট ব্যবহার করুন অথবা অন্যটি বেছে নিন।"</string>
+    <string name="ui_choose_another_account_b85639" formatted="false">"অন্য অ্যাকাউন্ট বেছে নিন"</string>
+    <string name="ui_choose_a_youtube_channel_91101f" formatted="false">"একটি YouTube চ্যানেল বেছে নিন"</string>
+    <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube একটি নির্বাচিত অ্যাকাউন্ট বা চ্যানেল নিশ্চিত করেনি। অ্যাপের আগের অ্যাকাউন্ট রাখা হয়েছে।"</string>
+    <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"আপনার YouTube সেশন যাচাই করা দরকার। আগের স্থানীয় আইটেম রাখা হয়েছে।"</string>
+    <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube অন্য অ্যাকাউন্টের তথ্য ফিরিয়েছে। অ্যাকাউন্টটি আবার বেছে নিন।"</string>
 </resources>

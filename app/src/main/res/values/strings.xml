@@ -19,7 +19,7 @@
     <string name="ui_60_minutes_ee8eb1" formatted="false">"60 minutes"</string>
     <string name="ui_6_hours_1e35c2" formatted="false">"6 hours"</string>
     <string name="ui_a_session_is_saved_but_its_account_identity_need_6ba223" formatted="false">"A session is saved, but its account identity needs verification."</string>
-    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"About SimpleToob 0.7.0"</string>
+    <string name="ui_about_simpletoob_0_6_1_9ffa77" formatted="false">"About SimpleToob 0.8.1"</string>
     <string name="ui_accent_1_s_6d6c3e">"Accent %1$s"</string>
     <string name="ui_accent_color_e49578" formatted="false">"Accent color"</string>
     <string name="ui_account_imports_25ea2a" formatted="false">"Account imports"</string>
@@ -167,7 +167,7 @@
     <string name="ui_history_90ccd6" formatted="false">"History"</string>
     <string name="ui_history_cleared_5a2d82" formatted="false">"History cleared"</string>
     <string name="ui_home_70f8bb" formatted="false">"Home"</string>
-    <string name="ui_home_discovery_query_dafc3a" formatted="false">"Home discovery query"</string>
+    <string name="ui_home_discovery_query_dafc3a" formatted="false">"Discovery search topic"</string>
     <string name="ui_home_topic_fa8a18" formatted="false">"Home topic"</string>
     <string name="ui_https_instance_url_f0ca6a" formatted="false">"HTTPS instance URL"</string>
     <string name="ui_import_1_s_now_f3f9af">"Import %1$s now"</string>
@@ -595,4 +595,44 @@
     <string name="ui_1_s_likes_0c10a5">"%1$s likes"</string>
     <string name="ui_1_s_replies_f40704">"%1$s replies"</string>
     <string name="ui_1_ss_left_72cd1d">"%1$ss left"</string>
+    <string name="ui_popular_now_a2e22d" formatted="false">"Popular now"</string>
+    <string name="ui_for_you_7e13d9" formatted="false">"For you"</string>
+    <string name="ui_trailers_20323e" formatted="false">"Trailers"</string>
+    <string name="ui_your_recommendations_fa8ea3" formatted="false">"Your recommendations"</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_popu_571d4b" formatted="false">"Sign in to see your YouTube recommendations. Popular now works without an account."</string>
+    <string name="ui_browse_popular_now_a147f1" formatted="false">"Browse Popular now"</string>
+    <string name="ui_refresh_home_f48c2a" formatted="false">"Refresh Home"</string>
+    <string name="ui_home_options_f736c0" formatted="false">"Home options"</string>
+    <string name="ui_from_your_youtube_home_9d7c69" formatted="false">"From your YouTube Home"</string>
+    <string name="ui_about_home_ce89a6" formatted="false">"About Home"</string>
+    <string name="ui_popular_now_shows_youtube_s_category_charts_for__d3385c" formatted="false">"Popular now shows YouTube's category charts for your chosen region. For you shows your account's YouTube Home recommendations. Local watch history stays on this device."</string>
+    <string name="ui_home_grid_on_wide_screens_a2959f" formatted="false">"Home grid on wide screens"</string>
+    <string name="ui_use_two_or_three_columns_on_larger_windows_compa_fb061d" formatted="false">"Use two or three columns on larger windows. Compact cards stay in a list."</string>
+    <string name="ui_your_youtube_account_returned_no_recommendations_95d2e4" formatted="false">"Your YouTube account returned no recommendations. You can refresh or browse Popular now."</string>
+    <string name="ui_no_chart_videos_match_your_filters_for_this_regi_436a92" formatted="false">"No chart videos match your filters for this region."</string>
+    <string name="ui_this_chart_page_expired_refresh_popular_now_5ab5c7" formatted="false">"This chart page expired. Refresh Popular now."</string>
+    <string name="ui_this_chart_is_unavailable_in_the_selected_region_53af3a" formatted="false">"This chart is unavailable in the selected region. Choose another region or category."</string>
+    <string name="ui_the_account_changed_reload_for_you_6542f7" formatted="false">"The account changed. Reload For you."</string>
+    <string name="ui_recommendations_changed_refresh_for_you_10ac6b" formatted="false">"Recommendations changed. Refresh For you."</string>
+    <string name="ui_sign_in_to_see_your_youtube_recommendations_cc4b8e" formatted="false">"Sign in to see your YouTube recommendations."</string>
+    <string name="ui_this_recommendations_page_expired_refresh_for_yo_1bddce" formatted="false">"This recommendations page expired. Refresh For you."</string>
+    <string name="ui_your_youtube_session_needs_verification_open_acc_80c680" formatted="false">"Your YouTube session needs verification. Open Account or sign in again."</string>
+    <string name="ui_youtube_returned_an_unsupported_recommendations__af659e" formatted="false">"YouTube returned an unsupported recommendations layout. Retry or use Popular now."</string>
+    <string name="ui_youtube_repeated_or_limited_this_recommendations_724a67" formatted="false">"YouTube repeated or limited this recommendations feed. Refresh for more."</string>
+    <string name="ui_1_s_views_773c4e">"%1$s views"</string>
+    <string name="ui_show_view_counts_17b8b0" formatted="false">"Show view counts"</string>
+    <string name="ui_use_view_counts_already_supplied_with_videos_e5141b" formatted="false">"Use view counts already supplied with videos."</string>
+    <string name="ui_show_upload_dates_8b9d0b" formatted="false">"Show upload dates"</string>
+    <string name="ui_use_exact_dates_when_available_otherwise_youtube_55fe11" formatted="false">"Use exact dates when available, otherwise YouTube’s date text."</string>
+    <string name="ui_show_all_account_imports_ebd11f" formatted="false">"Show all account imports"</string>
+    <string name="ui_combine_saved_imports_from_every_account_local_c_dc33c6" formatted="false">"Combine saved imports from every account. Local collections always stay available."</string>
+    <string name="ui_refresh_imports_after_account_switching_e5369a" formatted="false">"Refresh imports after account switching"</string>
+    <string name="ui_import_subscriptions_and_playlists_once_after_ch_7185de" formatted="false">"Import subscriptions and playlists once after choosing a different YouTube account."</string>
+    <string name="ui_account_ready_84a95d" formatted="false">"Account ready"</string>
+    <string name="ui_authorization_returned_to_youtube_use_this_accou_6bc626" formatted="false">"Authorization returned to YouTube. Use this account to finish, or choose another account."</string>
+    <string name="ui_choose_another_account_b85639" formatted="false">"Choose another account"</string>
+    <string name="ui_choose_a_youtube_channel_91101f" formatted="false">"Choose a YouTube channel"</string>
+    <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube didn't confirm one selected account/channel. The previous app account was kept."</string>
+    <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"Your YouTube session needs verification. Existing local items were kept."</string>
+    <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube returned a different account context. Choose the account again."</string>
 </resources>

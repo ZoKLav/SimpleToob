@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><item name="settings_section_key" type="id"/></resources>
+<resources><item name="settings_section_key" type="id"/><item name="home_feed" type="id"/></resources>
