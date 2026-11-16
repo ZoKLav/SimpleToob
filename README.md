@@ -360,8 +360,6 @@ Added:
 - Sixteen UI/error phrases in all seven languages, now 635 entries per locale.
 - Slow-loop, handoff-selection, account/channel mismatch and collection-request regression cases; VideoMetadataTest and production-SQL account-scope cases. Android SessionVaultTest and account-view tests are supplied.
 
-Validation: 4,838 Java host assertions, 26 SQLite checks and 4,445 locale entries pass, along with Android compilation, DEX/desugaring and APK signing/alignment. Android instrumentation, visual layout and live Google/YouTube multi-account flows were not run here. These are targeted implementation fixes, not a claim that Taylor's device-specific report has been reproduced or resolved on hardware.
-
 ## 0.8.0 — recommendations and regional Home charts
 
 Added:
