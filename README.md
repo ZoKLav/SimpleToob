@@ -1,5 +1,5 @@
 # SimpleToob
-## Version 0.8.1
+## Version 0.9.0
 
 I built SimpleToob for people who want to watch YouTube without surrendering the interface to a marketing department.
 
@@ -325,7 +325,18 @@ YouTube changes its website and request formats. That can break extraction or ac
 
 ## Complete changelog
 
-## 0.8.1 — account-switch/import fixes and video details
+# 0.9.0 - Creature Comforts
+
+Added:
+
+- optional SponsorBlock with undo
+- persistent verified MP4 resumption
+- opt-in public subscription notifications
+- video/audio chapter seeking and playlist download queues
+- Kept Java and existing dependencies
+- strengthened lifecycle cancellation and resource cleanup
+
+## 0.8.1 - account-switch/import fixes and video details
 
 Fixed / changed:
 - Stop the YouTube website at a signed-in landing and hand off to native Account ready / Use this account controls, retaining candidate selection only in memory.
@@ -347,7 +358,7 @@ Added:
 - Sixteen UI/error phrases in all seven languages, now 635 entries per locale.
 - Slow-loop, handoff-selection, account/channel mismatch and collection-request regression cases; VideoMetadataTest and production-SQL account-scope cases. Android SessionVaultTest and account-view tests are supplied.
 
-## 0.8.0 — recommendations and regional Home charts
+## 0.8.0 - recommendations and regional Home charts
 
 Added:
 - Popular now and For you inside the existing Home screen, with no extra bottom navigation tab.
@@ -372,7 +383,7 @@ Fixed / changed:
 - Route first-page and continuation account reads through the same selected-account/delegation context.
 - Keep local watch history local; fetching account recommendations adds no background watch-history upload.
 
-## 0.7.0 — interface languages and original audio
+## 0.7.0 - interface languages and original audio
 
 Added:
 - English, Simplified Chinese, Hindi, Spanish, Arabic, French and Bengali interface resources, bundled offline.
