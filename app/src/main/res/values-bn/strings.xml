@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube একটি নির্বাচিত অ্যাকাউন্ট বা চ্যানেল নিশ্চিত করেনি। অ্যাপের আগের অ্যাকাউন্ট রাখা হয়েছে।"</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"আপনার YouTube সেশন যাচাই করা দরকার। আগের স্থানীয় আইটেম রাখা হয়েছে।"</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube অন্য অ্যাকাউন্টের তথ্য ফিরিয়েছে। অ্যাকাউন্টটি আবার বেছে নিন।"</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"ডাউনলোড"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"অধ্যায়"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"স্পনসর অংশ এড়ানো বাতিল করুন"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"প্লেলিস্ট ডাউনলোড করুন"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"ফোল্ডার বাছুন"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"আবার শুরু করুন"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"চালু করুন"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"ডাউনলোড বাতিল করুন"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"ফাইল খুলুন"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"তালিকা থেকে সরান"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"সাবস্ক্রিপশনের বিজ্ঞপ্তি"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"সাবস্ক্রাইব করা চ্যানেলের নতুন ভিডিও"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"কোনো অধ্যায় নেই।"</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"এই ফাইল খোলার অ্যাপ নেই।"</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"ডাউনলোড প্রস্তুত হচ্ছে…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"ডাউনলোড লিংক হালনাগাদ হচ্ছে…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"ডাউনলোড বিরতিতে আছে"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"অপেক্ষমাণ"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"ডাউনলোড চলছে"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"বিরতিতে"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"ব্যর্থ"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"সম্পূর্ণ"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"বাতিল"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"অপেক্ষমাণ ডাউনলোড আবার শুরু, বিরতি বা সরান"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"ডাউনলোড হালনাগাদ করা যায়নি। আবার চেষ্টা করতে ডাউনলোড খুলুন।"</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"ডাউনলোডের সারি ব্যস্ত। আবার চেষ্টা করুন।"</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"ডাউনলোড আবার শুরু করতে ফোল্ডারে স্থায়ী অনুমতি দরকার।"</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"বিরতিতে যাচাই করা অংশ রাখা হয়। বাতিল করলে অস্থায়ী ফাইল মুছে যায়; সম্পূর্ণ ফাইল বাছা ফোল্ডারে থাকে।"</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"বাছা ফোল্ডারে সর্বোচ্চ ৫০০ ভিডিও MP4 হিসেবে রাখুন। অনুপলব্ধ ভিডিও আলাদাভাবে ব্যর্থ হয়; অন্য ডাউনলোড চলতে থাকে।"</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"SponsorBlock দিয়ে স্পনসর অংশ এড়ান। ভিডিও হ্যাশের প্রথম চার অক্ষর পাঠায়; অ্যাকাউন্ট কুকি বা দেখার প্রতিবেদন নয়। শুরুতে বন্ধ।"</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"সাইন ইন ছাড়া প্রায় প্রতি ঘণ্টায় প্রকাশ্য ভিডিও দেখুন। প্রথম পরীক্ষায় বিজ্ঞপ্তি আসে না। প্রতিবার সর্বোচ্চ দশ চ্যানেল; Android দেরি করতে পারে। শুধু সক্রিয় প্রোফাইল।"</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"ডাউনলোড ব্যর্থ। আবার শুরু করে চেষ্টা করুন; অনুপলব্ধ ফরম্যাটে নতুন ডাউনলোড লাগতে পারে।"</string>
 </resources>

@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube n'a pas confirmé un seul compte ou une seule chaîne. Le compte précédent a été conservé."</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"Votre session YouTube doit être vérifiée. Les éléments locaux ont été conservés."</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube a renvoyé le contexte d’un autre compte. Choisissez à nouveau le compte."</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"Téléchargements"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"Chapitres"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"Annuler le saut du sponsor"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"Télécharger la playlist"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"Choisir un dossier"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"Reprendre"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"Activer"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"Annuler le téléchargement"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"Ouvrir le fichier"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"Retirer de la liste"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"Notifications des abonnements"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"Nouvelles vidéos des abonnements"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"Aucun chapitre disponible."</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"Aucune application ne peut ouvrir ce fichier."</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"Préparation des téléchargements…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"Actualisation des liens de téléchargement…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"Téléchargement en pause"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"en attente"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"en cours"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"en pause"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"échec"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"terminé"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"annulé"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"Reprendre, suspendre ou retirer des téléchargements"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"Impossible de mettre à jour les téléchargements. Ouvrez Téléchargements pour réessayer."</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"La file est occupée. Réessayez."</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"Un accès persistant au dossier est nécessaire pour reprendre."</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"Les parties vérifiées sont conservées en pause. Annuler supprime les fichiers temporaires ; les fichiers terminés restent dans le dossier choisi."</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"Ajoutez jusqu’à 500 vidéos MP4 dans le dossier choisi. Une vidéo indisponible échoue seule ; les autres continuent."</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"Ignorer les sponsors avec SponsorBlock. Envoie quatre caractères du hachage vidéo, sans cookies de compte ni rapports de visionnage. Désactivé par défaut."</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"Vérifie les vidéos publiques environ chaque heure, sans connexion. Le premier passage reste silencieux. Dix chaînes au maximum par passage ; Android peut retarder les vérifications. Profil actif uniquement."</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"Échec du téléchargement. Reprenez pour réessayer ; un format indisponible peut nécessiter un nouveau téléchargement."</string>
 </resources>

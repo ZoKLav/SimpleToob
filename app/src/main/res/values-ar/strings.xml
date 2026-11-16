@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"لم يؤكد YouTube حسابًا أو قناة واحدة محددة. احتُفظ بحساب التطبيق السابق."</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"تحتاج جلسة YouTube إلى التحقق. احتُفظ بالعناصر المحلية الحالية."</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"أرجع YouTube سياق حساب مختلف. اختر الحساب مجددًا."</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"التنزيلات"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"الفصول"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"التراجع عن تخطي الرعاية"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"تنزيل قائمة التشغيل"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"اختيار مجلد"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"استئناف"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"تفعيل"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"إلغاء التنزيل"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"فتح الملف"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"إزالة من القائمة"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"إشعارات الاشتراكات"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"فيديوهات جديدة من الاشتراكات"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"لا توجد فصول متاحة."</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"لا يوجد تطبيق لفتح هذا الملف."</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"جارٍ تحضير التنزيلات…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"جارٍ تحديث روابط التنزيل…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"تم إيقاف التنزيل مؤقتًا"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"في الانتظار"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"قيد التنزيل"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"متوقف مؤقتًا"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"فشل"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"مكتمل"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"ملغى"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"استئناف التنزيلات أو إيقافها مؤقتًا أو إزالتها"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"تعذر تحديث التنزيلات. افتح التنزيلات للمحاولة مجددًا."</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"قائمة التنزيلات مشغولة. حاول مجددًا."</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"يتطلب استئناف التنزيلات إذن وصول دائم إلى المجلد."</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"تحتفظ التنزيلات المتوقفة بالأجزاء المتحقق منها. يلغي الإلغاء الملفات المؤقتة؛ وتبقى الملفات المكتملة في المجلد المختار."</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"أضف حتى 500 فيديو MP4 إلى المجلد المختار. يفشل كل فيديو غير متاح بمفرده وتستمر بقية التنزيلات."</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"تخطي الرعاية باستخدام SponsorBlock. يُرسل أول أربعة أحرف من بصمة الفيديو دون ملفات تعريف ارتباط الحساب أو تقارير المشاهدة. معطل افتراضيًا."</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"فحص الفيديوهات العامة كل ساعة تقريبًا دون تسجيل دخول. الفحص الأول صامت. حتى عشر قنوات في كل مرة؛ قد يؤخر Android الفحص. للملف النشط فقط."</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"فشل التنزيل. استأنف للمحاولة؛ قد تتطلب الصيغ غير المتاحة تنزيلًا جديدًا."</string>
 </resources>

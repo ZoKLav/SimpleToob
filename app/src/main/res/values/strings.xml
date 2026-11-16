@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube didn't confirm one selected account/channel. The previous app account was kept."</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"Your YouTube session needs verification. Existing local items were kept."</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube returned a different account context. Choose the account again."</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"Downloads"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"Chapters"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"Undo sponsor skip"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"Download playlist"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"Choose folder"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"Resume"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"Enable"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"Cancel download"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"Open file"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"Remove from list"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"Subscription notifications"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"New subscription videos"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"No chapters available."</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"No app can open this file."</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"Preparing downloads…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"Refreshing download links…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"Download paused"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"queued"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"running"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"paused"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"failed"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"complete"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"cancelled"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"Resume, pause or remove queued downloads"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"Could not update downloads. Open Downloads to retry."</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"Download queue is busy. Please retry."</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"Persistent folder access is required to resume downloads."</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"Paused downloads keep verified parts. Cancel removes temporary files; completed files stay in your chosen folder."</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"Queue up to 500 videos as MP4 files in a folder you choose. Unavailable videos fail individually; other downloads continue."</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"Skip sponsor segments using SponsorBlock. Sends a four-character video hash prefix; no account cookies or viewing reports. Off by default."</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"Check public uploads about hourly, without signing in. First checks establish a quiet baseline. Up to ten channels are checked per run; Android may delay checks. Uses the active profile only."</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"Download failed. Resume to retry; unavailable formats may need a new download."</string>
 </resources>

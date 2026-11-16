@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube no confirmó una única cuenta/canal. Se conservó la cuenta anterior de la app."</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"Tu sesión de YouTube necesita verificación. Se conservaron los elementos locales."</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube devolvió el contexto de otra cuenta. Vuelve a elegir la cuenta."</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"Descargas"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"Capítulos"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"Deshacer salto de patrocinio"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"Descargar lista"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"Elegir carpeta"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"Reanudar"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"Activar"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"Cancelar descarga"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"Abrir archivo"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"Quitar de la lista"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"Avisos de suscripciones"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"Nuevos vídeos de suscripciones"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"No hay capítulos disponibles."</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"Ninguna app puede abrir este archivo."</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"Preparando descargas…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"Actualizando enlaces de descarga…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"Descarga en pausa"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"en cola"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"descargando"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"en pausa"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"fallida"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"completa"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"cancelada"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"Reanudar, pausar o quitar descargas en cola"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"No se pudieron actualizar las descargas. Abre Descargas para reintentar."</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"La cola está ocupada. Reinténtalo."</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"Se necesita acceso permanente a la carpeta para reanudar."</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"Las descargas pausadas conservan las partes verificadas. Cancelar elimina los archivos temporales; los completos se quedan en la carpeta elegida."</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"Pon hasta 500 vídeos MP4 en cola en la carpeta elegida. Los vídeos no disponibles fallan por separado; las demás descargas continúan."</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"Saltar patrocinios con SponsorBlock. Envía cuatro caracteres del hash del vídeo; sin cookies ni informes de visualización. Desactivado inicialmente."</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"Comprueba subidas públicas aproximadamente cada hora, sin iniciar sesión. La primera consulta no avisa. Se revisan hasta diez canales por ronda; Android puede retrasarla. Solo el perfil activo."</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"Descarga fallida. Reanuda para reintentar; un formato no disponible puede requerir otra descarga."</string>
 </resources>

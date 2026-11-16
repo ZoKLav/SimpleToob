@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 
 public final class SimpleToobApp extends Application {
     public ExecutorService network, disk, images, media, account, ratings,importReads,importControl,recommendations;
+    public final Object downloadLock=new Object();
+    public java.util.concurrent.Future<?> downloadRecovery;
     public ImportManager imports;
     public SessionVault sessions;
     public YoutubeWebClient web;
@@ -29,9 +31,9 @@ public final class SimpleToobApp extends Application {
         prefs=new Prefs(this); library=new LibraryStore(this,prefs.text("profile","default"));
         sessions=new SessionVault(this,prefs);web=new YoutubeWebClient(sessions,prefs);votes=new RatingsRepository(prefs);
         youtube=new YoutubeRepository(this,prefs);home=new HomeRecommendations(()->new HomeRecommendations.Session(sessions.profile(),sessions.revision(),prefs.number("auth_user",0),prefs.text("language","en"),prefs.text("region","US"),sessions.present()),(profile,revision)->{YoutubeWebClient client=new YoutubeWebClient(sessions,prefs).pin(profile,revision);return client::homeData;});
-        thumbnails=new ImageLoader(images);avatars=new Avatars(this);imports=new ImportManager(this);sessions.onChanged(()->{home.clear();imports.sessionChanged();});imports.configure();registerActivityLifecycleCallbacks(new android.app.Application.ActivityLifecycleCallbacks(){int count;long lastForeground;public void onActivityStarted(android.app.Activity a){if(count++==0&&(lastForeground==0||android.os.SystemClock.elapsedRealtime()-lastForeground>30000)){lastForeground=android.os.SystemClock.elapsedRealtime();imports.foreground();}}public void onActivityStopped(android.app.Activity a){count=Math.max(0,count-1);}public void onActivityCreated(android.app.Activity a,android.os.Bundle b){}public void onActivityResumed(android.app.Activity a){}public void onActivityPaused(android.app.Activity a){}public void onActivitySaveInstanceState(android.app.Activity a,android.os.Bundle b){}public void onActivityDestroyed(android.app.Activity a){}});
+        thumbnails=new ImageLoader(images);avatars=new Avatars(this);imports=new ImportManager(this);sessions.onChanged(()->{home.clear();imports.sessionChanged();SubscriptionJobService.configure(this);});imports.configure();registerActivityLifecycleCallbacks(new android.app.Application.ActivityLifecycleCallbacks(){int count;long lastForeground;public void onActivityStarted(android.app.Activity a){if(count++==0&&(lastForeground==0||android.os.SystemClock.elapsedRealtime()-lastForeground>30000)){lastForeground=android.os.SystemClock.elapsedRealtime();imports.foreground();}}public void onActivityStopped(android.app.Activity a){count=Math.max(0,count-1);}public void onActivityCreated(android.app.Activity a,android.os.Bundle b){}public void onActivityResumed(android.app.Activity a){}public void onActivityPaused(android.app.Activity a){}public void onActivitySaveInstanceState(android.app.Activity a,android.os.Bundle b){}public void onActivityDestroyed(android.app.Activity a){}});
         // SQLite initialization and metadata expiry never run on the UI thread.
-        disk.execute(() -> library.expireMetadata());
+        downloadRecovery=disk.submit(() -> {try(DownloadStore downloads=new DownloadStore(this)){downloads.recover();}library.expireMetadata();});SubscriptionJobService.configure(this);
     }
     private ExecutorService pool(int size,int capacity,String name) {
         return WorkPools.create(name,size,capacity,()->android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND));

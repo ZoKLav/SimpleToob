@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube未确认唯一选中的账号或频道，应用已保留原账号。"</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"你的YouTube会话需要验证，现有本地内容已保留。"</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube返回了其他账号的上下文，请重新选择账号。"</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"下载"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"章节"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"撤销赞助片段跳过"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"下载播放列表"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"选择文件夹"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"继续"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"启用"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"取消下载"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"打开文件"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"从列表中移除"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"订阅通知"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"订阅频道的新视频"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"没有可用章节。"</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"没有可打开此文件的应用。"</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"正在准备下载…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"正在刷新下载链接…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"下载已暂停"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"排队中"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"下载中"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"已暂停"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"失败"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"已完成"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"已取消"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"继续、暂停或移除下载任务"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"无法更新下载。请打开下载页面重试。"</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"下载队列正忙。请重试。"</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"继续下载需要持久文件夹访问权限。"</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"暂停时保留已验证的部分。取消会删除临时文件；完成的文件保留在所选文件夹中。"</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"最多将500个视频以MP4格式下载到所选文件夹。无法下载的视频单独标记为失败，其他下载继续。"</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"使用SponsorBlock跳过赞助片段。仅发送视频哈希的前四个字符，不发送账户Cookie或观看报告。默认关闭。"</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"无需登录，约每小时检查公开视频。首次检查不发送通知。每次最多检查十个频道；Android可能延迟检查。仅用于当前个人资料。"</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"下载失败。继续以重试；格式不可用时可能需要新建下载。"</string>
 </resources>

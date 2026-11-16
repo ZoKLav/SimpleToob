@@ -635,4 +635,37 @@
     <string name="ui_youtube_didn_t_confirm_one_selected_account_chan_b82623" formatted="false">"YouTube ने एक चुने खाते या चैनल की पुष्टि नहीं की। ऐप का पिछला खाता रखा गया है।"</string>
     <string name="ui_your_youtube_session_needs_verification_existing_e13264" formatted="false">"आपके YouTube सत्र का सत्यापन चाहिए। मौजूदा स्थानीय सामग्री रखी गई है।"</string>
     <string name="ui_youtube_returned_a_different_account_context_cho_14d165" formatted="false">"YouTube ने दूसरे खाते की जानकारी लौटाई। खाता फिर चुनें।"</string>
+    <string name="ui_feature_a862c2b21b5e" formatted="false">"डाउनलोड"</string>
+    <string name="ui_feature_034e27330489" formatted="false">"अध्याय"</string>
+    <string name="ui_feature_e105c7fb9f4a" formatted="false">"प्रायोजित भाग को छोड़ना पूर्ववत करें"</string>
+    <string name="ui_feature_c92cc824ee72" formatted="false">"SponsorBlock"</string>
+    <string name="ui_feature_4f970836810b" formatted="false">"प्लेलिस्ट डाउनलोड करें"</string>
+    <string name="ui_feature_1838a4158f39" formatted="false">"फ़ोल्डर चुनें"</string>
+    <string name="ui_feature_b3bd0b5a7049" formatted="false">"फिर शुरू करें"</string>
+    <string name="ui_feature_20063ad90532" formatted="false">"चालू करें"</string>
+    <string name="ui_feature_67bb11d08df2" formatted="false">"डाउनलोड रद्द करें"</string>
+    <string name="ui_feature_f11b8781300b" formatted="false">"फ़ाइल खोलें"</string>
+    <string name="ui_feature_23a97691b4e6" formatted="false">"सूची से हटाएँ"</string>
+    <string name="ui_feature_a55991da1536" formatted="false">"सदस्यता सूचनाएँ"</string>
+    <string name="ui_feature_7ff883c22053" formatted="false">"सदस्यता वाले चैनलों के नए वीडियो"</string>
+    <string name="ui_feature_e53791ba716a" formatted="false">"कोई अध्याय उपलब्ध नहीं है।"</string>
+    <string name="ui_feature_80a76082a153" formatted="false">"कोई ऐप यह फ़ाइल नहीं खोल सकता।"</string>
+    <string name="ui_feature_fd3580557b97" formatted="false">"डाउनलोड तैयार हो रहे हैं…"</string>
+    <string name="ui_feature_b2c64bcf1897" formatted="false">"डाउनलोड लिंक ताज़ा हो रहे हैं…"</string>
+    <string name="ui_feature_6860f2b6d5d5" formatted="false">"डाउनलोड रुका हुआ है"</string>
+    <string name="ui_feature_efcc77141dbf" formatted="false">"कतार में"</string>
+    <string name="ui_feature_3c49d9cc3c0c" formatted="false">"डाउनलोड हो रहा है"</string>
+    <string name="ui_feature_11b1b5ec9167" formatted="false">"रुका हुआ"</string>
+    <string name="ui_feature_5f5f8758f5f2" formatted="false">"विफल"</string>
+    <string name="ui_feature_0737c22d3bfa" formatted="false">"पूरा"</string>
+    <string name="ui_feature_8761d26fb8d6" formatted="false">"रद्द"</string>
+    <string name="ui_feature_294b4df55a00" formatted="false">"कतार के डाउनलोड फिर शुरू करें, रोकें या हटाएँ"</string>
+    <string name="ui_feature_4f9620ac1cab" formatted="false">"डाउनलोड अपडेट नहीं हुए। फिर प्रयास के लिए डाउनलोड खोलें।"</string>
+    <string name="ui_feature_e8800daf276b" formatted="false">"डाउनलोड कतार व्यस्त है। फिर प्रयास करें।"</string>
+    <string name="ui_feature_3fa244730b32" formatted="false">"डाउनलोड फिर शुरू करने के लिए फ़ोल्डर की स्थायी अनुमति चाहिए।"</string>
+    <string name="ui_feature_dda759083c17" formatted="false">"रुके डाउनलोड के सत्यापित हिस्से सुरक्षित रहते हैं। रद्द करने पर अस्थायी फ़ाइलें हटती हैं; पूरी फ़ाइलें चुने फ़ोल्डर में रहती हैं।"</string>
+    <string name="ui_feature_3225c21c4a76" formatted="false">"चुने फ़ोल्डर में अधिकतम 500 वीडियो MP4 में डाउनलोड करें। अनुपलब्ध वीडियो अलग से विफल होते हैं; बाकी डाउनलोड चलते रहते हैं।"</string>
+    <string name="ui_feature_9c52974e39a1" formatted="false">"SponsorBlock से प्रायोजित हिस्से छोड़ें। वीडियो हैश के पहले चार अक्षर भेजे जाते हैं; खाते की कुकी या देखने की रिपोर्ट नहीं। डिफ़ॉल्ट रूप से बंद।"</string>
+    <string name="ui_feature_2c90b5aea5b8" formatted="false">"बिना साइन इन किए लगभग हर घंटे सार्वजनिक अपलोड जाँचें। पहली जाँच में सूचना नहीं आती। हर बार अधिकतम दस चैनल; Android जाँच में देरी कर सकता है। केवल सक्रिय प्रोफ़ाइल।"</string>
+    <string name="ui_feature_d04924bde60e" formatted="false">"डाउनलोड विफल। फिर प्रयास के लिए शुरू करें; अनुपलब्ध फ़ॉर्मैट के लिए नया डाउनलोड चाहिए हो सकता है।"</string>
 </resources>

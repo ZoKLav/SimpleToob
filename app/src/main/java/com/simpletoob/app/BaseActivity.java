@@ -15,7 +15,10 @@ import java.util.function.Consumer;
 
 abstract class BaseActivity extends Activity {
     SimpleToobApp app; Ui ui;private long seenImportVersion;private final Runnable importListener=()->{long current=app.imports.version();if(current!=seenImportVersion){seenImportVersion=current;onImportsChanged();}else onImportStatusChanged();};
-    private String appliedLanguage;
+    private volatile boolean activityDestroyed;private String appliedLanguage;
+    private final java.util.List<Future<?>> tasks=new java.util.ArrayList<>();
+    private final android.os.Handler results=new android.os.Handler(android.os.Looper.getMainLooper());
+    @Override protected void onDestroy(){activityDestroyed=true;for(Future<?> task:tasks)task.cancel(true);tasks.clear();results.removeCallbacksAndMessages(null);super.onDestroy();}
     @Override protected void attachBaseContext(android.content.Context base){super.attachBaseContext(AppLanguage.wrap(base));}
     String tr(int id,Object...args){return I18n.get(this,id,args);}
     String tx(String source){return I18n.text(this,source);}
@@ -33,16 +36,16 @@ abstract class BaseActivity extends Activity {
     void external(String url) { WebSessionActivity.open(this,url); }
     void browser(String url) { WebSessionActivity.open(this,url); }
     <T> Future<?> work(ExecutorService executor,Callable<T> action,Consumer<T> success,Consumer<String> failure) {
-        try { return executor.submit(()-> {
+        try { tasks.removeIf(Future::isDone);Future<?> task=executor.submit(()-> {
             try {
                 T result=action.call();
-                if(!Thread.currentThread().isInterrupted()) runOnUiThread(()-> { if(!isFinishing() && !isDestroyed()) success.accept(result); });
+                if(!activityDestroyed&&!Thread.currentThread().isInterrupted()) results.post(()-> { if(!isFinishing() && !isDestroyed()) success.accept(result); });
             } catch(Exception e) {
-                if(!Thread.currentThread().isInterrupted()) {
+                if(!activityDestroyed&&!Thread.currentThread().isInterrupted()) {
                     String message=(e instanceof YoutubeRepository.ApiException||e instanceof HomeRecommendations.FeedException)?e.getMessage():"Couldn't complete that action. Please retry.";
-                    runOnUiThread(()-> { if(!isFinishing() && !isDestroyed()) failure.accept(tx(message)); });
+                    results.post(()-> { if(!isFinishing() && !isDestroyed()) failure.accept(tx(message)); });
                 }
             }
-        }); } catch(RejectedExecutionException e) { failure.accept(tx("Busy finishing earlier requests. Please retry in a moment.")); return null; }
+        }); tasks.add(task);return task; } catch(RejectedExecutionException e) { failure.accept(tx("Busy finishing earlier requests. Please retry in a moment.")); return null; }
     }
 }

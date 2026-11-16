@@ -645,6 +645,39 @@ final class I18n {
         LABELS.put("YouTube didn't confirm one selected account/channel. The previous app account was kept.",R.string.ui_youtube_didn_t_confirm_one_selected_account_chan_b82623);
         LABELS.put("Your YouTube session needs verification. Existing local items were kept.",R.string.ui_your_youtube_session_needs_verification_existing_e13264);
         LABELS.put("YouTube returned a different account context. Choose the account again.",R.string.ui_youtube_returned_a_different_account_context_cho_14d165);
+        LABELS.put("Downloads",R.string.ui_feature_a862c2b21b5e);
+        LABELS.put("Chapters",R.string.ui_feature_034e27330489);
+        LABELS.put("Undo sponsor skip",R.string.ui_feature_e105c7fb9f4a);
+        LABELS.put("SponsorBlock",R.string.ui_feature_c92cc824ee72);
+        LABELS.put("Download playlist",R.string.ui_feature_4f970836810b);
+        LABELS.put("Choose folder",R.string.ui_feature_1838a4158f39);
+        LABELS.put("Resume",R.string.ui_feature_b3bd0b5a7049);
+        LABELS.put("Enable",R.string.ui_feature_20063ad90532);
+        LABELS.put("Cancel download",R.string.ui_feature_67bb11d08df2);
+        LABELS.put("Open file",R.string.ui_feature_f11b8781300b);
+        LABELS.put("Remove from list",R.string.ui_feature_23a97691b4e6);
+        LABELS.put("Subscription notifications",R.string.ui_feature_a55991da1536);
+        LABELS.put("New subscription videos",R.string.ui_feature_7ff883c22053);
+        LABELS.put("No chapters available.",R.string.ui_feature_e53791ba716a);
+        LABELS.put("No app can open this file.",R.string.ui_feature_80a76082a153);
+        LABELS.put("Preparing downloads\u2026",R.string.ui_feature_fd3580557b97);
+        LABELS.put("Refreshing download links\u2026",R.string.ui_feature_b2c64bcf1897);
+        LABELS.put("Download paused",R.string.ui_feature_6860f2b6d5d5);
+        LABELS.put("queued",R.string.ui_feature_efcc77141dbf);
+        LABELS.put("running",R.string.ui_feature_3c49d9cc3c0c);
+        LABELS.put("paused",R.string.ui_feature_11b1b5ec9167);
+        LABELS.put("failed",R.string.ui_feature_5f5f8758f5f2);
+        LABELS.put("complete",R.string.ui_feature_0737c22d3bfa);
+        LABELS.put("cancelled",R.string.ui_feature_8761d26fb8d6);
+        LABELS.put("Resume, pause or remove queued downloads",R.string.ui_feature_294b4df55a00);
+        LABELS.put("Could not update downloads. Open Downloads to retry.",R.string.ui_feature_4f9620ac1cab);
+        LABELS.put("Download queue is busy. Please retry.",R.string.ui_feature_e8800daf276b);
+        LABELS.put("Persistent folder access is required to resume downloads.",R.string.ui_feature_3fa244730b32);
+        LABELS.put("Paused downloads keep verified parts. Cancel removes temporary files; completed files stay in your chosen folder.",R.string.ui_feature_dda759083c17);
+        LABELS.put("Queue up to 500 videos as MP4 files in a folder you choose. Unavailable videos fail individually; other downloads continue.",R.string.ui_feature_3225c21c4a76);
+        LABELS.put("Skip sponsor segments using SponsorBlock. Sends a four-character video hash prefix; no account cookies or viewing reports. Off by default.",R.string.ui_feature_9c52974e39a1);
+        LABELS.put("Check public uploads about hourly, without signing in. First checks establish a quiet baseline. Up to ten channels are checked per run; Android may delay checks. Uses the active profile only.",R.string.ui_feature_2c90b5aea5b8);
+        LABELS.put("Download failed. Resume to retry; unavailable formats may need a new download.",R.string.ui_feature_d04924bde60e);
         // END GENERATED LABELS
     }
     private I18n(){}
