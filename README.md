@@ -415,7 +415,7 @@ The interface belongs on your phone. It should not require permission from a pro
 
 ### Install or update
 
-Install [SimpleToob-0.9.0-debug.apk](apk/SimpleToob-0.9.0-debug.apk) on Android 8.0 or newer.
+Install on Android 8.0 or newer from the Releases section.
 
 The supplied 0.9.0 debug APK uses the same development signing identity as the supplied 0.8.1 build. Android updates require matching application identity and signing certificates.
 
