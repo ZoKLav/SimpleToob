@@ -694,14 +694,6 @@ Changed and strengthened:
 - Keep download-job metadata free of expiring stream URLs.
 - Preserve Java, native UI, optional sign-in, the Android 8.0 minimum, existing runtime dependencies, and the development signer.
 
-Validation:
-
-- 4,882 Java host assertions.
-- 30 SQLite checks.
-- 4,676 language-resource entries checked.
-- Application compilation, DEX generation, signing, and alignment passed.
-- Device testing, Android instrumentation execution, Gradle/Lint, and heap profiling remain pending.
-
 ### 0.8.1 — Account-switch/import fixes and video details
 
 Fixed and changed:
