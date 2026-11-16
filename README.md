@@ -311,19 +311,6 @@ Diagnostics exclude passwords, session cookies, comment contents, and full strea
 
 YouTube changes its website and request formats. That can break extraction or account features and require a client update.
 
-Current limits include:
-
-- No uploads.
-- No complete desktop/mobile YouTube feature parity.
-- No background or screen-off playback, picture-in-picture, casting, or floating miniplayer.
-- No automatic bidirectional account synchronization.
-- No automatic access to private, paid, DRM-protected, or age-restricted video playback merely because an account is signed in.
-- Some account feeds currently load an initial page rather than a complete archive.
-- Dynamic mixes and unavailable playlist entries may fail or be omitted.
-- Local playlists store one entry per video ID, so repeated occurrences collapse.
-- Import safety limits of 500 continuation pages and 50,000 playable entries per playlist.
-- No resumable downloads or WebM/HLS downloading.
-- 
 <p><img src="./screenshots/1.png" alt="Screenshot 1" width="700"></p>
 
 <p><img src="./screenshots/2.png" alt="Screenshot 2" width="700"></p>
